@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods_detail_price_type_two"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/gradient_main_color"
+    android:layout_height="52dp">
+
+
+
+    <TextView
+        android:id="@+id/tv_pricecount"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom"
+        android:textSize="@dimen/subtitle_and_normalbutton_textsize"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/ll_timelimit"
+        android:layout_toRightOf="@+id/tv_pricecount"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:gravity="start"
+            android:id="@+id/tv_source_price"
+            android:textSize="@dimen/support_hint_textsize"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/tv_sale_volumn"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/frame_sold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_timelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <com.mujirenben.android.common.widget.campaignview.TimeLimitViewForGoodsDetail
+            android:layout_width="wrap_content"
+            android:id="@+id/limit_time_view"
+            android:layout_height="wrap_content">
+
+
+
+        </com.mujirenben.android.common.widget.campaignview.TimeLimitViewForGoodsDetail>
+
+
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="距离结束"
+            android:textSize="@dimen/support_hint_textsize"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

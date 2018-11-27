@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/mine_include_settings_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/invite_code_writing_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_userinfo_card_style"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="你的邀请人"
+                    android:textColor="#404040"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/et_invite_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_round_gray_bored"
+                    android:ems="10"
+                    android:hint="请输入邀请码"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color_blur"
+                    android:textSize="@dimen/module_textsize_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_error_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="邀请码错误，请输入正确的邀请码"
+                    android:textColor="#ED4143"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/mine_button_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:longClickable="true"
+                    android:text="输入完成"
+                    android:textColor="@drawable/global_button_text_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/mine_userinfo_card_style"
+                    android:orientation="vertical">
+
+                    <com.mujirenben.android.common.widget.ResizableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:paddingLeft="21dp"
+                        android:paddingRight="21dp"
+                        android:src="@drawable/invite_steps" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="32dp"
+                        android:background="#b2b2b2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="20dp"
+                        android:text="扫一扫"
+                        android:textColor="#404040"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/dotted_line" />
+
+                <ImageView
+                    android:layout_width="116dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_retrieve_invite_code" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

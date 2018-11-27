@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_sms_verify_bg"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/solid_login_bg"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/rl_titlebar_bg">
+        <ImageView
+            android:id="@+id/tv_back"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/icon_back" />
+        <TextView
+            android:id="@+id/tv_titlebar"
+            android:gravity="center"
+            android:text="手机号登录"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:id="@+id/unbind_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_already_sent"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/half_transparent_gray"
+            android:text="输入(+86)18565333976收到的4位验证码"
+            android:textSize="@dimen/module_textsize_14sp" />
+        <com.jkb.vcedittext.VerificationCodeEditText
+            android:id="@+id/et_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="70dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:bottomLineHeight="1dp"
+            app:bottomLineNormalColor="@color/seventy_precent_transparent_white"
+            app:bottomLineSelectedColor="@color/seventy_precent_transparent_white"
+            app:figures="4"
+            app:selectedBackgroundColor="@color/transparent"
+            app:verCodeMargin="10dp" />
+        <TextView
+            android:id="@+id/tv_resent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_login_sms_resent"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tv_resent_voice"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sixty_percent_transparent_white"
+            android:visibility="gone"/>
+        <com.mujirenben.android.common.widget.LoadingButton
+            android:layout_marginTop="50dp"
+            android:id="@+id/btn_login_sms"
+            android:layout_width="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="44dp"/>
+    </LinearLayout>
+</LinearLayout>

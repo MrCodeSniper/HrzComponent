@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="66dp"
+    android:layout_height="66dp"
+    android:id="@+id/search_platform_item_layout">
+
+    <ImageView
+        android:id="@+id/search_platform_item_icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/search_platform_all_large" />
+
+    <ImageView
+        android:id="@+id/search_platform_item_mark"
+        android:layout_width="20dp"
+        android:layout_alignTop="@+id/search_platform_item_icon"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/search_platform_selected_mark"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tv_maintheme"
+        android:background="@color/bg_grey"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:text="- 热门商品推荐 -"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_fail_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

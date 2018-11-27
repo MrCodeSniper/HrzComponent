@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.mujirenben.android.common.widget.HrzHeadersView
+            android:id="@+id/ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            cube_ptr:ptr_duration_to_close="1000"
+            cube_ptr:ptr_duration_to_close_header="500"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0"
+            cube_ptr:ptr_resistance="3">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+        </com.mujirenben.android.common.widget.HrzHeadersView>
+
+        <View
+            android:id="@+id/masque"
+            android:background="@drawable/masque"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_tool_bar"
+            android:background="@drawable/gradient_main_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mujirenben.android.common.widget.StatusBarView
+                android:id="@+id/home_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  />
+
+            <LinearLayout
+                android:id="@+id/home_title_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_titlebar_height"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/home_title_bar_bg_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_titlebar_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/scanning_layout"
+                        android:layout_width="44dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/scan_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="扫一扫"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/home_title_bar_font_color_selector"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_search_box"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_title_bar_search_corner_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/iv_search_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/icon_home_search" />
+
+                        <TextView
+                            android:layout_toRightOf="@+id/iv_search_icon"
+                            android:id="@+id/tv_search_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="@color/text_color"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/microphone"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/advisory_layout"
+                        android:layout_width="44dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/message_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="消息"
+                            android:textColor="@color/home_title_bar_font_color_selector"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.mujirenben.android.common.widget.BackToTopView
+            android:id="@+id/iv_to_top"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/icon_top"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="right|bottom"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_expiration_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_expiration_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="您的店主身份还有6天到期，点击立即续费"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <FrameLayout
+            android:id="@+id/fl_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/white_delete_icon" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

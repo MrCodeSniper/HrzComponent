@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+    
+
+
+  <TextView
+      android:layout_marginLeft="12dp"
+      android:id="@+id/tv_shop_type"
+      android:textSize="14sp"
+      android:textColor="#333333"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+
+
+    <TextView
+        android:id="@+id/tv_shop_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+
+     <TextView
+         android:layout_marginRight="14dp"
+         android:layout_marginLeft="15dp"
+         android:id="@+id/tv_shop_price"
+         android:textSize="14sp"
+         android:textColor="#333333"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+
+    <LinearLayout
+        android:id="@+id/ll_merchant_tag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

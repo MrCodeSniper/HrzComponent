@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/mine_include_settings_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/coupons_receive_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_userinfo_card_style"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="输入验证码获取价值100元的升级优惠"
+                    android:textColor="#404040"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/et_invite_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_round_gray_bored"
+                    android:ems="10"
+                    android:hint="请输入验证码"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color_blur"
+                    android:textSize="@dimen/module_textsize_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_error_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="验证码错误，请输入正确的验证码"
+                    android:textColor="#ED4143"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_give_up"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yellow_stroke_round_shape_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:longClickable="true"
+                        android:text="任性放弃"
+                        android:textColor="#171E4B"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_sure"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yellow_gradient_round_shape_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:longClickable="true"
+                        android:text="验证领取"
+                        android:textColor="#171E4B"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/mine_userinfo_card_style"
+                    android:orientation="vertical">
+
+                    <com.mujirenben.android.common.widget.ResizableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:paddingLeft="21dp"
+                        android:paddingRight="21dp"
+                        android:src="@drawable/verification_steps" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="32dp"
+                        android:background="#b2b2b2" />
+
+                    <TextView
+                        android:id="@+id/btn_save_image"
+                        android:layout_width="153dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/yellow_gradient_round_shape_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:longClickable="true"
+                        android:text="保存图片"
+                        android:textColor="#171E4B"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="151dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_retrieve_verification_code" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingStart="12dp"
+    android:paddingRight="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/order_list_item_origin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_blur"
+            android:textSize="14sp"
+            android:text="@string/mine_order_item_origin_price"/>
+
+        <TextView
+            android:id="@+id/order_item_orgin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff333333"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/order_list_item_reward_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffb2b2b2"
+            android:textSize="14sp"
+            android:text="@string/mine_order_item_reward_title"/>
+
+        <TextView
+            android:id="@+id/order_item_reward_reward_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffb2b2b2"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/mine_order_item_toaacount_time"/>
+
+        <TextView
+            android:id="@+id/order_item_reward_reward_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff333333"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_list_item_discount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#ffb2b2b2"
+            android:textSize="14sp"
+            android:text="@string/mine_order_item_discount_title"/>
+
+        <TextView
+            android:id="@+id/order_item_reward_discount_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff333333"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_bar_for_offline"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ffececec"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right">
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_timestamp"
+            android:layout_alignBottom="@+id/order_item_real_price_tv"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:text="2018-06-12 12:25:12"
+            android:textColor="@color/text_color_blur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        <TextView
+            android:layout_alignBottom="@+id/order_item_real_price_tv"
+            android:layout_toLeftOf="@+id/order_item_real_price_tv"
+            android:id="@+id/order_item_product_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_item_product_number"
+            android:textColor="#ff333333"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/order_item_real_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ED4143"
+            android:textSize="21sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/order_item_freight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_item_freight_price"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"/>
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:id="@+id/view_divider_above_ship"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ffececec"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_item_share_reward_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/main_color"
+        android:textSize="13sp"
+        android:background="@drawable/order_item_round_check_ship_info"
+        android:layout_gravity="right|end"
+        android:text="@string/mine_order_item_check_ship_info"/>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_offline_order_pay_status"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+        <TextView
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/offlineOrderPayNum"
+            android:textColor="@color/text_color_blur"
+            android:text="2018-06-12 12:25:12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        
+        
+        <TextView
+            android:id="@+id/offlineOrderPayNum"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/module_textsize_21sp"
+            android:textColor="@color/main_color"
+            android:layout_width="wrap_content"
+            android:includeFontPadding="false"
+            android:text="￥35.00 "
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/offlineOrderPayNum"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/offlineOrderPayNum"
+            android:text="实付款"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

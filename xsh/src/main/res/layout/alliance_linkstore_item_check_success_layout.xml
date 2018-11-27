@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/alliance_linkstore_item_margin_bottom">
+
+    <ImageView
+        android:id="@+id/alliance_linkstore_item_banner_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/alliance_linkstore_item_layout_style">
+
+        <include layout="@layout/alliance_linkstore_store_info_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/alliance_linkstore_item_text_margin"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="审核情况"
+                style="@style/alliance_linkstore_item_label_style"
+                />
+
+            <TextView
+                android:id="@+id/alliance_linkstore_item_verify_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核通过"
+                style="@style/alliance_linkstore_item_value_style"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/alliance_linkstore_item_seperator_line"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/alliance_linkstore_item_text_margin"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="佣金"
+                style="@style/alliance_linkstore_item_label_style"
+                />
+
+            <TextView
+                android:id="@+id/alliance_linkstore_item_income_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%"
+                style="@style/alliance_linkstore_item_value_style"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

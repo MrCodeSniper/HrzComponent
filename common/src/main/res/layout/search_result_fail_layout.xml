@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    
+    <LinearLayout
+        android:background="@color/bg_grey"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/iv_nodata"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="12dp"
+                android:background="@color/text_color_blur"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/iv_nodata"
+                android:layout_marginRight="22dp"
+                android:textColor="@color/text_color"
+                android:layout_alignTop="@+id/iv_nodata"
+                android:text="没找到搜索相关的商品，可以先看看下面的推荐商品哦~"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+
+        </RelativeLayout>
+        
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        </android.support.v7.widget.RecyclerView>
+        
+    </LinearLayout>
+    
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

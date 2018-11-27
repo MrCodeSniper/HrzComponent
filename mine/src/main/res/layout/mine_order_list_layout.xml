@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_titlebar" />
+
+    <com.mujirenben.android.common.widget.tablayout.CommonTabLayout
+        android:id="@+id/mine_order_tabLayout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:tl_textsize="@dimen/module_textsize_14sp"
+        app:tl_textSelectColor="@color/main_color"
+        app:tl_textUnselectColor="@color/black"
+        app:tl_indicator_width="64dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_color="@color/main_color"
+        android:layout_height="37dp"/>
+
+
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+            
+            
+            <TextView
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_all_category"
+                android:layout_toLeftOf="@+id/iv_turn_down"
+                android:layout_width="match_parent"
+                android:textColor="@color/text_color"
+                android:text="全部分类"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:layout_height="match_parent" />
+            
+            
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_toLeftOf="@+id/iv_turn_down"
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+
+            <com.mujirenben.android.common.widget.tablayout.CommonTabLayout
+                android:id="@+id/mine_order_tabLayout_plantform"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                app:tl_textsize="13sp"
+                app:tl_tab_width="60dp"
+                app:tl_textSelectColor="@color/main_color"
+                app:tl_textUnselectColor="@color/black"
+                app:tl_indicator_width="0dp"
+                app:tl_indicator_height="0dp"
+                app:tl_indicator_color="@color/main_color"
+                android:layout_height="36dp"/>
+
+
+            </HorizontalScrollView>
+
+
+
+            <ImageView
+                android:layout_toLeftOf="@+id/iv_turn_down"
+                android:id="@+id/iv_mask"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/order_mask_view"
+                />
+
+            <ImageView
+                android:id="@+id/iv_turn_down"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/common_icon_down" />
+
+        </RelativeLayout>
+
+
+
+
+
+    <include
+        android:visibility="gone"
+        layout="@layout/mine_order_list_platforms_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/module_divide_color"
+        />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_default_layout"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/white"
+            android:id="@+id/mine_order_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.mujirenben.android.common.widget.dropdownmenu.DropDownMenu
+            android:id="@+id/mine_order_dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ddmenuTextSize="13sp"
+            app:ddtextUnselectedColor="@color/drop_down_unselected"
+            app:ddtextSelectedColor="@color/drop_down_selected"
+            app:dddividerColor="@color/transparent"
+            app:ddunderlineColor="@color/transparent"
+            app:ddmenuMenuHeightPercent="0.5"
+            app:ddmenuSelectedIcon="@drawable/drop_down_selected_icon"
+            app:ddmaskColor="@color/mask_color"
+            app:ddmenuBackgroundColor="@color/white"
+            app:ddmenuUnselectedIcon="@drawable/drop_down_unselected_icon"
+            />
+
+
+
+        <include layout="@layout/mine_orderplantform_rv"/>
+
+        <ViewStub
+            android:visibility="gone"
+            android:id="@+id/vs_nodata_view"
+            android:layout_width="match_parent"
+            android:layout="@layout/common_nodata_views"
+            android:layout_height="match_parent" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

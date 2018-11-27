@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply from: 'nexus_maven_push.gradle'
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.hdyl.hrz:common:1.0.1'
+
+    implementation 'liji.library.dev:citypickerview:3.1.8'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+
+    //注解生成器
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"])
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.6.2'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.2'
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation rootProject.ext.dependencies["recyclerview-v7"]
+    //test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

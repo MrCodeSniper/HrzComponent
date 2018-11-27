@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/item_background">
+
+    <TextView
+        android:id="@+id/tv_main_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/settings_main_margin_left_or_right"
+        android:text="Setting description"
+        android:textColor="@color/settings_main_text_color"
+        android:textSize="@dimen/settings_main_description_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_next_action_arrow"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/settings_main_margin_left_or_right"
+        android:src="@drawable/icon_right_arrow_textcolor"
+         />
+
+    <TextView
+        android:id="@+id/tv_sub_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/iv_next_action_arrow"
+        android:text="ssss"
+        android:textColor="@color/settings_main_text_color"
+        android:textSize="@dimen/settings_sub_description_text_size" />
+
+</RelativeLayout>

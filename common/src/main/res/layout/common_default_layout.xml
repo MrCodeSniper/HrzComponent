@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/default_view_ll"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/default_icon_iv"
+        android:layout_width="100dp"
+        android:src="@drawable/no_data_icon"
+        android:layout_height="100dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/default_title_tv"
+        android:layout_width="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:text="标题标题标题限制十四个文字"
+        android:textColor="#FF333333"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/default_title_des_tv"
+        android:lineSpacingExtra="3dp"
+        android:text="辅助文案辅助文案辅助文辅助文案辅助文案辅助文"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_blur"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/default_operate_tv"
+        android:layout_width="160dp"
+        android:text="去看看"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/default_btn_gradient_shape_bg"
+        android:layout_height="36dp" />
+</LinearLayout>

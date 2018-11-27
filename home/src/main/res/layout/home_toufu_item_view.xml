@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:id="@+id/ll_row"
+    android:layout_height="96dp">
+
+
+
+            <TextView
+                android:id="@+id/tv_tofu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/index_toufu_daily_limitime"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_toufu"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="8dp"
+                />
+
+
+            <com.mujirenben.android.common.widget.campaignview.TimeLimitViewForHome
+                android:visibility="gone"
+                android:id="@+id/miaosha_view"
+                android:layout_width="82dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_tofu"
+                android:layout_marginLeft="12dp">
+
+
+            </com.mujirenben.android.common.widget.campaignview.TimeLimitViewForHome>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="88dp"
+        android:layout_below="@+id/tv_tofu"
+        android:text="日销10万件"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+{
+    "code": "0",
+    "itemInfoList": [
+       {
+                   "itemType": "findGoodShop",
+                   "module": "findGoodShop",
+                   "itemContentList": [
+                       {
+                            "imageUrl": "https://a.vpimg3.com/upload/merchandise/pdc/477/738/441429368041738477/0/3YYE1J-YMF2Z-1510-5_235x297_90.jpg",
+                            "clickUrl": "精选",
+                            "itemTitle": "测试商品测试商品测试商品",
+                            "itemSubTitle": "红人装",
+                            "itemRecommendedLanguage": "迪牛斯官方旗舰店",
+                            "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3154/346/7819339400/437339/1bb469e3/58bd294aN0b4647bd.jpg"
+                       },
+                       {
+                           "imageUrl": "https://a.vpimg4.com/upload/merchandise/pdcvis/605680/2017/1208/130/c3e15ced-3da7-4563-ad4f-4657c3cdf335.jpg",
+                           "clickUrl": "手机通讯",
+                           "itemTitle": "测试商品测试商品",
+                           "itemSubTitle": "VIP",
+                           "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                           "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                      },
+                      {
+                                                                                               "imageUrl": "http://chuantu.biz/t6/308/1525956904x1729546359.jpg",
+                                                                                               "clickUrl": "手机通讯",
+                                                                                               "itemTitle": "测试商品测试商品",
+                                                                                               "itemSubTitle": "活动项目",
+                                                                                               "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                                                               "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                      },
+                      {
+                                                 "imageUrl": "https://a.vpimg4.com/upload/merchandise/pdcvis/2018/04/25/188/db06e959-2404-41fe-acf0-9b1f951bd744.jpg",
+                                                 "clickUrl": "手机通讯",
+                                                 "itemTitle": "爆款推荐 百搭网面透气夏季男鞋跑步鞋休闲运动鞋",
+                                                 "itemSubTitle": "蘑菇街",
+                                                 "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                 "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "http://s3.mogucdn.com/mlcdn/c45406/180316_6a5kd8ag7kbj722h8ajdcjbkl6cjh_640x960.jpg_440x587.v1cAC.70.webp",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "原创史努比oppor9soppor11s手机壳vivox20vivoy67华为魅蓝苹果软壳",
+                                                  "itemSubTitle": "京东",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "http://s3.mogucdn.com/mlcdn/c45406/170801_2gh4l8152c5cfda7g73cke1b68fj3_640x960.jpg_468x468.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "oppoa57r9sr11a59s钢化膜vivox9y66x20全屏钢化膜苹果6s7p8p",
+                                                  "itemSubTitle": "京东",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i4/1879166980/TB1rJLEauySBuNjy1zdXXXPxFXa_!!0-item_pic.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "Lacoste 鳄鱼 新款儿童短袖休闲t恤POLO衫男童纯棉童装 1812",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i3/TB1OkGPOXXXXXaXXpXXXXXXXXXX_!!0-item_pic.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "GUCCI/古奇 大号羊毛真丝围巾男女通用 明星款165903",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i2/3174598666/TB1OsOvafQs8KJjSZFEXXc9RpXa_!!2-item_pic.png",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "美国HALBAK豪佰客天然蓝莓干567g进口果脯零食果干无添加蓝梅",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                                         "imageUrl": "http://chuantu.biz/t6/308/1525956962x1822614224.jpg",
+                                                                         "clickUrl": "手机通讯",
+                                                                         "itemTitle": "美国HALBAK豪佰客天然蓝莓干567g进口果脯零食果干无添加蓝梅",
+                                                                         "itemSubTitle": "活动项目",
+                                                                         "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                                         "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       }
+
+                   ]
+               }
+    ]
+}

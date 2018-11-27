@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/search_hot_temp_img_iv"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/search_hot_temp_img_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/search_hot_words_text_size"
+        android:textColor="@color/search_hot_words_text_color"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

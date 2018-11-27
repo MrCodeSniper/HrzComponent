@@ -1,0 +1,39 @@
+{
+    "code": "00000",
+    "message": null,
+    "success": true,
+    "data": [
+        {
+            "sequence": 1,
+            "title": "hrz3eeee",
+            "url": "hrzrouter:\/\/hrzapp\/mine\/settings",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-11\/a96e9813-6252-491d-ac5b-a6d58522dbbe.jpg",
+            "startTime": 1531065600,
+            "endTime": 1535558400
+        },
+        {
+            "sequence": 2,
+            "title": "测试",
+            "url": "hrzrouter:\/\/hrzapp\/mine\/login",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-16\/579b5835-9a0e-449a-8fb0-3288dbfbcc72.jpg",
+            "startTime": 1534262400,
+            "endTime": 1537718400
+        },
+        {
+            "sequence": 3,
+            "title": "测试跳转到一级分类",
+            "url": "hrzrouter:\/\/hrzapp\/product\/topCategory",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-20\/5689e052-7c2b-43bb-a34c-a84dd448339e.jpg",
+            "startTime": 1534694400,
+            "endTime": 1535731200
+        },
+        {
+            "sequence": 8,
+            "title": "hrz1打比赛111",
+            "url": "https:\/\/www.baidu.com\/",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-11\/7f16382f-c32b-4ae5-9802-697d94e7caf8.jpg",
+            "startTime": 1534176000,
+            "endTime": 1538236800
+        }
+    ]
+}

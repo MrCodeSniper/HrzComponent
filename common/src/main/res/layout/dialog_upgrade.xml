@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content"
+
+    >
+<RelativeLayout
+    android:layout_width="263dp"
+    android:layout_height="410dp"
+    android:background="@drawable/popwindow_upgrade">
+
+
+
+    <TextView
+        android:id="@+id/tv_findnewversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现新版本"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+
+        />
+
+    
+    <LinearLayout
+        android:layout_marginTop="82dp"
+        android:layout_below="@+id/tv_findnewversion"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新版本功能"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/module_textsize_14sp"
+
+            />
+
+        
+        <ScrollView
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="83dp">
+
+
+            <TextView
+                android:id="@+id/tv_upgrade_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:textColor="@color/text_color_blur"
+                android:textSize="14sp" />
+
+
+        </ScrollView>
+        
+
+
+
+        <TextView
+            android:id="@+id/tv_goto_upgrade"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="去升级"
+            android:background="@drawable/gradient_corner_18dp"
+            android:layout_width="160dp"
+            android:layout_height="36dp" />
+
+
+        <TextView
+            android:id="@+id/tv_no_need_upgrade"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_blur"
+            android:text="暂时不用"
+            android:layout_marginBottom="15dp"
+            android:autoLink="all"
+            android:textSize="@dimen/module_textsize_14sp"
+            />
+
+
+
+    </LinearLayout>
+
+    
+
+
+
+
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>

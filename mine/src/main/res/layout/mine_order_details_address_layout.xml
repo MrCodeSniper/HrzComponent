@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_order_ship"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mine_order_details_owner_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLength="10"
+                android:layout_marginLeft="36dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:text="收件人：xxx   xxxxxxx"/>
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/mine_order_details_owner_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mine_order_details_owner_name_tv"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:text="xxxxx"/>
+
+            <TextView
+                android:id="@+id/mine_order_details_owner_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_alignLeft="@+id/mine_order_details_owner_name_tv"
+                android:layout_below="@id/mine_order_details_owner_name_tv"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mine_order_details_location"
+                android:layout_alignTop="@id/mine_order_details_owner_address_tv"
+                android:layout_toLeftOf="@id/mine_order_details_owner_address_tv"
+                android:scaleType="centerInside"
+                android:layout_below="@id/mine_order_details_owner_name_tv"
+                android:layout_marginRight="4dp"/>
+
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:gravity="center_vertical">-->
+
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/mine_order_details_owner_name_tv"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:maxLength="10"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/text_color"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text=""/>&ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:singleLine="true"-->
+                <!--android:id="@+id/mine_order_details_owner_phone_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginStart="40dp"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:text=""/>-->
+        <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_gravity="top"-->
+                <!--android:id="@+id/mine_order_details_owner_address_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:textSize="14sp"-->
+                <!--android:drawablePadding="4dp"-->
+                <!--android:drawableLeft="@drawable/mine_order_details_location"-->
+                <!--android:textColor="@color/text_color" />-->
+
+</LinearLayout>

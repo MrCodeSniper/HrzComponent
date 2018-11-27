@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/light_gray_round_22dp_shape_bg" android:state_pressed="true" />
+    <item android:drawable="@drawable/light_gray_round_22dp_shape_bg" android:state_active="true" />
+    <item android:drawable="@drawable/solid_white_corner_22dp_bg"/>
+</selector>

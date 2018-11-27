@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hdyl.alliance.utils.jcvideolib.JCVideoPlayerStandard
+        android:id="@+id/custom_videoplayer_standard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:src="@drawable/person_back"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:text="分享"
+        android:textColor="@color/white"
+        android:id="@+id/iv_bottom_share"
+        android:src="@drawable/hrz_brand_share"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

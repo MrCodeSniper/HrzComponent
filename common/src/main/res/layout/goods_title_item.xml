@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="12dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="12dp"
+    android:background="@color/white"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:paddingTop="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_source"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红人装"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="@drawable/solid_source_text"
+        />
+
+    <ImageView
+        android:id="@+id/iv_platform_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.5dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/icon_taobao" />
+
+
+    <TextView
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/tv_title_first"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/iv_platform_icon"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        />
+
+
+
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/tv_source"
+        android:paddingRight="12dp"
+        android:layout_alignStart="@+id/tv_source"
+        android:layout_alignLeft="@+id/tv_source"
+        android:id="@+id/tv_title_second"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        />
+
+
+</RelativeLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll_action"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    android:layout_width="78dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/tv_share_money"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="24dp"
+    android:text="￥0.0"
+    android:background="@drawable/share_text_style"
+    android:textSize="@dimen/module_textsize_14sp"
+    android:textColor="@color/white"
+    />
+
+    
+    <TextView
+        android:drawableLeft="@drawable/icon_share_obtain"
+        android:id="@+id/tv_share_to_profit"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:textColor="@color/main_color"
+        android:textSize="11dp"
+        android:text="分享"
+        android:includeFontPadding="false"
+        />
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

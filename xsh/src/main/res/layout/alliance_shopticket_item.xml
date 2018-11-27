@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/hrz_alliance_shoptiticket"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="70dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="70dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/iv_shop_icon"
+                    android:layout_width="60dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="60dp" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="#333333"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/tv_usenow_ticket"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@+id/rl_left"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_below="@+id/tv_title"
+            android:layout_toRightOf="@+id/rl_left"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:textColor="#AC6825"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:gravity="right"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/tv_time"
+            android:layout_toLeftOf="@+id/tv_usenow_ticket"
+            android:layout_toRightOf="@+id/tv_time"
+            android:textSize="12sp"
+            android:textColor="#AC6825"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/tv_fu"
+            android:text="￥"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_alignBottom="@+id/rl_left"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#FF3636"
+             />
+        <TextView
+
+            android:layout_toRightOf="@+id/tv_fu"
+            android:layout_alignBottom="@+id/rl_left"
+            android:id="@+id/tv_ticket_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#FF3636"
+            android:textSize="30dp" />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_usenow_ticket"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#AC6825"
+            android:textSize="16sp"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:maxLines="2"
+            android:lines="2"
+            android:text="立即\n领取"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

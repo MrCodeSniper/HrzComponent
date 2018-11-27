@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="189dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/welfare_red_packet_background">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="店铺名字"
+            android:textColor="#ED4143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="22"
+            android:textColor="#ED4143"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp"
+            android:text="无门槛红包" />
+
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/welfare_snatch_button_background"
+            android:text="马上抢"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignTop="@id/tv_amount"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/tv_amount"
+            android:src="@drawable/welfare_red_packet_currency" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.roid.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <include layout="@layout/mine_main_user_info_layout"/>
+
+        <include layout="@layout/mine_main_activity_layout"/>
+
+        <include layout="@layout/mine_main_income_title_layout"/>
+
+        <include layout="@layout/mine_main_income_details_layout" />
+
+        <include layout="@layout/mine_main_order_title_layout" />
+
+        <include layout="@layout/mine_main_order_entry_layout" />
+
+        <include layout="@layout/mine_main_others_entry_layout" />
+    </LinearLayout>
+
+</ScrollView>

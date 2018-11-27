@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<GridView
+    android:id="@+id/search_platform_list_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:listSelector="@color/transparent"
+    android:horizontalSpacing="@dimen/search_platform_select_padding"
+    android:verticalSpacing="@dimen/search_platform_select_padding"
+    android:background="@color/white"
+    android:numColumns="5"
+    android:padding="@dimen/search_platform_select_padding"/>
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <View
+            android:background="@color/module_divide_color"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"></View>
+        
+
+        <TextView
+            android:includeFontPadding="false"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/module_textsize_14sp"
+            android:text="@string/click_change_platform"
+            android:textColor="@color/text_color_blur"
+            />
+
+        <View
+            android:background="@color/module_divide_color"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"></View>
+
+    </LinearLayout>
+
+
+</LinearLayout>

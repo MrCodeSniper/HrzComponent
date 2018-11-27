@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="2dp"/>
+    <!-- angle角度对面开始startColor->endColor-->
+    <gradient
+        android:startColor="#4d515a"
+        android:endColor="#171e4b"
+        android:angle="270"
+        />
+</shape>

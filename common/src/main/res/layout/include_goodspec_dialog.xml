@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/module_goodsdetail_dialog_spec_price_marginleft"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/tv_spec_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+
+
+    <com.mujirenben.android.common.widget.label.LabelsView
+        android:id="@+id/labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="29dp"
+        android:padding="5dp"
+        app:labelBackground="@drawable/lable_bg_sku"
+        app:labelTextColor="@drawable/lable_text_color"
+        app:labelTextPaddingBottom="4dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextPaddingTop="4dp"
+        app:labelTextSize="13sp"
+        app:lineMargin="8dp"
+        app:maxSelect="0"
+        app:selectType="SINGLE"
+        app:wordMargin="10dp" />
+
+
+</LinearLayout>

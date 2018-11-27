@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatImageView
+
+                android:id="@+id/goodIcon"
+                android:scaleType="centerCrop"
+                android:background="#FEF7F7"
+                android:layout_width="66dp"
+                android:layout_height="66dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_xiaofei"
+                android:text="消费收益"
+                android:layout_toRightOf="@+id/goodIcon"
+                android:layout_toLeftOf="@+id/tv_fu"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-3dp"
+                android:layout_alignTop="@+id/goodIcon"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_fu"
+                android:text="￥"
+                android:textSize="12sp"
+                android:textColor="#ED4143"
+                android:layout_alignBottom="@+id/tv_fanmoney"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/tv_fanmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_fanmoney"
+                android:layout_alignTop="@+id/goodIcon"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="12sp"
+                android:textSize="20sp"
+                android:textColor="#ED4143"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/goodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_xiaofei"
+                android:layout_alignLeft="@+id/tv_xiaofei"
+                android:singleLine="true"
+                android:layout_marginTop="7dp"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/relation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/goodName"
+                android:layout_toRightOf="@+id/goodIcon"
+                android:singleLine="true"
+                android:textColor="#B2B2B2"
+                android:textSize="12sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/status"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/goodIcon"
+                android:background="@drawable/showdialog"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text="已付款"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userStatus"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/status"
+                android:background="@drawable/showdialog"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="付款金额"
+                            android:textColor="#929292"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="￥"
+                                android:textColor="#000000"
+                                android:textSize="11sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/payMoneyInt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/payMoneyFloat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000000"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="成交预估收入"
+                            android:textColor="#929292"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="￥"
+                                android:textColor="#000000"
+                                android:textSize="11sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/downInt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000000"
+                                android:textSize="17sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/downFloat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000000"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/createTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/endTime"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#B2B2B2"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_tuihuo"
+                android:visibility="gone"
+                android:text="由于用户退货，无法获得该笔收益"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ED4143"
+                android:textSize="12sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_weiquan"
+                android:visibility="gone"
+                android:text="由于用户维权，延期结算"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ED4143"
+                android:textSize="12sp" />
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/already"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:src="@drawable/hrz_activity_ruzhang"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/notsettle"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/showdialog"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="4dp"
+                android:text="未入账"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/usertuihuo"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/hrz_activity_gray_shape"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="4dp"
+                android:text="用户退货"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userweiquan"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/hrz_activity_gray_shape"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="4dp"
+                android:text="维权订单"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

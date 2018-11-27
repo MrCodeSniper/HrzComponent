@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_bg"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/withdraw_status_ll"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_plantform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_of_wx"/>
+            <TextView
+                android:layout_toRightOf="@+id/iv_plantform"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tv_withdraw_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现成功"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_withdraw_amount"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="¥100.00"/>
+
+        </RelativeLayout>
+        <include layout="@layout/mine_include_settings_divider"/>
+        <RelativeLayout
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际到账"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"/>
+            <TextView
+                android:id="@+id/tv_withdraw_actual_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扣除税额"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_withdraw_tax_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现账号"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_withdraw_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18404902139"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请时间"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_apply_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-06-30 08:57:34"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_intoaccount_time"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账时间"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_intoaccount_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-06-30 08:57:34"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_fail_msg"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="失败原因"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_fail_msg"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:text="失败的原因有这些见附件大口径的多看点看显卡接口进出口查查看看"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:background="@color/bg_grey"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/withdraw_identify_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/identify_iv_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.gcssloop.widget.RCImageView
+                    android:id="@+id/identify_iv"
+                    android:layout_centerVertical="true"
+                    android:layout_width="18dp"
+                    app:round_as_circle="true"
+                    android:src="#FFF7722A"
+                    android:layout_height="18dp"/>
+                <TextView
+                    android:text="¥"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:layout_toRightOf="@+id/identify_iv_fl"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证实名认证扣除费用"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_identify_amount"
+                android:textColor="@color/main_color"
+                android:textSize="16sp"
+                android:text="¥0.15"/>
+
+        </RelativeLayout>
+        <include layout="@layout/mine_include_settings_divider"/>
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扣费时间"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+            <TextView
+                android:id="@+id/tv_identify_tax_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-08-15 08:58:09"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次认证结果"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/module_textsize_14sp"
+                />
+            <TextView
+                android:id="@+id/tv_identify_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认证通过"
+                android:textSize="@dimen/module_textsize_14sp"
+                android:textColor="@color/text_color_blur"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="17dp"
+            android:textColor="#FF929292"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*该费用在提现信息页面中，您验证身份证号扣除的费用。验证结果由公安机关提供，真实有效。"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+</LinearLayout>

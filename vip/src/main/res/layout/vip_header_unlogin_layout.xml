@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/vip_header_unLogin_banner"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:banner_pointContainerBackground="@color/transparent"
+                app:banner_pointDrawable="@color/transparent" />
+
+            <com.mujirenben.android.common.widget.indicatorLayout.IndicatorLayout
+                android:id="@+id/vip_header_unLogin_indicatorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="185dp"
+                app:pointSelectedColor="@color/golden_light_color"
+                app:pointSelectedWidth="12dp"
+                app:pointSize="4dp"
+                app:pointUnSelectedColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/ll_blur_layout"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="212dp"
+                android:background="@drawable/blur_bg" />
+
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="197dp"
+                android:id="@+id/vip_header_unLogin_share_iv"
+                android:layout_width="match_parent"
+                android:src="@drawable/share_make_bg"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/vip_header_unLogin_announce_layout"
+            layout="@layout/vip_header_announce_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/college_icon_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/vip_college_text"
+                android:textColor="@color/golden_deep_color"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/college_bg" />
+    </LinearLayout>
+
+    <include layout="@layout/vip_header_activity_layout"/>
+
+</LinearLayout>

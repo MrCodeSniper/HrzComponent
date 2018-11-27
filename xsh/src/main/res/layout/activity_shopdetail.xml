@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:id="@+id/rl_titlebar"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:paddingLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/hrz_new_back"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_titlebar"
+            android:gravity="center"
+            android:text="店铺详情"
+            android:layout_centerInParent="true"
+            android:textSize="19sp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f4f4f4"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shopdetail"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rl_titlebar"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<View-->
+        <!--android:id="@+id/divide_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/module_divide_color"-->
+        <!--/>-->
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="49dp">
+
+
+        <LinearLayout
+            android:background="#FFA833"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:background="@drawable/alliance_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="分享"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_discount_pay"
+            android:background="@drawable/gradient_shopdetail_main_color"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="优惠买单"
+            android:textColor="@color/white"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_nomore"
+        android:visibility="gone"
+        android:layout_below="@id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/datastatus"
+            android:text="暂无数据"
+            android:drawableTop="@drawable/no_data_icon"
+            android:textColor="@color/black_40"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

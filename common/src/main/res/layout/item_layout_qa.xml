@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="132dp">
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_qa"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_consume"
+            />
+
+        <TextView
+            android:id="@+id/tv_qa_title"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费"
+            android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_see_qa_all"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看全部"
+            android:textSize="@dimen/support_hint_textsize"
+            android:textColor="@color/text_color_blur"
+            />
+
+
+    </LinearLayout>
+
+
+    
+    <View
+        android:layout_width="@dimen/common_dividebar_size"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        ></View>
+    
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_question1"
+            android:paddingLeft="@dimen/global_margin_edge"
+            android:paddingRight="@dimen/global_margin_edge"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:singleLine="true"
+            android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+            android:text="为什么无法支付，怎么办？凉拌咯"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dividebar_size"
+            android:background="@color/module_divide_color"
+            ></View>
+
+
+        <TextView
+            android:id="@+id/tv_question2"
+            android:paddingLeft="@dimen/global_margin_edge"
+            android:paddingRight="@dimen/global_margin_edge"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+            android:text="为什么无法支付，如果问题太长省略，如…fsafasfsafs"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dividebar_size"
+            android:background="@color/bg_grey"
+            ></View>
+
+        <TextView
+            android:id="@+id/tv_question3"
+            android:paddingLeft="@dimen/global_margin_edge"
+            android:paddingRight="@dimen/global_margin_edge"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:text="为什么无法支付"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_grey"
+        ></View>
+
+
+
+</LinearLayout>

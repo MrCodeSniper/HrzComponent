@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_userinfo_bind_jd"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_mine_enter_jd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_userinfo_plantform_unbind"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/text_color_blur"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+    <ImageView
+        android:id="@+id/iv_mine_enter_jd"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mine_enter_mark"
+        />
+
+
+</RelativeLayout>

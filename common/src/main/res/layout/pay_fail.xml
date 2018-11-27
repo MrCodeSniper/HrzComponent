@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="121dp">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:src="@drawable/icon_faied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:textSize="@dimen/maintitle_textsize"
+                android:textColor="@color/main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付失败"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dividebar_size"
+        android:background="@color/bg_grey"
+        />
+
+
+
+
+    <TextView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+        android:textColor="@color/text_color_blur"
+        android:padding="16dp"
+        android:text="
+1.系统繁忙，订单生成失败\n
+\n
+2.网络异常，建议您检查手机网络情况\n
+\n
+3.二维码失效，请和商家确认支付二维码是否有效\n
+\n
+4.请确认支付平台余额是否充足\n
+\n
+5.使用第三方平台支付,请确认第三方平台状态是否正常"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dividebar_size"
+        android:background="@color/bg_grey"
+        />
+
+
+    <TextView
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+        android:text="您可以通过和商家确认订单是否成功后，重新下单购买，避免重复付款"
+        android:textColor="@color/text_color"
+        />
+
+
+
+    <TextView
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_blur"
+        android:text="如有疑问请联系客服,客服热线：400-8765"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btn_submmit"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:textSize="@dimen/subtitle_and_normalbutton_textsize"
+        android:layout_height="44dp"
+        android:text="重新支付"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/solid_button"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_payerror"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/main_color"
+        android:text="支付遇到问题?"
+        android:textSize="12sp"
+        android:layout_marginBottom="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

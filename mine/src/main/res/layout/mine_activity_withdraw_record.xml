@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_titlebar"/>
+    <include layout="@layout/mine_include_divider_bar_full"/>
+    <FrameLayout
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mujirenben.android.common.widget.HrzHeadersView
+            android:id="@+id/pull_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_duration_to_close="1000"
+            cube_ptr:ptr_duration_to_close_header="500"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0"
+            cube_ptr:ptr_resistance="3">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_withdraw_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </com.mujirenben.android.common.widget.HrzHeadersView>
+        <include
+            android:layout_gravity="center"
+            layout="@layout/common_default_layout"
+            tools:ignore="IncludeLayoutParam" />
+    </FrameLayout>
+</LinearLayout>

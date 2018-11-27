@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/college_icon_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/vip_college_text"
+                android:textColor="@color/golden_deep_color"
+                android:textSize="18sp" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vip_header_login_school_des_text"
+            android:textColor="#ffb2b2b2"
+            android:textSize="12sp" />
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.gcssloop.widget.RCImageView
+                android:id="@+id/vip_header_login_school_avatar_iv"
+                android:layout_width="40dp"
+                app:round_as_circle="true"
+                android:src="@drawable/iv_user_default_icon"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/vip_header_login_school_welcome_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/vip_header_login_school_avatar_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎来到一年级！"
+                android:textColor="#ff333333"
+                android:textSize="16sp" />
+        <FrameLayout
+            android:layout_toRightOf="@+id/vip_header_login_school_welcome_tv"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingRight="22dp"
+                android:paddingLeft="17dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="下一课: 如何索取..."
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:background="@drawable/next_class_shape_bg"
+                android:layout_width="match_parent"
+                android:layout_height="26dp" />
+            <ImageView
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="7dp"
+                android:src="@drawable/icon_enter"
+                android:layout_height="12dp" />
+        </FrameLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="2dp"
+            app:cardMaxElevation="2dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/vip_header_login_school_class_tv"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_gravity="left"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:text="已完成6节一年级课程"
+                        android:drawableLeft="@drawable/icon_school_crown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="44dp"
+                        android:layout_width="148dp"
+                        android:layout_height="0.5dp"
+                        android:background="#ffececec"/>
+                    <TextView
+                        android:id="@+id/vip_header_login_school_trophy_tv"
+                        android:layout_marginLeft="13dp"
+                        android:layout_gravity="left"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:text="击败了60%的人"
+                        android:drawableLeft="@drawable/icon_trophy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="44dp"
+                        android:layout_width="148dp"
+                        android:layout_height="0.5dp"
+                        android:background="#ffececec"/>
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/vip_header_login_school_need_tv"
+                        android:layout_marginLeft="13dp"
+                        android:layout_gravity="left"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:text="距离二年级还需学习5课"
+                        android:drawableLeft="@drawable/icon_study"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.mujirenben.android.common.widget.progress.CircleProgress
+                    android:id="@+id/vip_header_login_school_circleProgress"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    app:inCircleColor="#ffececec"
+                    app:outCircleColor="#FFE3CD92"
+                    app:outCircleEndColor="#FFE3CD92"
+                    app:outCircleStartColor="#FFC7AD76"
+                    app:outCircleStrokeWidth="8dp"
+                    app:progressTextSize="21sp"
+                    app:progressTextColor="#FFC7AD76" />
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

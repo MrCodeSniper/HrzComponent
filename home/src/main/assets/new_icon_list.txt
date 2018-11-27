@@ -1,0 +1,47 @@
+{
+    "code": "00000",
+    "message": null,
+    "success": true,
+    "data": [
+        {
+            "sequence": 1,
+            "title": "活动",
+            "url": "hrzrouter:\/\/hrzapp\/app\/goodDetail?itemId=120&platformId=0",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/a4f9b5f8-89e6-4369-8de3-f3fa73616b7b.png",
+            "startTime": 1530547200,
+            "endTime": 1535558400
+        },
+        {
+            "sequence": 2,
+            "title": "美妆",
+            "url": "hrzrouter:\/\/hrzapp\/product\/secondaryCategory?categoryPid=100&productName=洗护美容",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/02e6d781-86b6-4be1-9ff9-39dde696251d.png",
+            "startTime": 1530547200,
+            "endTime": 1535644800
+        },
+        {
+            "sequence": 3,
+            "title": "服装",
+            "url": "hrzrouter:\/\/hrzapp\/product\/secondaryCategory?categoryPid=32&productName=鞋子",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/a17d2add-43cf-406d-9088-2887afe2e8aa.png",
+            "startTime": 1530979200,
+            "endTime": 1534953600
+        },
+        {
+            "sequence": 4,
+            "title": "百货",
+            "url": "hrzrouter:\/\/hrzapp\/mine\/settings",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/e25d82d3-6d5b-48c8-9164-2d632971322d.png",
+            "startTime": 1534608000,
+            "endTime": 1535644800
+        },
+        {
+            "sequence": 5,
+            "title": "分类",
+            "url": "hrzrouter:\/\/hrzapp\/product\/topCategory",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/53fc9c37-c724-4f53-b91c-86b27e624b03.png",
+            "startTime": 1534143600,
+            "endTime": 1536735600
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar" />
+    <include layout="@layout/mine_include_divider_bar_full" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/mine_include_userinfo_icon" />
+            <include layout="@layout/mine_include_settings_divider" />
+            <include layout="@layout/mine_include_userinfo_nickname" />
+            <include layout="@layout/mine_include_settings_divider" />
+            <include layout="@layout/mine_include_userinfo_qrcode" />
+            <include layout="@layout/mine_include_settings_divider" />
+            <include
+                layout="@layout/mine_include_userinfo_birthday"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_settings_divider"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_userinfo_location"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_settings_divider"
+                android:visibility="gone" />
+            <include layout="@layout/mine_include_userinfo_shipaddress" />
+            <include layout="@layout/mine_include_settings_divider" />
+            <include layout="@layout/mine_include_userinfo_family" />
+            <include  android:visibility="gone" layout="@layout/mine_include_settings_divider" />
+            <include layout="@layout/mine_include_userinfo_bindphone" />
+            <include android:visibility="gone" layout="@layout/mine_include_settings_divider" />
+            <include
+                layout="@layout/mine_include_userinfo_bindwx"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_settings_divider"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_userinfo_icon_bindjd"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_settings_divider"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_userinfo_bindvip"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_settings_divider"
+                android:visibility="gone" />
+            <include
+                layout="@layout/mine_include_userinfo_bindmgj"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

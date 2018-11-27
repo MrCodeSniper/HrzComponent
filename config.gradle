@@ -134,7 +134,6 @@ ext {
                 "vasonic"                    : "com.tencent.sonic:sdk:3.0.0",
                 //jsbridge
                 "jsbridge"                   : "com.github.wendux:DSBridge-Android:master-SNAPSHOT",
-                "photoview"                  : "com.bm.photoview:library:1.4.1",
                 //ThirdParty
                 "wx"                         :  "com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+",
                 //环信客服SDK

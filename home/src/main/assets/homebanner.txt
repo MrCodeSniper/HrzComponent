@@ -1,0 +1,195 @@
+{
+    "code": "0",
+    "itemInfoList": [
+        {
+            "itemType": "topBanner",
+            "module": "topBanner",
+            "itemContentList": [
+
+
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t3097/241/9768114398/78418/47e4335e/58d8a637N6f178fbd.jpg!q70.jpg",
+                    "clickUrl": "慕尼黑新品上市"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4282/364/2687292678/87315/e4311cd0/58d4d923N24a2f5eb.jpg!q70.jpg",
+                    "clickUrl": "空调让你百试不爽"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4162/171/1874609280/92523/a1206b3f/58c7a832Nc8582e81.jpg",
+                    "clickUrl": "奥妙全新上市"
+                }
+
+            ]
+        },
+        {
+                    "itemType": "iconList",
+                    "module": "iconList",
+                    "itemContentList": [
+                        {
+                            "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-e5a341b90aba9f9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                            "clickUrl": "http://www.taobao.com",
+                            "itemTitle": "淘宝"
+                        },
+                        {
+                            "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-ad1af8c648763cff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                            "clickUrl": "https://www.jd.com/",
+                            "itemTitle": "京东"
+                        },
+                        {
+                            "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-8be85daea6170470.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                            "clickUrl": "http://www.mogujie.com/",
+                            "itemTitle": "蘑菇街"
+                        },
+                        {
+                            "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-58f1853fef378579.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                            "clickUrl": "https://www.vip.com/",
+                            "itemTitle": "唯品会"
+                        },
+                        {
+                            "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-c40e1aa68113b09d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                            "clickUrl": "http://www.itmfb.com/",
+                            "itemTitle": "红人装"
+                        }
+
+                    ]
+                },{
+                              "itemType": "newUser",
+                              "module": "newUser",
+                              "itemContentList": [
+                                  {
+                                      "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3229/183/8420242660/31884/d556597b/58c24709Nf44579e2.jpg!q70.jpg",
+                                      "clickUrl": "新用户专享",
+                                      "itemTitle": "京东超市",
+                                      "itemSubTitle": "",
+                                      "itemRecommendedLanguage": "",
+                                      "itemSubscript": "",
+                                      "itemBackgroundImageUrl": ""
+                                  },
+                                  {
+                                      "imageUrl": "https://img10.360buyimg.com/mobilecms/s500x500_jfs/t8638/5/1380338857/137855/1c1f5171/59b8d8bcNc3d95d6e.jpg",
+                                      "clickUrl": "限时秒杀",
+                                      "itemTitle": "限时秒杀"
+                                  },
+                                  {
+                                      "imageUrl": "https://img13.360buyimg.com/mobilecms/s500x500_jfs/t3448/27/1001281942/96818/dda55698/581af181Nee668ef2.jpg",
+                                      "clickUrl": "热卖榜单",
+                                      "itemTitle": "热卖榜单"
+                                  },
+                                  {
+                                      "imageUrl": "https://img12.360buyimg.com/mobilecms/s500x500_jfs/t19168/182/2246056137/201636/3998f7a5/5aebd3fbNe095e52b.jpg",
+                                      "clickUrl": "超级购物券",
+                                      "itemTitle": "超级购物券"
+                                  },
+                                  {
+                                      "imageUrl": "https://img14.360buyimg.com/mobilecms/s500x500_jfs/t18250/107/355095416/223989/bb2222c7/5a6ee8faNbc10cf03.jpg!q70.jpg",
+                                      "clickUrl": "超级性价比",
+                                      "itemTitle": "超级性价比"
+                                  }
+                              ]
+                          },
+         {
+                        "itemType": "showEvent",
+                        "module": "showEvent",
+                        "itemContentList": [
+                           {
+                               "imageUrl": "https://upload-imgs.jianshu.io/upload_images/2634235-47edce8835868ecf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                               "clickUrl": "新用户专享",
+                               "itemTitle": "首单满99元得新人礼包",
+                               "itemSubTitle": "69",
+                               "itemRecommendedLanguage": "",
+                               "itemSubscript": "",
+                               "itemBackgroundImageUrl": ""
+                           }
+                        ]
+                    },
+
+        {
+                   "itemType": "findGoodShop",
+                   "module": "findGoodShop",
+                   "itemContentList": [
+                       {
+                            "imageUrl": "https://img11.360buyimg.com/mobilecms/s500x500_jfs/t6286/62/1598217447/109660/9b005504/5954689dN598f4aa4.jpg",
+                            "clickUrl": "精选",
+                            "itemTitle": "丹尼尔惠灵顿 (DanielWellington )手表DW女表34mm表盘金色边皮带超薄女士石英表带日历DW00100092",
+                            "itemSubTitle": "京东",
+                            "itemRecommendedLanguage": "迪牛斯官方旗舰店",
+                            "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3154/346/7819339400/437339/1bb469e3/58bd294aN0b4647bd.jpg"
+                       },
+                       {
+                           "imageUrl": "https://img12.360buyimg.com/mobilecms/s500x500_jfs/t17062/225/2097765289/161544/bda68b9e/5ae3fc40Nd541dd65.jpg",
+                           "clickUrl": "手机通讯",
+                           "itemTitle": "【95%棉面料】【2件减5元】2018夏季新款圆领印花爱心短袖中长款宽松显瘦T恤 粉色(1130#) L",
+                           "itemSubTitle": "京东",
+                           "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                           "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                      },
+                      {
+                                                                                               "imageUrl": "http://chuantu.biz/t6/308/1525956904x1729546359.jpg",
+                                                                                               "clickUrl": "手机通讯",
+                                                                                               "itemTitle": "美国HALBAK豪佰客天然蓝莓干567g进口果脯零食果干无添加蓝梅",
+                                                                                               "itemSubTitle": "活动项目",
+                                                                                               "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                                                               "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                      },
+                      {
+                                                 "imageUrl": "https://img14.360buyimg.com/mobilecms/s500x500_jfs/t7927/281/3746111100/47599/f1f8f04b/59f995d6Nd512a028.jpg!q70.jpg",
+                                                 "clickUrl": "手机通讯",
+                                                 "itemTitle": "飞利浦(PHILIPS)空气净化器KJ330F-C03(AC4076)香槟色家用除雾霾除甲醛除过敏原",
+                                                 "itemSubTitle": "京东",
+                                                 "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                 "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://img14.360buyimg.com/mobilecms/s500x500_jfs/t3493/253/425253315/176995/19f2a2b2/5808619cN27390691.jpg!q70.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "美威 智利原味三文鱼排 240g/袋 4片装",
+                                                  "itemSubTitle": "京东",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://img13.360buyimg.com/mobilecms/s500x500_jfs/t20080/151/82979313/162940/fad5c110/5ae427fdNdc7e0689.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "U.S.POLO ASSN.短袖T恤男士2018夏季新款POLO时尚商务纯色翻领棉质半袖t恤 藏青色1814 XL",
+                                                  "itemSubTitle": "京东",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i4/1879166980/TB1rJLEauySBuNjy1zdXXXPxFXa_!!0-item_pic.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "Lacoste 鳄鱼 新款儿童短袖休闲t恤POLO衫男童纯棉童装 1812",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i3/TB1OkGPOXXXXXaXXpXXXXXXXXXX_!!0-item_pic.jpg",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "GUCCI/古奇 大号羊毛真丝围巾男女通用 明星款165903",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                  "imageUrl": "https://gw.alicdn.com/bao/uploaded/i2/3174598666/TB1OsOvafQs8KJjSZFEXXc9RpXa_!!2-item_pic.png",
+                                                  "clickUrl": "手机通讯",
+                                                  "itemTitle": "美国HALBAK豪佰客天然蓝莓干567g进口果脯零食果干无添加蓝梅",
+                                                  "itemSubTitle": "天猫",
+                                                  "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                  "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       },
+                       {
+                                                                         "imageUrl": "http://chuantu.biz/t6/308/1525956962x1822614224.jpg",
+                                                                         "clickUrl": "手机通讯",
+                                                                         "itemTitle": "美国HALBAK豪佰客天然蓝莓干567g进口果脯零食果干无添加蓝梅",
+                                                                         "itemSubTitle": "活动项目",
+                                                                         "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                                                                         "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+                       }
+
+                   ]
+               }
+    ]
+}

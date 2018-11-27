@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_hour"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/solid_miaosha"
+        android:gravity="center"
+        android:text="112"
+        android:layout_width="26dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:textColor="@color/main_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_minute"
+        android:text="32"
+        android:textSize="12sp"
+        android:background="@drawable/solid_miaosha"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:textColor="@color/main_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:text="03"
+        android:textSize="12sp"
+        android:background="@drawable/solid_miaosha"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+</LinearLayout>
+
+

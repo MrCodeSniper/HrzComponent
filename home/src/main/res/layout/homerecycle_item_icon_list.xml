@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:layout_height="89dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_marginTop="5dp"
+        android:id="@+id/iv_menu_icon_one"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/clothes_icon"
+       />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_menu_icon_one"
+            android:textColor="@color/text_color_gray"
+            android:layout_width="wrap_content"
+            android:text="@string/clothes"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_menu_icon_two"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_icon"
+            />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_menu_icon_two"
+            android:textColor="@color/text_color_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/funiture"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_three"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_menu_icon_three"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/food_icon"
+             />
+
+
+        <TextView
+            android:textSize="12dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_menu_icon_three"
+            android:textColor="@color/text_color_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_four"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_menu_icon_four"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/life_icon"
+             />
+
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_menu_icon_four"
+            android:textColor="@color/text_color_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/life"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_five"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_menu_icon_five"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/more_icon"
+             />
+
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_menu_icon_five"
+            android:textColor="@color/text_color_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

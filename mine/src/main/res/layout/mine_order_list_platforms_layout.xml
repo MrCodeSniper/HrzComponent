@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/mine_order_list_status_platforms_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_platforms_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_platforms"
+            style="@style/mine_order_list_status_tv_style" />
+
+        <ImageView
+            android:id="@+id/mine_order_list_platforms_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mine_order_list_platforms_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_order_list_status_activity_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_activity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_activitys"
+            style="@style/mine_order_list_status_tv_style" />
+
+        <ImageView
+            android:id="@+id/mine_order_list_activity_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mine_order_list_platforms_arrow"/>
+
+    </LinearLayout>
+</LinearLayout>

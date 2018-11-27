@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mine_order_list_status_indicator_color">#ED4143</color>
+
+    <color name="settings_main_text_color">#333333</color>
+    <color name="settings_main_background_color">#F4F4F4</color>
+    <color name="notice_thing">#FEF7F7</color>
+    <color name="mine_profit_text_color">#ffb2b2b2</color>
+    <color name="preview_mock">#9a000000</color>
+    <color name="profit_gray_nomal">#B2B2B2</color>
+</resources>

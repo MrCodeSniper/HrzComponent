@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/mine_profit_header_bg">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:background="@color/white"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mine_header_profit_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_header_profit_total_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="累计收益（元）"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mine_header_profit_evulate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/perTotalCashText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_header_profit_evulate_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="预计收益（元）"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_left"
+            android:layout_marginTop="22dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_header_profit_withdrawing_tv"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="提现中（元）"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mine_header_profit_withdrawing_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_header_profit_withdraw_tv"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="已提现（元）"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mine_header_profit_withdraw_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_header_profit_cash_tv"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="未提现（元）"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mine_header_profit_cash_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mine_profit_header_cash_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@+id/ll_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/mine_yellow_shape_bg"
+            android:gravity="center"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="去提现"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/mine_green_shape_bg">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/mine_header_notice_title"
+            android:background="#b2b2b2" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/mine_header_notice_title"
+            android:background="#b2b2b2" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mine_header_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:text="收益说明"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mine_header_notice_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_header_notice_title"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="11dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mine_header_notice_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_header_notice_desc"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#ED4143"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mine_header_notice_sub_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_header_notice_sub_title"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#ED4143"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/todayCashText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:text="今日付款到账佣金（元）"
+        android:textColor="#696969"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/todayCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/todayCashText"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="--"
+        android:textColor="#929292"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/todayMum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/strut"
+        android:layout_below="@+id/todayCashText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/todayCash"
+        android:gravity="center_vertical"
+        android:text="--"
+        android:textColor="#929292"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/yesCashText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:text="昨日付款到账佣金（元）"
+        android:textColor="#696969"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/yesCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yesCashText"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="--"
+        android:textColor="#929292"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/yesMum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yesCashText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/yesCash"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#929292"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+    <include
+
+        android:id="@+id/mine_profit_header_month_layout"
+        layout="@layout/mine_profit_month_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_middle"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+
+        android:layout_height="8dp"
+        android:layout_below="@id/mine_profit_header_month_layout"
+        android:background="#f2f2f2"></View>
+
+
+    <LinearLayout
+        android:id="@+id/mine_profit_tab_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/view4"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/mine_profit_header_indicator" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="收益明细"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="个人购物奖励与店铺收益每日零点更新"
+            android:textColor="#B2B2B2"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/mine_profit_tab_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="19dp"
+            android:visibility="invisible"
+            android:src="@drawable/mine_profit_calendar" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/mine_profit_tab_info"
+        android:background="#f2f2f2"></View>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mine_profit_tab_tablayout"
+        style="@style/MineProfitCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view5"
+        android:layout_gravity="center"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MineProfitTabTextAppearance" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/mine_profit_tab_tablayout"
+        android:background="#f2f2f2"></View>
+</RelativeLayout>
+

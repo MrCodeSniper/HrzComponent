@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="12dp"
+       android:layout_centerVertical="true"
+        android:id="@+id/common_forward_layout_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左边文字"
+        android:textColor="#ffb2b2b2"
+        android:textSize="14sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:text="中间文字"
+        android:textColor="#ffb2b2b2"
+        android:id="@+id/common_forward_layout_mid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/common_forward_layout_forward_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/icon_right" />
+</RelativeLayout>

@@ -6,12 +6,35 @@ package com.hrz.hrzcomponent;
 
 
 import android.app.Application;
+import android.content.Context;
+import android.util.Log;
+
+
+import com.hrz.push.HrzPushIntentService;
+import com.hrz.push.PushAgent;
+import com.igexin.sdk.message.GTTransmitMessage;
+import com.mujirenben.android.common.pay.PayHelper;
+
+import java.io.UnsupportedEncodingException;
 
 public class BaseApplication extends Application{
 
     @Override
     public void onCreate() {
         super.onCreate();
+//        AlibabaSDK.initSDK(this);
+        PushAgent.init(this, new HrzPushIntentService() {
+            @Override
+            public void onReceiveMessageData(Context context, GTTransmitMessage gtTransmitMessage) {
+                try {
+                    String msg=new String(gtTransmitMessage.getPayload(),"utf-8");
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+
 
     }
 }

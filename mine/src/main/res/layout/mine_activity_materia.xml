@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/common_titlebar"/>
+
+    <include layout="@layout/mine_include_divider_bar_full"/>
+
+
+    <com.mujirenben.android.common.widget.tablayout.SlidingTabLayout
+        android:id="@+id/stl_select_materia"
+        android:layout_width="match_parent"
+        app:tl_tab_width="188dp"
+        android:background="@color/white"
+        app:tl_textsize="14sp"
+        app:tl_textSelectColor="@color/main_color"
+        app:tl_textUnselectColor="@color/black"
+        app:tl_indicator_width="64dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_color="@color/main_color"
+        android:layout_height="40dp"/>
+
+    <include layout="@layout/mine_include_divider_bar_full"/>
+
+    <com.mujirenben.mine.mvp.ui.view.LazyViewPager
+        android:id="@+id/vp_materia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    </com.mujirenben.mine.mvp.ui.view.LazyViewPager>
+
+</LinearLayout>

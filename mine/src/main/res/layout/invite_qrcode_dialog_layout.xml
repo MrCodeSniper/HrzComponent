@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/invite_qrcode_dialog_bg"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/invite_dialog_notice_tv"
+        android:textColor="@color/text_color"
+        android:textSize="13sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/withdraw_scan_title"
+        android:layout_marginTop="37dp"
+        android:autoLink="all"
+        android:layout_gravity="center_horizontal"
+        android:text="保存二维码，扫一扫图片"
+        android:textColor="@color/main_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="140dp"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/invite_dialog_qrcode_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.gcssloop.widget.RCImageView
+            android:id="@+id/invite_invite_dialog_logo"
+            android:layout_width="40dp"
+            app:round_as_circle="false"
+            app:stroke_width="1dp"
+            android:src="@color/color_orange_red"
+            android:layout_gravity="center"
+            app:stroke_color="@color/white"
+            android:layout_height="40dp" />
+    </FrameLayout>
+    <EditText
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/invite_dialog_code_et"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/text_color"
+        android:hint="请输入邀请码"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColorHint="@color/search_hot_title_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/light_gray_small_round_shape_bg"
+        />
+    <TextView
+        android:layout_marginBottom="18dp"
+        android:id="@+id/invite_dialog_okay_tv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:text="确认验证"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/deep_gray_round_shape_bg"
+        />
+</LinearLayout>
+

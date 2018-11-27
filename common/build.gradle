@@ -1,0 +1,183 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+apply from: 'nexus_maven_push.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName:project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'com.hdyl.hrz:thirdsdk:1.0.0'
+    api 'com.hdyl.hrz:poplayer:1.0.0'
+
+
+
+    api 'com.sensorsdata.analytics.android:SensorsAnalyticsSDK:2.0.0'
+
+    api(rootProject.ext.dependencies["support-v4"]) {
+        exclude module: 'support-annotations'
+    }
+    api(rootProject.ext.dependencies["appcompat-v7"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    api(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+    }
+    api rootProject.ext.dependencies["annotations"]
+    //view
+    api(rootProject.ext.dependencies["autolayout"]) {
+        exclude group: 'com.android.support'
+    }
+    // butterknife
+    api(rootProject.ext.dependencies["butterknife"]) {
+        exclude module: 'support-annotations'
+    }
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    api rootProject.ext.dependencies["recycleadapter"]
+    //rx
+    api rootProject.ext.dependencies["rxjava2"]
+    api(rootProject.ext.dependencies["rxandroid2"]) {
+        exclude module: 'rxjava'
+    }
+    api(rootProject.ext.dependencies["rxcache2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'jsr305'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle2-android"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+        exclude module: 'rxlifecycle'
+    }
+    api rootProject.ext.dependencies['rxerrorhandler2']
+    api(rootProject.ext.dependencies["rxpermissions2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'support-annotations'
+    }
+    //gson封装
+    api(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
+        exclude module: 'gson'
+    }
+    //network
+    api(rootProject.ext.dependencies["retrofit"]) {
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+    }
+    api(rootProject.ext.dependencies["retrofit-converter-gson"]) {
+        exclude module: 'gson'
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+        exclude module: 'retrofit'
+    }
+    api(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+        exclude module: 'okio'
+    }
+    api rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["retrofit-url-manager"]
+    //图片处理
+    api(rootProject.ext.dependencies["glide"]) {
+        exclude module: 'support-v4'
+    }
+    annotationProcessor(rootProject.ext.dependencies["glide-compiler"]) {
+        exclude module: 'jsr305'
+    }
+    api rootProject.ext.dependencies["ucrop"]
+    api rootProject.ext.dependencies["fresco"]
+    api rootProject.ext.dependencies["ptr"]
+    api rootProject.ext.dependencies["banner"]
+    api rootProject.ext.dependencies["autosystembar"]
+    //test
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation rootProject.ext.dependencies["junit"]
+    //tools
+    compileOnly rootProject.ext.dependencies["javax.annotation"]
+    api rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    api rootProject.ext.dependencies["gson"]
+    //    api rootProject.ext.dependencies["androideventbus"]
+    api 'org.greenrobot:eventbus:3.1.1'
+    //router
+    api rootProject.ext.dependencies["arouter"]
+    //log
+    api rootProject.ext.dependencies["timber"]
+    //log总框架
+    api rootProject.ext.dependencies["logger"]
+    //自定义log
+    api 'jp.wasabeef:glide-transformations:3.3.0'
+    api 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    //ThirdParty
+    api rootProject.ext.dependencies["wx"]
+    // GreenDao
+    api rootProject.ext.dependencies["green-dao"]
+    api 'com.justkiddingbaby:vercodeedittext:1.0.5'
+    api 'com.gcssloop.widget:rclayout:1.6.0'
+    api rootProject.ext.dependencies["multidex"]
+//    api 'me.kareluo.ui:popmenu:1.1.0'
+    //fabric crash
+    api('com.crashlytics.sdk.android:crashlytics:2.9.3@aar') {
+        transitive = true;
+    }
+    api files('libs/core-3.3.0.jar')
+    api files('libs/zxingscanner-2.1.1.jar')
+    api rootProject.ext.dependencies["vasonic"]
+    api(rootProject.ext.dependencies["cardview-v7"]) {
+        exclude module: 'support-annotations'
+    }
+    api 'com.amap.api:map2d:latest.integration'
+    api 'com.amap.api:location:latest.integration'
+    api 'com.amap.api:search:latest.integration'
+    api rootProject.ext.dependencies["ui_adapt"]
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

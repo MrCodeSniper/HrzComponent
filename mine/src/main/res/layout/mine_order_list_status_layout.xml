@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="38dp">
+
+    <RelativeLayout
+        android:id="@+id/mine_order_list_status_all_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_status_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_status_all"
+            style="@style/mine_order_list_status_tv_style"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/mine_order_list_status_all_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mine_order_list_status_indicator_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginLeft="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginRight="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginEnd="@dimen/mine_order_list_status_line_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_order_list_status_success_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_status_success_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_success_all"
+            style="@style/mine_order_list_status_tv_style"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/mine_order_list_status_success_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mine_order_list_status_indicator_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginLeft="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginRight="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginEnd="@dimen/mine_order_list_status_line_margin"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_order_list_status_finish_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_status_finish_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_finish_all"
+            style="@style/mine_order_list_status_tv_style"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/mine_order_list_status_finish_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mine_order_list_status_indicator_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginLeft="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginRight="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginEnd="@dimen/mine_order_list_status_line_margin"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_order_list_status_invalid_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">                                                  ">
+        <TextView
+            android:id="@+id/mine_order_list_status_invalid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_order_list_invalid_all"
+            style="@style/mine_order_list_status_tv_style"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/mine_order_list_status_invalid_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mine_order_list_status_indicator_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginLeft="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginRight="@dimen/mine_order_list_status_line_margin"
+            android:layout_marginEnd="@dimen/mine_order_list_status_line_margin"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

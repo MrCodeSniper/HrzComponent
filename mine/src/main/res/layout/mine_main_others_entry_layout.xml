@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="17dp"
+    android:id="@+id/mine_main_others_entry_layout">
+
+    <TextView
+        android:id="@+id/tv_invitecode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="填写邀请码"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_materia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="必发素材"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/mine_main_setting_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/mine_main_contact_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系我们"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/mine_main_qa_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="常见问题"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="客服"
+        android:padding="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <FrameLayout
+        android:layout_width="277dp"
+        android:layout_height="334dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_shopkeeper_expiration"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="94dp"
+            android:text="店主身份即将到期"
+            android:textColor="#2E3451"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginTop="148dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:longClickable="true"
+            android:text="您的店主身份还有-天将到期，到期后将无法享受店主分佣特权并降级为皇冠，请点击立即续费。"
+            android:textColor="#FFE074"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="212dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="216dp"
+            android:background="@drawable/dialog_button_sure_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:longClickable="true"
+            android:text="续费店主"
+            android:textColor="#171E4B"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="212dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="263dp"
+            android:background="@drawable/dialog_button_cancel_background"
+            android:gravity="center"
+            android:text="遗憾放弃"
+            android:textColor="#FFE074"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+</FrameLayout>

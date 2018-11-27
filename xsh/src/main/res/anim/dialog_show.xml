@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 指相对于父容器 -->
+    <!-- 从上往下显示 -->
+<!--     <translate android:duration="600" android:fromYDelta="-100%p" /> -->
+
+	<!-- 从下往上显示 -->
+    <translate
+        android:duration="600"
+        android:fromYDelta="100%p"
+         />
+    
+    <!-- 从上往下显示 -->
+<!--     <translate -->
+<!--         android:duration="600" -->
+<!--         android:fromYDelta="-100%p" -->
+<!--          /> -->
+</set>

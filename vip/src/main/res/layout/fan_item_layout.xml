@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.gcssloop.widget.RCImageView
+        android:layout_margin="12dp"
+        android:id="@+id/fan_item_avatar_iv"
+        android:layout_width="55dp"
+        app:round_as_circle="true"
+        android:src="@drawable/iv_user_default_icon"
+        android:layout_height="55dp" />
+   <FrameLayout
+
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_marginTop="13dp"
+          android:layout_marginLeft="13dp"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/fan_item_avatar_iv"
+              android:id="@+id/fan_item_user_name_tv"
+              android:layout_width="wrap_content"
+              android:text="蜡笔小新"
+              android:gravity="left"
+              android:layout_height="wrap_content" />
+          <ImageView
+              android:layout_marginTop="8dp"
+              android:id="@+id/fan_header_type_iv"
+              android:layout_width="wrap_content"
+              android:src="@drawable/shop_keeper_icon"
+              android:layout_height="wrap_content" />
+          <View
+              android:layout_marginTop="15dp"
+              android:layout_alignParentBottom="true"
+              android:layout_marginRight="12dp"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="#ffcecece"/>
+      </LinearLayout>
+
+       <ImageView
+           android:layout_gravity="center|right"
+           android:id="@+id/fan_item_phone_iv"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="32dp"
+           android:layout_centerVertical="true"
+           android:src="@drawable/phone_icon"
+           android:layout_width="22dp"
+           android:layout_height="22dp" />
+
+   </FrameLayout>
+</LinearLayout>

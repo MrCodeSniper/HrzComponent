@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/goods_background"
+    android:clickable="true"
+    android:longClickable="true">
+
+    <ImageView
+        android:id="@+id/iv_goods_image"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@color/no_img_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_goods_image"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/goods_source_label_background"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="淘宝"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_platforms_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_taobao"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:singleLine="true"
+            android:text="我是商品标题，最多容纳一行文字，我是商品标题，最多容纳一行文字，省我是商品标题，最多容纳一行文字，我是商品标"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_goods_image"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_after_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="券后￥86.00"
+            android:textColor="#ED4143"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/coupons_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="券"
+                android:textColor="#ED4143"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tv_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="￥86"
+                android:textColor="#ED4143"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:text="@string/mine_userinfo_nickname"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+
+    <TextView
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_user_info_name"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:text="红人装用户"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_blur"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_mine_enter_nickname"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mine_enter_mark"
+        />
+
+</RelativeLayout>

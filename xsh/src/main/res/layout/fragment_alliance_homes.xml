@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFF2F2F2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/gradient_main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.mujirenben.android.common.widget.StatusBarView
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:id="@+id/rl_titlebar"
+       >
+
+
+        <TextView
+            android:id="@+id/tv_titlebar"
+            android:gravity="center"
+            android:text="吃喝玩乐"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <!--<View-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#f4f4f4" />-->
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_back"
+            android:paddingLeft="12dp"
+            android:paddingBottom="2dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/hrz_new_back" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+        <com.hdyl.alliance.widget.xrecyclerview.XRecyclerView
+            android:id="@+id/rv_shop_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </com.hdyl.alliance.widget.xrecyclerview.XRecyclerView>
+
+
+
+
+
+
+
+</LinearLayout>

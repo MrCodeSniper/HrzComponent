@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_main_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/mine_include_settings_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_receive_new_notification"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:id="@+id/tv_main_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/settings_main_margin_left_or_right"
+                android:layout_marginTop="12dp"
+                android:text="Setting description"
+                android:textColor="@color/settings_main_text_color"
+                android:textSize="@dimen/settings_main_description_text_size" />
+
+            <TextView
+                android:id="@+id/tv_sub_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/settings_main_margin_left_or_right"
+                android:layout_marginTop="33dp"
+                android:text="Setting description"
+                android:textColor="#B2B2B2"
+                android:textSize="11sp" />
+
+            <com.mujirenben.mine.mvp.ui.view.SwitchButton
+                android:id="@+id/switch_action"
+                android:layout_width="38dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/settings_main_margin_left_or_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_include_settings_divider" />
+
+        <include
+            android:id="@+id/layout_banner_settings"
+            layout="@layout/mine_include_settings_item_with_switch" />
+
+        <include layout="@layout/mine_include_settings_divider" />
+
+        <include
+            android:id="@+id/layout_ring_settings"
+            layout="@layout/mine_include_settings_item_with_switch" />
+
+        <include layout="@layout/mine_include_settings_divider" />
+
+        <include
+            android:id="@+id/layout_vibrate_settings"
+            layout="@layout/mine_include_settings_item_with_switch" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/settings_main_margin_left_or_right"
+        android:layout_marginRight="@dimen/settings_main_margin_left_or_right"
+        android:layout_marginTop="9dp"
+        android:text="@string/notification_settings_tips"
+        android:textColor="#B2B2B2"
+        android:textSize="11sp" />
+
+</LinearLayout>

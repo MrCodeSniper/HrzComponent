@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_main_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title_bar"
+            layout="@layout/mine_include_settings_title_bar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/layout_notification_settings"
+                layout="@layout/mine_include_settings_item_with_next_action" />
+
+            <include
+                android:visibility="gone"
+                layout="@layout/mine_include_settings_divider" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/layout_download_img_manually"
+                layout="@layout/mine_include_settings_item_with_switch" />
+
+            <include
+                android:visibility="gone"
+                layout="@layout/mine_include_settings_divider" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/layout_auto_play_video"
+                layout="@layout/mine_include_settings_item_with_switch" />
+
+            <include
+                android:visibility="gone"
+                layout="@layout/mine_include_settings_divider" />
+
+            <include
+                android:id="@+id/layout_clear_cache"
+                layout="@layout/mine_include_settings_item_with_only_text" />
+
+            <include layout="@layout/mine_include_settings_divider" />
+
+            <include
+                android:id="@+id/layout_switch_addr"
+                layout="@layout/mine_include_settings_item_with_switch" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_about_hrz"
+            layout="@layout/mine_include_settings_item_with_only_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/settings_main_margin_left_or_right"
+        android:background="@drawable/logout_background"
+        android:text="@string/settings_logout"
+        android:textColor="#ED4143"
+        android:textSize="16sp" />
+
+</RelativeLayout>

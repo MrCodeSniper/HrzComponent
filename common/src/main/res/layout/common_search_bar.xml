@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90pt"
+    android:background="@color/main_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:id="@+id/iv_back"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:src="@drawable/icon_back" />
+
+
+    <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginRight="24px"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="56px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/title_bar_search_corner_bg"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_search_icon"-->
+            <!--android:layout_marginLeft="16px"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="24px"-->
+            <!--android:layout_height="24px"-->
+            <!--android:src="@drawable/search_icons"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@+id/iv_search_icon"-->
+            <!--android:id="@+id/tv_search_text"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="12px"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#333"-->
+            <!--android:textSize="28px"-->
+            <!--android:lines="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:text="推荐搜索词"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:layout_marginRight="24px"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/delete_icon"-->
+            <!--android:layout_width="24px"-->
+            <!--android:layout_height="24px"-->
+            <!--android:scaleType="fitXY"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/category_title_search_layout"
+        android:layout_width="654pt"
+        android:layout_height="56pt"
+        android:background="@drawable/home_title_bar_search_bg"
+        >
+        <ImageView
+            android:id="@+id/iv_search_icon"
+            android:layout_toLeftOf="@+id/tv_search_text"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:src="@drawable/iconfont_search_icons"
+            />
+        <TextView
+            android:id="@+id/tv_search_text"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="28pt"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="一级菜单搜索"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

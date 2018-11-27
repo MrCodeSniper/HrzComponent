@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="45dp">
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_back_left_toward"
+        />
+
+
+
+    <RelativeLayout
+        android:background="@drawable/module_search_frame_bg"
+        android:layout_margin="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginRight="6dp"
+            android:id="@+id/iv_search_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_search_module"
+            />
+
+        <EditText
+            android:id="@+id/et_search_frame"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_toRightOf="@+id/iv_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:hint="红人装优惠券"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

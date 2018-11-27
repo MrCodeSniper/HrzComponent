@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="445dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/tv_above_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="选择配送地址"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_color"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_closedialog"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_icon_dialog"
+            />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    
+    <View
+        android:background="@color/module_divide_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+    <com.mujirenben.android.common.widget.tablayout.CommonTabLayout
+        android:id="@+id/stl_select_address"
+        android:layout_width="match_parent"
+        app:tl_tab_width="83dp"
+        android:background="@color/white"
+        app:tl_textsize="14sp"
+        app:tl_textSelectColor="@color/main_color"
+        app:tl_textUnselectColor="@color/black"
+        app:tl_indicator_width="64dp"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_color="@color/main_color"
+        android:layout_height="44dp"/>
+
+        <View
+            android:background="@color/module_divide_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_address"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

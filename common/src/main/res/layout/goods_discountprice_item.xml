@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="@color/white"
+    android:layout_height="35dp">
+
+
+    <TextView
+        android:id="@+id/tv_after_price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="券后价"
+        android:layout_marginBottom="3.5dp"
+        android:textColor="@color/main_color"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:includeFontPadding="false"
+        android:id="@+id/tv_dicountprice"
+        android:gravity="bottom"
+        android:layout_marginLeft="2dp"
+        android:textSize="13sp"
+        android:textColor="@color/main_color"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_preprice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="3.5dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/text_color_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_gravity="right"
+        android:id="@+id/tv_sold"
+        android:layout_width="match_parent"
+        android:includeFontPadding="false"
+        android:gravity="bottom|right"
+        android:layout_marginBottom="3.5dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_color_gray"
+        android:textSize="11sp"
+        />
+
+
+
+</LinearLayout>

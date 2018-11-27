@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qr_code_image_view_margin_horizontal">58dp</dimen>
+    <dimen name="page_dot_size">8dp</dimen>
+    <dimen name="page_dot_margin_horizontal">6dp</dimen>
+</resources>

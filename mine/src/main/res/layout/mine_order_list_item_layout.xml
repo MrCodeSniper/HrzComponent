@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/order_list_item_platform_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_waterfall_platform"
+            android:paddingBottom="1dp"
+            android:paddingEnd="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingStart="3dp"
+            android:paddingTop="1dp"
+            android:text="京东"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/order_list_item_platform_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_taobao"
+            />
+
+
+        <TextView
+            android:id="@+id/order_list_item_store_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#ff333333"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="店铺名称"/>
+
+        <TextView
+            android:id="@+id/order_list_item_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffed4143"
+            android:textSize="14sp"
+            android:text="订单已取消"/>
+
+    </LinearLayout>
+
+    <!-- 商品列表 -->
+    <LinearLayout
+        android:id="@+id/order_list_product_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- 费用相关 -->
+    <include layout="@layout/mine_order_list_item_charge_layout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#fff4f4f4"/>
+
+</LinearLayout>

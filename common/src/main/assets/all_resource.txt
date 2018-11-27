@@ -1,0 +1,104 @@
+{
+    "code": "0",
+    "resourceInfo":[
+     {
+       "resType":"controll",
+       "resScope":"global",
+       "resContentList":[
+            {"isOpenPay":1},
+            {"isOpenBuy":1},
+            {"isOpenDebug":1}
+        ]
+     },
+     {
+       "resType":"drawable",
+       "resScope":"view",
+       "resContentList":[
+         {
+           "localId":"R.drawable.icon",
+           "imgUrl":"https://www.baidu.com/img/540-258pad_b4457124d4666cb02363fac26db23f68.png",
+           "effectTime_Start":"2018-05-12",
+           "effectTime_End":"2018-05-13",
+           "effectContext":"FlashActivity"
+         }
+      ]
+    },
+    {
+       "resType":"block",
+       "resScope":"home",
+       "resContentList":[
+       {
+        "templateId":"1",
+        "businessId":"wheelBanner",
+        "configuration":{
+            "backgroundColor":"#FFF",
+            "spanLine":"none"
+        },
+        "isShow":1,
+        "position":0,
+        "itemDataContent":[
+             {    "imageUrl":"https://m.360buyimg.com/babel/jfs/t19249/222/2308009498/68054/d1634987/5af10ff8Nf8c994f5.jpg",
+               "clickType":"webview",
+               "clickUrl":"https://www.jd.com/",
+               "mainTitle":"主标题0",
+               "subTitle":"子标题0",
+               "sourceFrom":"京东"
+             },
+             {    "imageUrl":"https://img.alicdn.com/tfs/TB1E118qGmWBuNjy1XaXXXCbXXa-520-280.png_q90_.webp",
+               "clickType":"local",
+               "clickUrl":"local://com/user/",
+               "mainTitle":"主标题1",
+               "subTitle":"子标题1",
+               "sourceFrom":"红人装"
+             }
+          ]
+
+
+        }
+
+       ]
+
+    },
+    {
+       "resType":"block",
+       "resScope":"home",
+       "resContentList":[
+       {
+        "templateId":"2",
+        "businessId":"enterIcon",
+        "configuration":{
+            "backgroundColor":"#FFF",
+            "spanLine":"none"
+        },
+        "isShow":1,
+        "position":1,
+        "itemDataContent":[
+             {    "imageUrl":"http://chuantu.biz/t6/309/1526090725x-1404793447.jpg",
+               "clickType":"webview",
+               "clickUrl":"https://www.vip.com/",
+               "mainTitle":"主标题0",
+               "subTitle":"子标题0",
+               "sourceFrom":"唯品会"
+             },
+             {    "imageUrl":"http://chuantu.biz/t6/309/1526090787x-1404793447.jpg",
+               "clickType":"local",
+               "clickUrl":"local://com/user/",
+               "mainTitle":"主标题1",
+               "subTitle":"子标题1",
+               "sourceFrom":"红人装"
+             }
+          ]
+
+
+        }
+
+       ]
+
+    }
+
+
+
+]
+
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_near"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_gravity="center_vertical"
+        android:layout_width="4dp"
+        android:id="@+id/iv_tickets"
+        android:layout_height="16dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/alliance_shopdetail_left_tab"
+        ></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/iv_tickets"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#333"
+        android:text="附近参与优惠的店铺"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/iv_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vip_header_login_ll"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/vip_header_login_bg"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vip_header_login_crown_bg"
+        android:layout_height="480dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.mujirenben.android.common.widget.StatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/vip_header_shop_expired_rl"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/light_yellow_gradient_shape"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:gravity="left|center"
+                    android:textColor="#FF171E4B"
+                    android:textSize="14sp"
+                    android:text="您的店主身份已到期，点击续费店主"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"/>
+                <ImageView
+                    android:id="@+id/vip_header_expired_notice_close_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/white_delete_icon"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.gcssloop.widget.RCImageView
+                        android:padding="2dp"
+                        android:id="@+id/vip_header_login_avatar_iv"
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iv_user_default_icon"
+                        app:round_as_circle="true"
+                        app:stroke_width="1dp"
+                        app:stroke_color="#dfcca7" />
+                    <TextView
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:id="@+id/vip_header_login_level_tv"
+                        android:layout_width="40dp"
+                        android:text="店主"
+                        android:gravity="center"
+                        android:textSize="8sp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/gray_golden_round_bg"
+                        android:layout_height="16dp" />
+                </FrameLayout>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right|top"
+                    android:id="@+id/vip_header_login_qrcode"
+                    android:src="@drawable/vip_header_crown_qrcode"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/vip_header_login_name_tv"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="蜡笔小新"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/vip_header_login_fan_layout"/>
+        <com.mujirenben.android.common.widget.switcher.AdvTextSwitcher
+            android:id="@+id/vip_header_login_switcher"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_width="228dp"
+            app:switcherTextSize="10sp"
+            app:switcherMarginLeft="12dp"
+            app:switcherMarginRight="12dp"
+            android:background="@drawable/normal_fan_announce_bg"
+            android:layout_height="20dp"/>
+        <include layout="@layout/vip_header_login_income_layout"/>
+    </LinearLayout>
+
+</FrameLayout>

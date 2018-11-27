@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+
+
+    <com.gcssloop.widget.RCRelativeLayout
+        android:paddingTop="20dp"
+        android:background="@drawable/link_to_platform_bg"
+        android:layout_width="238dp"
+        android:paddingLeft="22dp"
+        android:layout_height="161dp">
+
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/tv_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hrz_save_str"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/tv_save_money_amount"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/tv_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_buy_earn"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginTop="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/tv_title_buy_earn_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买完还赚"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_earn_money"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="9dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_buy_earn_second"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginTop="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/tv_title_buy_earn_amount_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买完还赚"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_earn_money_second"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:text="100.00"
+                android:layout_marginTop="9dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+    </com.gcssloop.widget.RCRelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_goto_platform"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textSize="16sp"
+        android:text="正在去往淘宝..."
+        android:textColor="#FFCC74"
+        />
+    
+
+
+
+</LinearLayout>

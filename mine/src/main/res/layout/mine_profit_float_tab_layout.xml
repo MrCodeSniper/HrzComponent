@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mine_profit_float_tab_layout"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/include"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mine_profit_float_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/mine_profit_header_indicator" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="收益明细"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:text="个人购物奖励与店铺收益每日零点更新"
+            android:textColor="#B2B2B2"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/mine_profit_float_calendar_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="14dp"
+            android:visibility="gone"
+            android:src="@drawable/mine_profit_calendar" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mine_profit_float_tablayout"
+        style="@style/MineProfitCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MineProfitTabTextAppearance" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f2f2" />
+</LinearLayout>

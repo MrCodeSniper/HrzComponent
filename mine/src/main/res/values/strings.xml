@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">mine_module</string>
+    <string name="mine_login_bind_phone_title">绑定手机号</string>
+    <string name="mine_login_sms_input">输入短信验证码</string>
+    <string name="mine_login_sms_already_sent">验证码已发送至</string>
+    <string name="mine_login_sms_resent">重新发送</string>
+    <string name="mine_login_bind_phone_law">根据《网络安全法》要求实施，请绑定您的手机号</string>
+    <string name="mine_login_bing_phone_des">您将更改绑定的手机号，考虑到帐号安全，请您谨慎操作。</string>
+    <string name="mine_login_text">确认</string>
+    <string name="mine_userinfo_nickname">昵称</string>
+    <string name="mine_userinfo_icon">头像</string>
+    <string name="mine_userinfo_qrcode">二维码</string>
+    <string name="mine_userinfo_birthday">出生日期</string>
+    <string name="mine_userinfo_location">所在地区</string>
+    <string name="mine_userinfo_shipAddress">收货地址</string>
+    <string name="mine_userinfo_family_identity">家族身份</string>
+    <string name="mine_userinfo_bind_phone">绑定手机</string>
+    <string name="mine_userinfo_bind_wx">绑定微信</string>
+    <string name="mine_userinfo_bind_jd">绑定京东</string>
+    <string name="mine_userinfo_bind_vip">绑定唯品会</string>
+    <string name="mine_userinfo_bind_mgj">绑定蘑菇街</string>
+    <string name="mine_userinfo_no_nickname">最长字数10个字数</string>
+    <string name="mine_userinfo_plantform_bind">已授权</string>
+    <string name="mine_userinfo_plantform_unbind">未授权</string>
+
+    <string name="mine_withdraw_deposit">提现</string>
+    <string name="mine_withdraw_deposit_record">提现记录</string>
+    <string name="mine_withdraw_deposit_amount">提现金额</string>
+    <string name="mine_withdraw_deposit_all">全部提现</string>
+    <string name="mine_withdraw_deposit_hint">根据国家规定，每笔提现需扣除6%税费</string>
+    <string name="mine_withdraw_deposit_alipay">支付宝</string>
+    <string name="mine_withdraw_deposit_wx">微信 (暂不开放)</string>
+    <string name="mine_withdraw_deposit_me">我要提现</string>
+    <string name="mine_withdraw_deposit_alipay_account">支付宝账号</string>
+    <string name="mine_withdraw_deposit_alipay_account_name">真实姓名</string>
+    <string name="mine_withdraw_deposit_alipay_account_hint">请输入您的支付宝账号</string>
+    <string name="mine_withdraw_deposit_alipay_account_name_hint">请输入支付宝的真实姓名</string>
+    <string name="mine_withdraw_deposit_idnumber_hint">请输入您的身份证号码</string>
+    <string name="mine_withdraw_deposit_save_info">保存信息</string>
+    <string name="mine_withdraw_deposit_modify_info">修改信息</string>
+    <string name="mine_withdraw_deposit_notice_info">注意事项</string>
+
+    <string name="mine_profit_details_title">收益明细</string>
+
+
+
+
+
+
+    <!-- 订单列表页面 -->
+    <string name="mine_order_list_page_title">我的订单</string>
+
+    <string name="mine_order_list_platforms">电商平台</string>
+    <string name="mine_order_list_activitys">活动类型</string>
+    <string name="mine_order_item_reward_title">消费奖励</string>
+    <string name="mine_order_item_discount_title">平台优惠</string>
+    <string name="mine_order_item_origin_price">商品原价</string>
+    <string name="mine_order_item_toaacount_time">(预计到账时间：%s)</string>
+    <string name="mine_order_item_product_number">共%s件商品  实付</string>
+    <string name="mine_order_item_freight_price">(含运费%s)</string>
+    <string name="mine_order_item_share_reward">分享奖励%s</string>
+    <string name="mine_order_item_check_ship_info">查看物流</string>
+    <string name="mine_order_status_success">订单成功</string>
+    <string name="mine_order_status_finish">订单结算</string>
+    <string name="mine_order_status_invalid">订单失效</string>
+    
+    <string name="mine_hrz_order_status_success">已支付</string>
+    <string name="mine_hrz_order_status_progress">支付中</string>
+    <string name="mine_hrz_order_status_fail">支付失败</string>
+    
+
+    <string name="settings_title_settings">设置</string>
+    <string name="settings_notification_settings">通知</string>
+    <string name="settings_manually_download_img_without_wifi">非WIFI环境下手动下载图片</string>
+    <string name="settings_auto_play_video_with_wifi">WIFI环境下自动播放视频</string>
+    <string name="settings_clear_local_cache">清除本地缓存</string>
+    <string name="settings_about_hrz">关于红人装</string>
+    <string name="settings_version_prefix">版本号 </string>
+
+    <string name="settings_logout">登出账号</string>
+
+    <string name="notification_settings_title">通知</string>
+    <string name="notification_settings_receive_new_notification">接受新信息通知</string>
+    <string name="notification_settings_receive_new_notification_sub">关闭将会错过最新优惠信息</string>
+    <string name="notification_settings_banner">端内横幅提醒</string>
+    <string name="notification_settings_ring">铃声提醒</string>
+    <string name="notification_settings_vibrate">震动提醒</string>
+    <string name="notification_settings_tips">红人装APP运行时收到的商品、店铺、好友及服务号消息，您可以设置是否需要横幅提醒，铃声提醒或震动提醒。</string>
+    
+    <string name="about_hrz_settings_official_account">红人装公众号</string>
+    <string name="about_hrz_settings_version_prefix">当前版本号：</string>
+    <string name="about_hrz_settings_share_app_qr_code">分享二维码给好友</string>
+    <string name="about_hrz_settings_check_upgrade">检查更新</string>
+    <string name="about_hrz_settings_special_explain">特别说明</string>
+    <string name="about_hrz_settings_platform_service_explain">平台服务说明</string>
+    <string name="about_hrz_settings_private_policy">隐私政策</string>
+    <string name="about_hrz_settings_hotline">客服电话</string>
+    <string name="about_hrz_settings_already_up_to_data">已经是最新版本了</string>
+
+    <!-- 订单详情页面 -->
+    <string name="mine_order_details_page_title">订单详情</string>
+    <string name="mine_order_details_owner_name">收件人：</string>
+    <string name="mine_order_details_owner_address">收货地址：</string>
+    <string name="mine_order_details_reward">消费奖励</string>
+    <string name="mine_order_details_discount">平台优惠</string>
+    <string name="mine_order_details_freight">运费</string>
+    <string name="mine_order_details_charge_pay">实付款</string>
+    <string name="mine_order_details_charge_total">商品总额</string>
+    <string name="mine_order_details_pay_method">支付方式</string>
+    <string name="mine_order_details_pay_time">支付时间</string>
+    <string name="mine_order_details_tran_time">成交时间</string>
+    <string name="mine_order_details_receive_time">奖励预计到账时间</string>
+    <string name="mine_order_details_order_searial">订单编号</string>
+    <string name="mine_order_details_order_book_time">下单时间</string>
+    <string name="mine_order_details_ask_question">对此订单有疑惑?</string>
+
+    <string name="login_weixin_error">微信授权失败，获取code失败</string>
+    <string name="user_self_info">个人信息</string>
+    <string name="choose_your_city">选择您的城市</string>
+    <string name="please_input_nickname">请输入您的昵称</string>
+    <string name="select_city">请选择您的所在地</string>
+
+    <string name="mine_plantform_above">全部</string>
+    <string name="mine_plantform_tb">淘宝</string>
+    <string name="mine_plantform_jd">京东</string>
+    <string name="mine_plantform_vip">唯品会</string>
+    <string name="mine_plantform_ziying">自营</string>
+
+    <string name="profit_main_month_title">%d月累计收益</string>
+
+    <array name="tabPlantforms">
+        <item>全部</item>
+        <item>自营</item>
+        <item>淘宝 </item>
+        <item>京东</item>
+        <item>唯品会</item>
+        <item>线下</item>
+        <item>蘑菇街</item>
+    </array>
+
+    <string name="mine_order_list_status_all">全部订单</string>
+    <string name="mine_order_list_success_all">订单成功</string>
+    <string name="mine_order_list_finish_all">订单结算</string>
+    <string name="mine_order_list_invalid_all">订单失效</string>
+    <string name="mine_can_withdraw_text">可提现%s元</string>
+    <string name="withdraw_info_title_text">提现信息</string>
+    <string name="withdraw_save_info_text">保存信息</string>
+    <string name="camera_notice_text">请将国徽面放到框内，并调整好光线</string>
+    <string name="withdraw_detail_title_text">提现信息</string>
+    <string name="withdraw_detail_again_upload_text">点击重新上传</string>
+    <string name="withdraw_detail_front_upload_text">身份证正面照</string>
+    <string name="withdraw_detail_Opposite_upload_text">身份证反面照</string>
+    <string name="withdraw_detail_right_title_text">编辑</string>
+    <string name="withdraw_upload_again_text">点击重新上传</string>
+    <string name="withdraw_no_record_text">当前没有提现记录哦</string>
+    <string name="click_login_text">点击登录</string>
+    <string name="no_network_hint">需要打开网络后，才能使用红人装哦~</string>
+    <string name="network_error_hint">网络好像出了点问题</string>
+    <string name="refresh_data_str">刷新试试</string>
+    <string name="no_orders_hint">您还没有订单哦~</string>
+
+    <array name="tabTexts">
+        <item>全部订单</item>
+        <item>订单成功 </item>
+        <item>订单结算</item>
+        <item>订单失效</item>
+    </array>
+
+    <array name="filterTabs">
+        <item>淘宝</item>
+        <item>京东 </item>
+        <item>唯品会</item>
+        <item>红人装</item>
+        <item>自营</item>
+    </array>
+    
+    <array name="functionOptions">
+        <item>填邀请码</item>
+        <item>我的活动 </item>
+        <item>商家对接人</item>
+        <item>体验馆入场券</item>
+        <item>常见问题</item>
+        <item>联系客服</item>
+        <item>联系我们</item>
+    </array>
+    
+    
+    <string name="levelFans">粉丝</string>
+    <string name="levelCrown">皇冠</string>
+    <string name="levelShopKepper">店主</string>
+
+
+</resources>

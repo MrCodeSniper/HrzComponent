@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+
+    <include android:id="@+id/title_bar" layout="@layout/common_titlebar"/>
+
+
+    <View
+        android:id="@+id/view_divide_bar"
+        android:layout_below="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dividebar_size"
+        android:background="@color/module_divide_color"
+        ></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/tv_add_address"
+        android:layout_below="@+id/view_divide_bar"
+        android:id="@+id/rl_address_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:text="＋新增收货地址"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/goods_detail_buy_bg"
+        />
+
+
+</RelativeLayout>

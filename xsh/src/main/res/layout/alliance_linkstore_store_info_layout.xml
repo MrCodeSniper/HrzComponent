@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@drawable/alliance_linkma_item_bg_yellow"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alliance_linkstore_item_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="此处商店名"
+        android:textColor="#ffff9225"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/alliance_linkstore_item_text_margin"
+        android:paddingStart="@dimen/alliance_linkstore_item_text_margin"
+        android:paddingEnd="@dimen/alliance_linkstore_item_text_margin"
+        android:paddingRight="@dimen/alliance_linkstore_item_text_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/common_location_indicator" />
+
+        <TextView
+            android:id="@+id/alliance_linkstore_item_store_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="广州市新港东琶洲新村11栋"
+            android:textColor="#ff929292"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

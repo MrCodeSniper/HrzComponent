@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">vip_module</string>
+    <string name="vip_text">会员</string>
+    <string name="vip_notice_text">公告</string>
+    <string name="vip_shop_type_text">商铺类型</string>
+    <string name="vip_login_make_text">· 登 录 即 刻 赚 ·</string>
+    <string name="vip_vip_exclusive_text">· 会 员 专 享 商 品 ·</string>
+    <string name="vip_vip_activity_text">· 会 员 活 动 ·</string>
+    <string name="vip_college_text">· 商 学 院 ·</string>
+    <string name="vip_login_btn_text">登录享受更多福利</string>
+    <string name="vip_beer_fun_text">会员去这些商铺，吃喝玩乐都省钱</string>
+    <string name="vip_nearby_text">附近&#8194; </string>
+    <string name="vip_food_text">美食&#8194; </string>
+    <string name="vip_distance_text">按距离排序&#8194;</string>
+    <string name="vip_shop_make_text">购物赚</string>
+    <string name="vip_shop_make_des_text">购物返佣20%</string>
+    <string name="vip_share_make_text">分享赚</string>
+    <string name="vip_share_make_des_text">分享得高额佣金</string>
+    <string name="vip_fan_make_text">粉丝赚</string>
+    <string name="vip_fan_make_des_text">好友购物你也赚</string>
+    <string name="vip_grow_make_text">成长赚</string>
+    <string name="vip_grow_make_des_text">等级提升佣金更多</string>
+    <string name="fan_my_fans_text">我的粉丝</string>
+    <string name="fan_normal_fans_text">普通粉丝</string>
+    <string name="fan_crown_fans_text">皇冠粉丝</string>
+    <string name="fan_shop_fans_text">店主粉丝</string>
+    <string name="fan_total_text">店铺粉丝总数</string>
+    <string name="vip_fan_text">粉丝</string>
+    <string name="vip_crown_text">皇冠</string>
+    <string name="vip_one_star_shop_text">店主</string>
+    <string name="vip_five_star_shop_text">五星店主</string>
+    <string name="vip_ten_star_shop_text">十星店主</string>
+    <string name="vip_fifteen_star_shop_text">十五星店主</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fan_referrer_text">我的推荐人</string>
+    <string name="vip_header_login_goto_update_text">去升级提升%s收益</string>
+    <string name="vip_header_login_make_income_text">红人装累计为您带来收益(元)</string>
+    <string name="vip_header_login_next_level_make_income_text">下一等级预计带来收益(元)</string>
+
+    <string name="qr_code_activity_title">我的邀请码</string>
+    <string name="vip_header_login_school_des_text">学的越多，赚的越多</string>
+    <string name="fan_get_referrer_text">点击获取</string>
+</resources>

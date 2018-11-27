@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/welfare_coupons_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_shop_image"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@color/bg_grey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="店铺名字"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="全程通用优惠"
+                android:textColor="#B2B2B2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06.01~06.20"
+                android:textColor="#B2B2B2"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38dp">
+
+            <Button
+                android:id="@+id/btn_get"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="62dp"
+                android:background="@drawable/welfare_snatch_button_background"
+                android:text="分享领券"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:gravity="center_horizontal"
+                android:text="$100"
+                android:textColor="#ED4143"
+                android:textSize="28sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

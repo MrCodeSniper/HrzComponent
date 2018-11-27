@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 我对接的店页面 -->
+    <dimen name="alliance_linkstore_item_margin_left">15dp</dimen>
+    <dimen name="alliance_linkstore_item_margin_right">15dp</dimen>
+    <dimen name="alliance_linkstore_item_margin_bottom">15dp</dimen>
+    <dimen name="alliance_linkstore_item_pading_bottom">15dp</dimen>
+    <dimen name="alliance_linkstore_item_text_margin">15dp</dimen>
+    <dimen name="alliance_linkstore_item_label_text_size">14sp</dimen>
+    <dimen name="alliance_linkstore_item_income_text_size">16sp</dimen>
+    <dimen name="alliance_linkstore_item_income_label_size">13sp</dimen>
+    <dimen name="alliance_linkstore_item_btn_padding_left">28dp</dimen>
+    <dimen name="alliance_linkstore_item_btn_padding_top">5dp</dimen>
+    <dimen name="jc_progress_dialog_margin_top">80dp</dimen>
+    <dimen name="jc_volume_dialog_margin_left">24dp</dimen>
+    <!--界面间尺寸-->
+
+    <dimen name="recycleview_marginbottom">5dp</dimen>
+
+    <dimen name="view_sp_size_1050">525dip</dimen>
+    <dimen name="view_sp_size_360">180dip</dimen>
+    <dimen name="view_sp_size_500">250dip</dimen>
+    <dimen name="view_sp_size_280">140dip</dimen>
+    <dimen name="view_sp_size_480">240dip</dimen>
+    <dimen name="view_sp_size_460">230dip</dimen>
+
+    <dimen name="view_sp_size_400">200dip</dimen>
+    <dimen name="view_sp_size_300">150dip</dimen>
+    <dimen name="view_sp_size_240">120dip</dimen>
+    <dimen name="view_sp_size_200">100dip</dimen>
+    <dimen name="view_sp_size_180">90dip</dimen>
+    <dimen name="view_sp_size_160">80dip</dimen>
+    <dimen name="view_sp_size_150">75dip</dimen>
+    <dimen name="view_sp_size_140">70dip</dimen>
+    <dimen name="view_sp_size_120">60dip</dimen>
+    <dimen name="view_sp_size_100">50dip</dimen>
+    <dimen name="view_sp_size_86">43dip</dimen>
+    <dimen name="view_sp_size_80">40dip</dimen>
+    <dimen name="view_sp_size_130">65dip</dimen>
+    <dimen name="view_sp_size_60">30dip</dimen>
+    <dimen name="view_sp_size_58">29dip</dimen>
+    <dimen name="view_sp_size_50">25dip</dimen>
+    <dimen name="view_sp_size_48">24dip</dimen>
+    <dimen name="view_sp_size_44">22dip</dimen>
+
+    <dimen name="view_sp_size_40">20dip</dimen>
+    <dimen name="view_sp_size_38">19dip</dimen>
+    <dimen name="view_sp_size_30">15dip</dimen>
+    <dimen name="view_sp_size_25">12.5dip</dimen>
+    <dimen name="view_sp_size_20">10dip</dimen>
+    <dimen name="view_sp_size_16">8dip</dimen>
+    <dimen name="view_sp_size_12">6dip</dimen>
+    <dimen name="view_sp_size_10">5dip</dimen>
+    <dimen name="view_sp_size_8">4dip</dimen>
+    <dimen name="view_sp_size_5">2.5dip</dimen>
+    <dimen name="view_sp_size_2">1dip</dimen>
+    <!--字体大小-->
+    <dimen name="txt_sp_size_60">30sp</dimen>
+    <dimen name="txt_sp_size_50">25sp</dimen>
+    <dimen name="txt_sp_size_48">24sp</dimen>
+    <dimen name="txt_sp_size_44">22sp</dimen>
+    <dimen name="txt_sp_size_40">20sp</dimen>
+    <dimen name="txt_sp_size_36">18sp</dimen>
+    <dimen name="txt_sp_size_32">16sp</dimen>
+    <dimen name="txt_sp_size_28">14sp</dimen>
+    <dimen name="txt_sp_size_24">12sp</dimen>
+</resources>

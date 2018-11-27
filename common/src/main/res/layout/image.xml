@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/page_item"
+            android:layout_width="640pt"
+            android:scaleType="fitXY"
+            android:layout_height="800pt"
+            android:src="@drawable/transparent_bg"/>
+
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="48pt"
+            android:layout_height="48pt"
+            android:scaleType="fitXY"
+            android:layout_alignRight="@+id/page_item"
+            android:layout_alignTop="@+id/page_item"
+            android:src="@drawable/delete_icon"
+            />
+
+
+
+
+
+
+
+</RelativeLayout>

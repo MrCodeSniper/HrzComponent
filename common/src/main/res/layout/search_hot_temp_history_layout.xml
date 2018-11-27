@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/search_hot_hotwords_padding_left"
+    android:paddingStart="@dimen/search_hot_hotwords_padding_left">
+
+    <com.mujirenben.android.common.widget.label.LabelsView
+        android:id="@+id/search_hot_temp_history"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:minHeight="29dp"
+        android:padding="5dp"
+        app:labelBackground="@drawable/label_bg_pressed"
+        app:labelTextColor="@drawable/label_text_color_pressed"
+        app:labelTextPaddingBottom="8dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextPaddingTop="8dp"
+        app:labelTextSize="@dimen/search_hot_words_text_size"
+        app:lineMargin="8dp"
+        app:maxSelect="0"
+        app:selectType="SINGLE"
+        app:wordMargin="10dp" />
+
+</LinearLayout>

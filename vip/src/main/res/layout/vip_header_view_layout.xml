@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewStub
+        android:id="@+id/vip_header_unLogin_view_stub"
+        android:layout_width="match_parent"
+        android:layout="@layout/vip_header_unlogin_layout"
+        android:layout_height="wrap_content" />
+    <ViewStub
+        android:id="@+id/vip_header_login_view_stub"
+        android:layout_width="match_parent"
+        android:layout="@layout/vip_header_login_layout"
+        android:layout_height="wrap_content" />
+    <ViewStub
+        android:id="@+id/vip_header_shop_login_view_stub"
+        android:layout_width="match_parent"
+        android:layout="@layout/vip_header_shop_login_layout"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_marginTop="0.5dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <ImageView
+         android:visibility="gone"
+         android:layout_marginTop="16dp"
+         android:layout_marginBottom="16dp"
+         android:layout_marginRight="12dp"
+         android:layout_marginLeft="12dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ico_store"
+         />
+
+        <View
+            android:layout_marginLeft="12dp"
+            android:layout_width="4dp"
+            android:id="@+id/iv_ticket"
+            android:layout_height="16dp"
+            android:background="@drawable/alliance_shopdetail_left_tab"
+            ></View>
+
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:text="附近参与优惠的店铺"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:visibility="gone"
+        android:background="@color/module_divide_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/rv_discount_shops"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+</LinearLayout>

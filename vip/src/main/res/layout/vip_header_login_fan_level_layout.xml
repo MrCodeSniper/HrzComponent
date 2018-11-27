@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="87dp">
+    <RelativeLayout
+        android:id="@+id/ll_1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vip_header_login_level_one_item_iv"
+            android:layout_width="49dp"
+            android:src="@drawable/icon_fensi"
+            android:scaleType="fitCenter"
+            android:layout_height="77dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vip_header_login_level_one_item_iv"
+            android:id="@+id/vip_header_login_level_one_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="粉丝"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vip_header_login_level_two_item_iv"
+            android:layout_width="29dp"
+            android:src="@drawable/icon_huangguan"
+            android:scaleType="fitCenter"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vip_header_login_level_two_item_iv"
+            android:id="@+id/vip_header_login_level_two_item_tv"
+            android:layout_width="wrap_content"
+            android:text="皇冠"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/ll_3"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vip_header_login_level_three_item_iv"
+            android:layout_width="31dp"
+            android:src="@drawable/icon_shop_star"
+            android:scaleType="fitCenter"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vip_header_login_level_three_item_iv"
+            android:id="@+id/vip_header_login_level_three_item_tv"
+            android:layout_width="wrap_content"
+            android:text="店主"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

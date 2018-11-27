@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mine_order_list_status_line_margin">10dp</dimen>
+    <dimen name="mine_order_list_product_item_margin_top">5dp</dimen>
+
+    <dimen name="settings_main_margin_left_or_right">12dp</dimen>
+
+    <dimen name="settings_main_description_text_size">14sp</dimen>
+    <dimen name="settings_sub_description_text_size">14sp</dimen>
+
+    <dimen name="settings_item_divider_height">0.5dp</dimen>
+</resources>

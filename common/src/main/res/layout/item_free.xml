@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <com.mujirenben.android.common.widget.MyViewPager
+            android:id="@+id/vp_goods"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/jd_resource"
+            android:id="@+id/imageView" />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_12"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignTop="@+id/imageView"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4.0dip"
+            android:maxLines="2"
+            android:text="        我是商品标题我是商品标题我是商品标题我是商品标题我是商品标题"
+            android:textColor="#ff404040"
+            android:textSize="12.0sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll_price"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/main_color"
+                android:text="已领取10300份"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_color"
+                android:text="需100人助力"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/frame_text"
+                android:text="免费领"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

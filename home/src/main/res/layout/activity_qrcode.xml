@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mylhyl.zxing.scanner.ScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <RelativeLayout
+        android:paddingTop="25dp"
+        android:id="@+id/ll_titlebar"
+        android:background="@color/captrue_bar_color"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:id="@+id/tv_scan_back"
+            android:gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/common_titlebar_textsize"
+            android:textColor="@color/white"
+            android:text="@string/qrcode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_scan_alblum"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="13dp"
+            android:text="@string/alblum_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_click_light"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/light_selector"
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/touch_light_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_above="@+id/zxing_status_view"
+                android:text="@string/touch_light_text"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_above="@+id/zxing_myqrcode"
+        android:id="@+id/zxing_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+        android:text="@string/text_qrcode_hint_one"
+        />
+
+
+
+
+
+
+    <TextView android:id="@+id/zxing_myqrcode"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+        android:layout_marginBottom="118dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/my_invite_qrcode"
+        android:textColor="@color/main_color"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_dialog_bg"
+    android:id="@+id/search_platform_guide_layout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_platform_guide_icon"
+        android:layout_marginTop="-3dp"
+        android:layout_marginLeft="41dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_platform_guide_font"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"/>
+
+</LinearLayout>

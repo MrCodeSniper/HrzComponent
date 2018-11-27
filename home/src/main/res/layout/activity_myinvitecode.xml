@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <ImageView
+            android:id="@+id/tv_scan_back"
+            android:gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/common_titlebar_textsize"
+            android:textColor="@color/white"
+            android:text="@string/my_invite_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_save_qrcode"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="27px"
+            android:textSize="28px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="@string/saveQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_myinvitecode"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray"
+        android:textSize="28px"
+        android:layout_below="@+id/iv_myinvitecode"
+        android:text="@string/add_family"
+        />
+
+
+
+
+
+
+</RelativeLayout>

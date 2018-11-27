@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey_1"
+    android:orientation="vertical">
+
+    <com.mujirenben.android.common.widget.StatusBarView
+        android:id="@+id/id_status_bar_view_unlogin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/common_titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mujirenben.vip.mvp.ui.widget.VipRefreshLayout
+            android:id="@+id/vip_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vip_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_grey_1"/>
+        </com.mujirenben.vip.mvp.ui.widget.VipRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.mujirenben.android.common.widget.StatusBarView
+                android:id="@+id/id_status_bar_view"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/vip_login_title_bar"
+                android:gravity="center"
+                android:text="会员"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color" />
+            <include
+                android:layout_below="@+id/vip_login_title_bar"
+                layout="@layout/vip_header_specific_tab_layout"
+                android:id="@+id/vip_header_float_specific_tab_layout"
+                android:visibility="invisible"
+                tools:ignore="IncludeLayoutParam" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/common_default_layout"/>
+</LinearLayout>

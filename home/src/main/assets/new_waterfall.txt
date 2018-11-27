@@ -1,0 +1,98 @@
+{
+    "code": "00000",
+    "message": null,
+    "success": true,
+    "data": [
+        {
+            "products": [
+                {
+                    "id": 30,
+                    "productName": "韩都衣舍2018新款女装夏装韩版显瘦条纹拼接牛仔短裤GD00622聖",
+                    "img": "http://img.alicdn.com/bao/uploaded/i1/263817957/TB2G20jq4SYBuNjSspjXXX73VXa_!!263817957-0-item_pic.jpg",
+                    "orgPrice": 48,
+                    "coupon": 0,
+                    "maxCommission": 2.38,
+                    "platform": 2,
+                    "saleVolume": 90,
+                    "afterPrice": 48
+                },
+                {
+                    "id": 30,
+                    "productName": "韩都衣舍2018新款女装夏装韩版显瘦条纹拼接牛仔短裤GD00622聖",
+                    "img": "http:\/\/img.alicdn.com\/bao\/uploaded\/i1\/263817957\/TB2G20jq4SYBuNjSspjXXX73VXa_!!263817957-0-item_pic.jpg",
+                    "orgPrice": 48,
+                    "coupon": 0,
+                    "maxCommission": 2.38,
+                    "platform": 2,
+                    "saleVolume": 90,
+                    "afterPrice": 48
+                },
+                {
+                    "id": 30,
+                    "productName": "韩都衣舍2018新款女装夏装韩版显瘦条纹拼接牛仔短裤GD00622聖",
+                    "img": "http:\/\/img.alicdn.com\/bao\/uploaded\/i1\/263817957\/TB2G20jq4SYBuNjSspjXXX73VXa_!!263817957-0-item_pic.jpg",
+                    "orgPrice": 48,
+                    "coupon": 0,
+                    "maxCommission": 2.38,
+                    "platform": 2,
+                    "saleVolume": 90,
+                    "afterPrice": 48
+                },
+                {
+                    "id": 121,
+                    "productName": "罗马仕（ROMOSS）sense6加量版超智能快充移动电源2充电宝20000毫安白色 双输出适用于苹果安卓手机平板",
+                    "img": "http:\/\/img14.360buyimg.com\/n1\/jfs\/t15532\/105\/2040029396\/90992\/a42c35b0\/5a766596N2e3c1ee0.jpg",
+                    "orgPrice": 89,
+                    "coupon": 0,
+                    "maxCommission": 4.01,
+                    "platform": 3,
+                    "saleVolume": 21645,
+                    "afterPrice": 89
+                },
+                {
+                    "id": 119,
+                    "productName": "毕亚兹(BIAZE)苹果8\/7\/6数据线 手机充电器电源线 1.2米 iPhone5\/6s\/7 Plus\/8\/X\/新iPad Air
+Mini 牛仔蓝 K25",
+                    "img": "http:\/\/img14.360buyimg.com\/n1\/jfs\/t22801\/155\/1609850869\/1130178\/32d48ea0\/5b64218cN86163665.jpg",
+                    "orgPrice": 29,
+                    "coupon": 0,
+                    "maxCommission": 1.57,
+                    "platform": 3,
+                    "saleVolume": 9794,
+                    "afterPrice": 29
+                },
+                {
+                    "id": 120,
+                    "productName": "【包邮】三只松鼠 手撕面包1kg\/箱早餐糕点蛋糕休闲零食",
+                    "img": "http:\/\/img.alicdn.com\/bao\/uploaded\/i1\/725677994\/TB2exKAI7KWBuNjy1zjXXcOypXa_!!725677994-0-item_pic.jpg",
+                    "orgPrice": 29.9,
+                    "coupon": 0,
+                    "maxCommission": 0.54,
+                    "platform": 2,
+                    "saleVolume": 174992,
+                    "afterPrice": 29.9
+                },
+                {
+                    "id": 120,
+                    "productName": "【包邮】三只松鼠 手撕面包1kg\/箱早餐糕点蛋糕休闲零食",
+                    "img": "http:\/\/img.alicdn.com\/bao\/uploaded\/i1\/725677994\/TB2exKAI7KWBuNjy1zjXXcOypXa_!!725677994-0-item_pic.jpg",
+                    "orgPrice": 29.9,
+                    "coupon": 0,
+                    "maxCommission": 0.54,
+                    "platform": 2,
+                    "saleVolume": 174992,
+                    "afterPrice": 29.9
+                }
+            ],
+            "shops": null,
+            "advertises": [
+                {
+                    "url": "https:\/\/www.baidu.com",
+                    "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-21\/ea752da9-5c01-41fc-8044-30092c4d92e3.png"
+,
+                    "advertiseName": "21321"
+                }
+            ]
+        }
+    ]
+}

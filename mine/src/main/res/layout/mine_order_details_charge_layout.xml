@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingLeft="12dp"
+    android:paddingEnd="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/ll_goods_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_order_details_charge_total"
+            android:textColor="#ffb2b2b2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mine_order_details_charge_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="￥0.00"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/ll_award"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_order_details_reward"
+            android:includeFontPadding="false"
+            android:textColor="#ffb2b2b2"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/mine_order_details_reward_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/ll_discounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+      >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="@string/mine_order_details_discount"
+            android:textColor="#ffb2b2b2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mine_order_details_discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="￥0.00"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_order_details_freight"
+            android:includeFontPadding="false"
+            android:textColor="#ffb2b2b2"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/mine_order_details_freight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/divider_h"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#ffececec" />
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:id="@+id/ll_real_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mine_order_details_charge_pay"
+            android:includeFontPadding="false"
+            android:textColor="#ffb2b2b2"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/mine_order_details_charge_pay_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:includeFontPadding="false"
+            android:textColor="#ffed4143"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

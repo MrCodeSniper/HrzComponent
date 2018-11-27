@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_login_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/login_bind_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="更改手机号"
+        android:textColor="#fffefefe"
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_white_32px" />
+    <RelativeLayout
+        android:id="@+id/ll_login_way_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_close">
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="100dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="(中国) +86"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/down_login_phone_choose" />
+
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入您的手机号码"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/phone_edit_color"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="30sp" />
+            <View
+                android:layout_width="304dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/seventy_precent_transparent_white"></View>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ll_law_desc"
+            android:layout_width="match_parent"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:layout_below="@+id/ll_input"
+            android:text="@string/mine_login_bing_phone_des"
+            android:textColor="#ffffde00"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_agreement_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_law_desc"
+
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_login_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继续表示您同意红人装用户协议"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/iv_confirm_phone_login"
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/white_shape_22dp_selector"
+                android:gravity="center"
+                android:text="接收手机验证码"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

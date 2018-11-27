@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView
+    android:id="@+id/tv_service"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="7天无理由退换"
+    android:textSize="22pt"
+    android:textColor="@color/text_color_blur"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+
+
+

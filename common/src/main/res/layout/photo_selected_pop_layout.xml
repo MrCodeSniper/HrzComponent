@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_gravity="bottom"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/selectPhotoTv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:gravity="center"
+          android:padding="10dp"
+          android:text="去手机相册"
+          android:textColor="@color/text_color"
+          android:textSize="18sp" />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/bg_grey" />
+      <TextView
+          android:id="@+id/takePhotoTv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:gravity="center"
+          android:padding="10dp"
+          android:text="用手机拍一张"
+          android:textColor="@color/text_color"
+          android:textSize="18sp" />
+      <TextView
+          android:id="@+id/cancelTv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:background="@color/white"
+          android:gravity="center"
+          android:padding="10dp"
+          android:text="取消"
+          android:textColor="@color/text_color"
+          android:textSize="18sp" />
+  </LinearLayout>
+
+</FrameLayout>

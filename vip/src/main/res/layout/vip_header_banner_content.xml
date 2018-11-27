@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/vip_header_banner_content"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/vip_header_banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        android:scaleType="fitXY" />
+
+</FrameLayout>

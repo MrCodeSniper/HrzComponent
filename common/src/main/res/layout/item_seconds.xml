@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/jd_resource"
+            android:id="@+id/imageViews" />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_12"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageViews"
+            android:layout_alignStart="@+id/imageViews"
+            android:layout_alignTop="@+id/imageViews"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4.0dip"
+            android:maxLines="2"
+            android:text="        我是商品标题我是商品标题我是商品标题我是商品标题我是商品标题"
+            android:textColor="#ff404040"
+            android:textSize="12.0sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_prices"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.mujirenben.android.common.widget.SaleProgressView
+                app:nearOverText="@string/nearOverText"
+                app:overText="@string/overText"
+                app:textSize="10sp"
+                android:layout_width="140dp"
+                android:layout_height="20dp" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/cut_price"
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_color"
+                android:text="￥58元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cut_price"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:text="淘宝价 ￥99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/frame_text"
+                android:text="马上抢"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

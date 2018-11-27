@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialogui_shape_wihte_round_corner"
+    android:orientation="vertical"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gcssloop.widget.RCImageView
+        android:id="@+id/iv_shop"
+        android:layout_margin="12dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:round_as_circle="false"
+        app:round_corner="4dp"
+        android:scaleType="fitXY"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_alignTop="@id/iv_shop"
+        android:layout_toLeftOf="@+id/tv_shop_distance"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="#333"
+        />
+
+    <TextView
+        android:id="@+id/tv_shop_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_shop_name"
+        android:textSize="12sp"
+        android:textColor="#FF3636"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_distance"
+        android:layout_alignTop="@id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginRight="13dp"
+        android:text="0.5km"
+        android:textColor="#FFB037"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_shop_category"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_shop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_shop_type"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            />
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_average_consume"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_second_level"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_below="@id/ll_shop_category"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_location" />
+
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_street"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:textColor="#b2b2b2"
+            android:textSize="12sp" />
+
+
+        <View
+            android:visibility="gone"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#e5e5e5"
+            ></View>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ll_second_level"
+        android:id="@+id/ll_third_level"
+        android:layout_toRightOf="@id/iv_shop"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_shop_bussiness_time"
+            android:textColor="#b2b2b2"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:id="@+id/view_divide"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#e5e5e5"
+            ></View>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/divide_bar"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_below="@id/ll_third_level"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ececec"
+        ></View>
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_redpocket"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_below="@id/divide_bar"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_redpocket"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_pokect_discount"
+        android:layout_marginTop="11dp"
+        android:textColor="#b2b2b2"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:layout_below="@id/divide_bar"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_redpocket"
+        />
+
+    <TextView
+        android:id="@+id/iv_discounts"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_below="@id/divide_bar"
+        android:layout_marginTop="12dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:text="券"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:background="@drawable/gradient_up_down_yellow_red_bg"
+        />
+
+    <TextView
+        android:layout_marginBottom="12dp"
+        android:id="@+id/tv_full_discount"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFED4143"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:textSize="12sp"
+        android:layout_below="@id/divide_bar"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/iv_discounts"
+        />
+</RelativeLayout>

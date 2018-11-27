@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_locations" />
+
+
+
+
+    <!--android:layout_toRightOf="@id/tv_bussiness_time"-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_wifi"
+        android:layout_centerVertical="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_corner_situation"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:text="WIFI"
+        android:layout_marginLeft="12dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/tv_location"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/iv_phone_call"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#333"
+        />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_park"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_corner_situation"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:text="停车"
+        android:layout_marginLeft="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_phone_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/icon_phone" />
+
+
+
+</RelativeLayout>

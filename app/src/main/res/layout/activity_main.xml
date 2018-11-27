@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <Button
+        android:text="测试淘宝跳转"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testTbRoute"
+        />
+
+
+    <Button
+        android:text="测试TB商品详情"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testTbGoodsDetail"
+        />
+
+
+    <Button
+        android:text="测试TB店铺"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testTbShop"
+        />
+
 </LinearLayout>

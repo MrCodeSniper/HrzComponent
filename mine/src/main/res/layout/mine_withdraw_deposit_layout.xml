@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:src="@drawable/icon_back_left_toward" />
+
+        <TextView
+            android:id="@+id/tv_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/mine_withdraw_deposit"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_titlebar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="@string/mine_withdraw_deposit_record"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/module_textsize_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/module_divide_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_explantion"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/rl_titlebar"
+        android:background="#FEFCED">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/icon_annouce" />
+
+
+        <TextView
+            android:id="@+id/tv_marquee"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="【提现说明】此处说明文案说明文案说明文案说明文案此处说明文案说明文案说明文案说明文案"
+            android:textColor="#FF7831"
+            android:textSize="@dimen/module_textsize_14sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_close_ellipsize_notice"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/iv_close_explation" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_explantion"
+        android:layout_marginBottom="44dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/withdraw_user_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="12dp">
+
+                <com.gcssloop.widget.RCImageView
+                    android:visibility="gone"
+                    android:id="@+id/withdraw_type_icon_iv"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    app:round_as_circle="false"
+                    app:round_corner="2dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_alipay" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/withdraw_phone_name_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/withdraw_type_icon_iv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/withdraw_user_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18565339976"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/withdraw_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="林美美"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/withdraw_input_des_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请填写提现账号信息"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@id/iv_enter_predict"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/icon_enter_grey"
+                    android:text="24小时内到账"
+                    android:textColor="@color/text_color_blur"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/bg_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_withdraw_deposit_amount"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:src="@drawable/icon_rmb" />
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/et_paycount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="11dp"
+                        android:background="@null"
+                        android:hint="单笔提现限额800"
+                        android:inputType="numberDecimal"
+                        android:maxEms="8"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_color_blur"
+                        android:textSize="28sp" />
+                    <TextView
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_withdraw_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:text="@string/mine_withdraw_deposit_all"
+                        android:textColor="#1296DB"
+                        android:textSize="@dimen/module_textsize_14sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="39px"
+                    android:background="@color/bg_grey"></View>
+
+
+                <TextView
+                    android:id="@+id/withdraw_des_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/mine_withdraw_deposit_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/bg_grey" />
+
+            <include layout="@layout/mine_include_settings_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/mine_withdraw_deposit_notice_info"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/withdraw_notice_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:lineSpacingExtra="5dp"
+                android:text="的发送到发送到发送到发送到的方式发生的发生"
+                android:textColor="@color/text_color_blur"
+                android:textSize="@dimen/module_textsize_14sp" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_withdraw_operation"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/picture_payments" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_withdraw_operation"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_main_color"
+        android:gravity="center"
+        android:text="@string/mine_withdraw_deposit_me"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

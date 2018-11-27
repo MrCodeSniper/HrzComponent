@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/search_hot_title_padding_left"
+    android:paddingStart="@dimen/search_hot_title_padding_left"
+    >
+
+    <View
+        android:id="@+id/search_hot_item_button_title_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_height="1dp"
+        android:background="#ffececec"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_hot_item_button_title_line"
+        android:layout_marginTop="11dp">
+        <TextView
+            android:id="@+id/search_hot_item_button_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/search_hot_title_color"
+            android:textSize="@dimen/search_hot_title_size"
+            android:text="test"/>
+
+        <ImageView
+            android:id="@+id/search_hot_item_button_title_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:src="@drawable/clean_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

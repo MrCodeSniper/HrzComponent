@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/vip_include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_vp_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_styles"
+                android:layout_width="225dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:id="@+id/btn_save"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="56dp"
+                android:background="@drawable/save_button_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:longClickable="true"
+                android:text="保存"
+                android:textColor="#ED4143"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_share"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:longClickable="true"
+                android:text="去分享"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

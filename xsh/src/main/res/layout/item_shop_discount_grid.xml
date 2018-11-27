@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0.5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/cardview"-->
+    <!--android:background="@drawable/shape_cardview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+
+
+
+
+<RelativeLayout
+    android:background="@drawable/shape_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <com.gcssloop.widget.RCImageView
+        app:round_corner_top_left="4dp"
+        app:round_corner_top_right="4dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:id="@+id/iv_shop_icon"
+        android:layout_width="match_parent"
+        android:layout_height="172dp" />
+
+
+
+    <TextView
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:id="@+id/tv_shop_name"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_shop_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_marginLeft="11dp"
+        android:layout_below="@id/tv_shop_name"
+        android:textSize="12sp"
+        android:id="@+id/tv_info"
+        android:layout_marginTop="12dp"
+        android:textColor="#333333"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_shop_name"
+        android:textColor="#b2b2b2"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    
+    
+    
+    <Button
+        android:visibility="gone"
+        android:background="@drawable/btn_get_ticket"
+        android:layout_width="80dp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_height="28dp"
+        android:text="立即领券"
+        />
+
+
+
+    <com.mujirenben.android.common.widget.label.LabelsView
+        android:layout_below="@id/tv_info"
+        android:id="@+id/labels"
+        android:layout_margin="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:labelBackground="@drawable/lable_bg_sku"
+    app:labelTextColor="@color/main_color"
+    app:labelTextSize="12sp"
+    app:labelTextPaddingBottom="2dp"
+    app:labelTextPaddingLeft="4dp"
+    app:labelTextPaddingRight="4dp"
+    app:labelTextPaddingTop="2dp"
+    app:lineMargin="3dp"
+    app:wordMargin="3dp"
+    app:selectType="NONE"
+    app:maxSelect="1" />
+
+
+
+</RelativeLayout>
+
+<!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

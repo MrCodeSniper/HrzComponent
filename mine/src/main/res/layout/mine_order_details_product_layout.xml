@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/mine_order_details_platform_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/platform_name_bg_round"
+            android:text="京东"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp"
+            android:paddingRight="3dp"
+            android:paddingEnd="3dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="#ffed4143"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/mine_order_details_store_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#ff333333"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="店铺名称"/>
+    </LinearLayout>
+
+    <!-- 商品列表 -->
+    <LinearLayout
+        android:id="@+id/mine_order_details_product_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

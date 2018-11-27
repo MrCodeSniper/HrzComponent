@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_titlebar_height"
+    android:id="@+id/rl_titlebar_second_category"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:gravity="center"
+        android:src="@drawable/iconforback"
+        android:padding="7dp"
+        android:layout_width="35dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_second_category"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/common_titlebar_textsize"
+        android:text="页面名称"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_share"
+        android:gravity="center"
+        android:src="@drawable/iconforshare"
+        android:padding="7dp"
+        android:layout_width="35dp"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

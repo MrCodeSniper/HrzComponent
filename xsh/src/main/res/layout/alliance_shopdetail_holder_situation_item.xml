@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/ll_merchant_ticket"
+    android:background="@color/white"
+    android:layout_marginTop="6dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/time_icon" />
+
+
+     <TextView
+         android:id="@+id/tv_bussiness_time"
+         android:layout_centerVertical="true"
+         android:singleLine="true"
+         android:layout_toRightOf="@id/iv_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="14sp"
+         android:textColor="#333"
+         />
+
+
+
+
+
+
+
+
+    <ImageView
+            android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:padding="5dp"
+        android:src="@drawable/icon_enter" />
+
+
+
+</RelativeLayout>

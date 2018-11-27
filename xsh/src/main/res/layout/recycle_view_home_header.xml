@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--app:banner_pointContainerBackground="#ffffffff"-->
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_alliance_home"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:banner_pageChangeDuration="5000"
+            app:banner_pointContainerBackground="@color/transparent"
+            app:banner_pointDrawable="@color/transparent"
+            app:banner_isNumberIndicator="false"
+            app:banner_transitionEffect="defaultEffect" />
+
+        <com.mujirenben.android.common.widget.indicatorLayout.IndicatorLayout
+            android:id="@+id/indicatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="9dp"
+            app:pointSelectedColor="@color/main_color"
+            app:pointSelectedWidth="12dp"
+            app:pointSize="4dp"
+            app:pointUnSelectedColor="@color/white" />
+    </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_position_address"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_lbs"
+                />
+
+
+            <TextView
+                android:id="@+id/alliance_home_city_tv"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:text="设置地址"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_unfold"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_positon_near"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_near"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:text="全部"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_unfold"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_industry_all"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_industry"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:text="全部分类"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_unfold"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_discount"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:background="@drawable/choose_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:text="只看优惠"
+                android:layout_marginLeft="4dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/module_divide_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_nomore"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+
+            android:text="一大批商家正在路上，敬请期待～"
+            android:textColor="@color/black_40"
+            android:drawableTop="@drawable/alliance_img_nothing"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

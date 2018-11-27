@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="discovery_items_gap">8dp</dimen>
+    <dimen name="discovery_items_horizontal_padding">12dp</dimen>
+    <dimen name="discovery_items_image_gutter">5dp</dimen>
+</resources>

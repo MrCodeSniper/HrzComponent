@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="180dp"
+    android:gravity="center"
+    android:background="@drawable/common_toast_bg"
+    android:layout_height="32dp">
+
+
+    <TextView
+        android:id="@+id/toast_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单行文字最多十个文字"
+        android:maxLength="10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/usual_goodsdetail_titlebar_content_list_textsize"
+        />
+
+
+</LinearLayout>

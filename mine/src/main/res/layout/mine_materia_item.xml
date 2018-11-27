@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="140dp">
+
+
+
+ <ImageView
+     android:id="@+id/iv_materia"
+     android:layout_centerVertical="true"
+     android:layout_margin="12dp"
+     android:layout_width="116dp"
+     android:scaleType="fitXY"
+     android:layout_height="116dp" />
+
+
+    <TextView
+        android:id="@+id/show_toast"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="淘宝"
+        android:layout_toRightOf="@+id/iv_materia"
+        android:layout_alignTop="@+id/iv_materia"
+        android:textColor="@color/main_color"
+        android:background="@drawable/plantform_textview"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_descrition_part1"
+        android:layout_alignBaseline="@+id/show_toast"
+        android:layout_toRightOf="@+id/show_toast"
+        android:textSize="@dimen/support_small_button_textsize"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginRight="10dp"
+        android:text="原创设计毛发胎毛手工制作仿宇宙琉璃玻璃球星项坠继续继续继续项坠继续继续继续项坠继续继续继续"
+        />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_descrition_part2"
+        android:layout_below="@+id/show_toast"
+        android:layout_toRightOf="@+id/iv_materia"
+        android:textSize="@dimen/support_small_button_textsize"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="原创设计毛发胎毛手工制作仿宇宙琉璃玻璃球星项坠继续继续继续项坠继续继续继续项坠继续继续继续"
+        />
+
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/iv_materia"
+        android:layout_below="@+id/tv_descrition_part2"
+        android:id="@+id/tv_preprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_blur"
+        android:text="淘宝价: ¥120"
+        android:textSize="@dimen/support_hint_textsize"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/tv_preprice"
+        android:id="@+id/tv_rxtool"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/iv_materia"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:text="券后¥88.04"
+        android:textSize="@dimen/support_hint_textsize"
+        />
+
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_preprice"
+        android:id="@+id/tv_month_sale_amount"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月销:1200"
+        android:textColor="@color/text_color_blur"
+        android:textSize="@dimen/support_hint_textsize"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/tv_month_sale_amount"
+        android:layout_toRightOf="@+id/iv_materia"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/tv_ticket_amount"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/main_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="券 ¥100"
+        android:textSize="@dimen/support_hint_textsize"
+        android:background="@drawable/common_ticket_bg"
+        />
+
+    <Button
+        android:id="@+id/btn_reward"
+        android:text="分享奖励￥10"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/mine_button_share"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/module_textsize_14sp"
+        android:layout_below="@+id/tv_month_sale_amount"
+        android:layout_height="28dp" />
+
+
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/module_divide_line_height"
+       android:layout_alignParentBottom="true"
+       layout="@layout/mine_include_divider_bar_full"/>
+
+
+
+
+</RelativeLayout>

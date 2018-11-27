@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tofu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/module_divide_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_tofu_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff">
+
+
+            <TextView
+                android:id="@+id/tv_tofu_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/index_toufu_daily_limitime"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_toufu_one"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="8dp"
+                />
+
+
+            <com.mujirenben.android.common.widget.campaignview.TimeLimitViewForHome
+                android:id="@+id/miaosha_view"
+                android:layout_width="82dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_tofu_one"
+                android:layout_marginLeft="12dp">
+
+
+            </com.mujirenben.android.common.widget.campaignview.TimeLimitViewForHome>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/module_divide_color" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tofu_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff">
+
+
+            <TextView
+                android:id="@+id/tv_hotsale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/index_toufu_daily_hotsale"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hotsale"
+                android:layout_marginRight="88dp"
+                android:layout_marginLeft="12dp"
+                android:text="日销10万件"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_toufu_two"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="8dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/module_divide_color" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_row_two"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tofu_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="#fff">
+
+
+            <TextView
+                android:id="@+id/tv_buyticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:text="@string/index_toufu_daily_buyticket"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_buyticket"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="88dp"
+                android:text="最高省5千"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_toufu_three"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="8dp"
+              />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/module_divide_color" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tofu_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff">
+
+
+            <TextView
+                android:id="@+id/tv_super_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/index_toufu_daily_costperform"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_subtitle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="88dp"
+                android:layout_below="@+id/tv_super_quality"
+                android:layout_marginLeft="12dp"
+                android:text="品质也可不贵"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_toufu_four"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="8dp"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/module_divide_color" />
+
+
+</LinearLayout>

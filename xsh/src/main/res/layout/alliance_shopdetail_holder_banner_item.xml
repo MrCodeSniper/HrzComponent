@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rl_shopdetail_banner"
+    android:layout_height="wrap_content">
+
+    
+
+
+     <ImageView
+         android:id="@+id/iv_shopdetail_banner"
+         android:layout_width="match_parent"
+         android:layout_height="211dp"
+         android:scaleType="centerCrop"
+         android:background="@color/place_holder_error_color"
+         />
+
+
+
+
+
+     <com.mujirenben.android.common.widget.ExpLayout
+         android:visibility="gone"
+         android:id="@+id/exp_iv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+
+     </com.mujirenben.android.common.widget.ExpLayout>
+
+     <ImageView
+         android:visibility="gone"
+         android:id="@+id/iv_play"
+         android:layout_centerInParent="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/ico_play"
+         />
+
+
+
+</RelativeLayout>

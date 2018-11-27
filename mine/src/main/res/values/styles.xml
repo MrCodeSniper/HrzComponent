@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="mine_order_list_status_tv_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="AppStatusBarTheme" parent="NoMyBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="NoMyBar">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="HrzAppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+    <!-- 收藏头部导航栏 -->
+    <style name="MineProfitCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#ed4143</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextAppearance">@style/MineProfitTabTextAppearance</item>
+        <item name="tabSelectedTextColor">#ed4143</item>
+    </style>
+
+    <style name="MineProfitTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

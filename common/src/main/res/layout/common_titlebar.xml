@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:id="@+id/rl_titlebar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/icon_back_left_toward" />
+    <TextView
+        android:id="@+id/tv_titlebar"
+        android:gravity="center"
+        android:text="联系我们"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+         android:visibility="gone"
+         android:layout_marginRight="11dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:id="@+id/common_titlebar_right_iv"
+         android:layout_width="wrap_content"
+         android:src="@drawable/icon_right"
+         android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_marginRight="11dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/common_titlebar_right_tv"
+        android:layout_width="wrap_content"
+        android:text="测试测试测试"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

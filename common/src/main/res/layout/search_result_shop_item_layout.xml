@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:layout_marginBottom="9dp"
+    android:layout_marginTop="9dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_shop_name"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/ic_luncher" />
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_shop_name"
+        android:text="店铺名称店铺名称"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/frame_button"
+        android:paddingBottom="6dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="6dp"
+        android:text="进入店铺"
+        android:textColor="@color/main_color"
+        android:textSize="12sp"
+
+        />
+</RelativeLayout>

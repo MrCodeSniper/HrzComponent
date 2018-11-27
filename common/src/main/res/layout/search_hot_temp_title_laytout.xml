@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/search_hot_title_padding_top"
+    android:paddingBottom="@dimen/search_hot_title_padding_bottom"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/search_hot_title_padding_left"
+    android:paddingStart="@dimen/search_hot_title_padding_left"
+    >
+
+    <TextView
+        android:id="@+id/search_hot_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/search_hot_title_color"
+        android:textSize="@dimen/search_hot_title_size"/>
+
+</LinearLayout>

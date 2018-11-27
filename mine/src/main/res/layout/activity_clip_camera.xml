@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.mujirenben.mine.mvp.ui.view.ClipCamera
+        android:id="@+id/surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <com.mujirenben.mine.mvp.ui.view.CameraScanLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <FrameLayout
+            android:layout_above="@+id/btn_shoot"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/camera_scan_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:background="@drawable/picture_square"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+                android:layout_gravity="right"
+               android:layout_marginRight="26dp"
+               android:id="@+id/sign_guo_hui"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="23dp"
+               android:src="@drawable/sign_guohui" />
+
+           <ImageView
+               android:id="@+id/sign_head_picture"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom|right"
+               android:layout_marginBottom="15dp"
+               android:layout_marginRight="42dp"
+               android:src="@drawable/sign_headpicture" />
+
+           <TextView
+               android:id="@+id/tv_hint"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:rotation="90"
+               android:text="请将头像面放到框内，并调整好光线"
+               android:textColor="#FFFFA935"
+               android:textSize="15sp" />
+       </FrameLayout>
+        <ImageView
+            android:layout_above="@+id/camera_scan_fl"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="32dp"
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_camera_close" />
+        <ImageView
+            android:layout_marginBottom="23dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_shoot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/icon_camera_take" />
+    </com.mujirenben.mine.mvp.ui.view.CameraScanLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_module_spec"
+    android:layout_marginBottom="0.5dp"
+    android:layout_height="44dp">
+
+    <View
+        android:layout_marginLeft="12dp"
+        android:background="@color/module_divide_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+    <TextView
+        android:padding="12dp"
+        android:textColor="@color/text_color_blur"
+        android:textSize="@dimen/module_textsize_14sp"
+        android:text="规格"
+        android:gravity="center"
+        android:id="@+id/tv_param_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+
+    <TextView
+        android:layout_toRightOf="@id/tv_param_name"
+        android:id="@+id/tv_description"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+
+        />
+'
+
+
+    <ImageView
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_reback"
+        android:layout_height="match_parent" />
+    
+    
+
+
+
+
+
+</RelativeLayout>

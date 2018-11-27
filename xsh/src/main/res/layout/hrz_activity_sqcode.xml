@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include android:id="@+id/ll_common_bar" layout="@layout/common_titlebar"/>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/ll_common_bar"
+        android:id="@+id/rl_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.gcssloop.widget.RCImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="50dp"
+        app:round_as_circle="true"
+        android:src="@drawable/ic_luncher"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:text="Hi,[]"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/tv_name"
+        android:text="邀请您入驻红人装商家，共享千万级用户流量"
+        android:textColor="@color/black_40"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  <ImageView
+      android:id="@+id/iv_code"
+      android:layout_below="@+id/tv_title"
+      android:layout_width="180dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/dockCode"
+            android:textColor="@color/black_40"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iv_code"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_zhu"
+            android:textColor="@color/black_40"
+            android:text="不方便扫一扫二维码，您可以分享邀请码"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/dockCode"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_bew"
+        android:textColor="@color/black_40"
+        android:text="商家长按打开小程序即可入驻"
+        android:textSize="12sp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/tv_zhu"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/rl_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:text="保存图片"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/hrz_activity_newtheam_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_share"
+            android:text="分享图片"
+            android:layout_toRightOf="@+id/tv_save"
+            android:layout_alignBottom="@+id/tv_save"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/hrz_activity_newtheam_bg"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_watch"
+        android:layout_below="@+id/ll_bg"
+        android:text="查看我对接的店"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/hrz_activity_newtheam_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

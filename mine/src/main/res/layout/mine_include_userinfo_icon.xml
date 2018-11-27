@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_userinfo_icon"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/module_textsize_14sp" />
+
+
+    <com.gcssloop.widget.RCImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/iv_mine_enter_icon"
+        android:id="@+id/iv_users_icon"
+        app:round_as_circle="true"
+        android:layout_centerVertical="true"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/iv_user_default_icon"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_mine_enter_icon"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mine_enter_mark"
+        />
+
+
+</RelativeLayout>

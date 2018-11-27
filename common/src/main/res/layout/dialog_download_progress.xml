@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_template"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_template"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="正在下载安装包"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <ProgressBar
+            android:id="@+id/pb_dowload"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:maxHeight="12dp"
+            android:minHeight="12dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp" />
+
+        <TextView
+            android:id="@+id/tv_state_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:text="0.78M/56M"
+            android:textColor="#B2B2B2"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_left_action"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/item_background"
+                android:gravity="center"
+                android:text="取消下载"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:id="@+id/textView10"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#ECECEC" />
+
+            <TextView
+                android:id="@+id/tv_right_action"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/item_background"
+                android:gravity="center"
+                android:text="后台下载"
+                android:textColor="#ED4143"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

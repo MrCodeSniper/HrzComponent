@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/vip_header_login_income_ll"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/vip_header_crown_income_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="209dp">
+        <TextView
+            android:id="@+id/vip_header_login_next_make_income_text_tv"
+            android:textColor="@color/golden_light_color"
+            android:layout_marginTop="130dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:text="@string/vip_header_login_next_level_make_income_text"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/vip_header_login_next_make_income_num_tv"
+            android:layout_marginBottom="18dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text=""
+            android:textColor="@color/golden_light_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/vip_header_login_income_border_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/vip_header_crown_border_bg" />
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="111dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/vip_header_login_fan_level_layout"/>
+        <LinearLayout
+            android:layout_marginRight="19dp"
+            android:layout_marginLeft="19dp"
+            android:background="@drawable/white_round_bg"
+            android:layout_width="match_parent"
+            android:layout_height="121dp">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/gray_border_bg"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/vip_header_login_make_income_text_tv"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/vip_header_login_make_income_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/vip_header_login_make_income_num_tv"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:textSize="25sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/vip_header_login_goto_update_tv"
+        android:layout_marginBottom="97dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/vip_header_login_goto_update_text"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/light_yellow_gradient_bg"
+        android:layout_width="wrap_content"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="8dp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="#171E4B"
+        android:layout_height="39dp" />
+</FrameLayout>

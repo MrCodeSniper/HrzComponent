@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+   android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="50dp"
+    android:layout_height="wrap_content">
+
+
+    <include layout="@layout/alliance_shopdetail_holder_banner_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_shopname_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_info_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_shoppics_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_situation_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_location_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_ticket_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_menu_item"/>
+    <include layout="@layout/alliance_shopdetail_holder_shopticket_item"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+

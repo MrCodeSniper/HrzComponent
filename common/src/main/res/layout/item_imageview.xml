@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_avatar"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content">
+
+
+
+
+    </ImageView>
+</FrameLayout>
+    <!--当设置为fitXY时，虽然ImageView显示那么点尺寸，但是，但是Glide加载图片时，却是以全分辨率加载的，于是加载几张，就OOM了-->

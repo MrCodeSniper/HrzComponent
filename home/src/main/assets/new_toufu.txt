@@ -1,0 +1,53 @@
+{
+    "code": "00000",
+    "message": null,
+    "success": true,
+    "data": [
+        {
+            "id": 3,
+            "sequence": 1,
+            "title": "超级购物劵",
+            "subtitle": "最高能省5000元",
+            "url": "hrzrouter:\/\/hrzapp\/h5\/homepage\/activity?url=http:\/\/47.106.21.23:8890\/dist\/index.h
+tml?id%3d3%26test%3dtesturlencode%20%0a#\/Discounts&titleName=活动页面",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/1f73b8b3-4562-414a-8400-76b2bc1797f5.png",
+            "startTime": 1533225600,
+            "endTime": 1535126400,
+            "flag": 1
+        },
+        {
+            "id": 2,
+            "sequence": 2,
+            "title": "热卖榜单",
+            "subtitle": "日销10万件",
+            "url": "hrzrouter:\/\/hrzapp\/h5\/homepage\/activity?url=http:\/\/47.106.21.23:8890\/dist\/index.h
+tml?id=2#\/HotSale&titleName=活动页面",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-08\/24d2f428-374b-4704-8d8a-137570a500e6.png",
+            "startTime": 1533052800,
+            "endTime": 1537372800,
+            "flag": 1
+        },
+        {
+            "id": 4,
+            "sequence": 3,
+            "title": "超级性价比",
+            "subtitle": "品质也可以不贵",
+            "url": "https:\/\/www.jingdong.com\/",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-21\/711bd0cd-5a59-440c-a6f8-b581a4a7ee26.jpg",
+            "startTime": 1534089600,
+            "endTime": 1538150400,
+            "flag": 0
+        },
+        {
+            "id": 1,
+            "sequence": 4,
+            "title": "限时秒",
+            "subtitle": "史上最低价",
+            "url": "http:\/\/www.baidu.com",
+            "img": "http:\/\/imgcdn.tlgn365.com\/2018-07-20\/532ab65a-687f-4cab-b932-49aeb1c1d402.png",
+            "startTime": 1534608000,
+            "endTime": 1538236800,
+            "flag": 1
+        }
+    ]
+}

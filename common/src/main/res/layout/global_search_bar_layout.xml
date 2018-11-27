@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/search_main_back_btn"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_back" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:background="@drawable/search_editext_shape_bg">
+
+        <ImageView
+            android:id="@+id/search_platform_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/search_platform_all_small" />
+
+        <EditText
+            android:layout_toLeftOf="@+id/search_input_delete_iv"
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_toRightOf="@+id/search_platform_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#ACACAC"
+            android:textCursorDrawable="@null"
+            android:hint="试试优惠券"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:background="#00ffffff" />
+
+        <!--android:ellipsize="marquee"-->
+        <!--android:layout_toEndOf="@+id/search_platform_iv"-->
+        <!--android:scrollHorizontally="true"-->
+        <!--android:marqueeRepeatLimit="marquee_forever"-->
+
+        <ImageView
+            android:id="@+id/search_input_delete_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete_icon"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+           />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_query_tv"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="@string/commmon_text_search"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/view_padding"
+        android:visibility="gone"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

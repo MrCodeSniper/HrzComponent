@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.gcssloop.widget.RCImageView
+        android:layout_margin="16dp"
+        android:id="@+id/iv_users_icon"
+        app:round_as_circle="true"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/ic_luncher"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_sender"
+        android:layout_alignTop="@+id/iv_users_icon"
+        android:layout_toRightOf="@+id/iv_users_icon"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:text="红人装小编"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/tv_sender"
+        android:layout_toRightOf="@+id/iv_users_icon"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/module_textsize_14sp"
+        android:id="@+id/tv_sendtime"
+        android:textColor="@color/text_color_blur"
+        android:text="06.09发布"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <Button
+        android:id="@+id/btn_resend"
+        android:text="一键发圈"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/mine_button_share"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/module_textsize_14sp"
+        android:layout_below="@+id/tv_month_sale_amount"
+        android:layout_height="28dp" />
+
+
+    <TextView
+        android:id="@+id/tv_send_msg"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/iv_users_icon"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红人装淘宝拉新陆续到账啦!晒单实在太火爆!感恩努力的你们!好产品，好平台，好事业，每一份努力在红人装都不会白费"
+        android:textSize="16sp"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/fl_fill"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/tv_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/rv_images"
+            android:scaleType="fitXY"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_type_two"
+            android:layout_height="173dp">
+
+
+            <ImageView
+                android:layout_marginRight="2.5dp"
+                android:id="@+id/iv_type_two_of_one"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+
+            <ImageView
+                android:id="@+id/iv_type_two_of_two"
+                android:layout_marginLeft="2.5dp"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_type_third"
+            android:layout_height="114dp">
+
+
+            <ImageView
+                android:layout_marginRight="2.5dp"
+                android:id="@+id/iv_type_three_of_one"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+
+            <ImageView
+                android:id="@+id/iv_type_three_of_two"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_type_three_of_three"
+                android:layout_marginLeft="2.5dp"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_type_four"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginBottom="2.5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="173dp">
+
+                <ImageView
+                    android:layout_marginRight="2.5dp"
+                    android:id="@+id/iv_type_four_of_one"
+                    android:layout_width="0dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+
+                <ImageView
+                    android:id="@+id/iv_type_four_of_two"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_width="0dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2.5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="173dp">
+
+                <ImageView
+                    android:layout_marginRight="2.5dp"
+                    android:id="@+id/iv_type_four_of_three"
+                    android:layout_width="0dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+
+                <ImageView
+                    android:id="@+id/iv_type_four_of_four"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_width="0dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_recommend_sendtime"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/fl_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推荐早上9点发朋友圈"
+        android:textColor="@color/text_color_blur"
+        android:textSize="@dimen/module_textsize_14sp"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="193dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:banner_pointContainerBackground="@color/transparent"
+            app:banner_pointDrawable="@color/transparent" />
+
+        <com.mujirenben.android.common.widget.indicatorLayout.IndicatorLayout
+            android:id="@+id/indicatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="9dp"
+            app:pointSelectedColor="@color/main_color"
+            app:pointSelectedWidth="12dp"
+            app:pointSize="4dp"
+            app:pointUnSelectedColor="@color/white" />
+    </FrameLayout>
+</LinearLayout>

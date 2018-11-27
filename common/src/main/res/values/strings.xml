@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">HrzNew</string>
+
+    <string name="commmon_text_cancel">取消</string>
+    <string name="commmon_text_search">搜索</string>
+
+    <string name="loading_text">加载中…</string>
+
+    <item name="tag_key_data" type="id"/>
+    <item name="tag_key_position" type="id"/>
+
+    <string name="back_texts">返回</string>
+    <string name="shop_name">[商家名字]</string>
+    //base adapter
+    <string name="loading">正在加载中...</string>
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+    <string name="show_details_open_weixin">打开微信</string>
+    //pull to refresh
+    <string name="cube_ptr_pull_down">Pull Down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull Down to Refresh</string>
+    <string name="cube_ptr_release_to_refresh">Release To Refresh</string>
+    <string name="cube_ptr_refreshing">Updating...</string>
+    <string name="cube_ptr_refresh_complete">Updated.</string>
+
+    <string name="cube_ptr_last_update">last update:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;seconds ago</string>
+    <string name="cube_ptr_minutes_ago">&#160;minutes ago</string>
+    <string name="cube_ptr_hours_ago">&#160;hours ago</string>
+
+    <string name="nearOverText">即将售罄</string>
+    <string name="overText">已售罄</string>
+
+    <string name="saveQrCode">保存图片</string>
+
+
+    <string name="index_menu_tb">淘宝xx</string>
+    <string name="index_menu_jd">京东xx</string>
+    <string name="index_menu_mgj">蘑菇街xx</string>
+    <string name="index_menu_vip">唯品汇xx</string>
+    <string name="index_menu_hrz">红人装xx</string>
+    <string name="index_toufu_daily_limitime">限时秒杀</string>
+    <string name="index_toufu_daily_hotsale">热卖榜单</string>
+    <string name="index_toufu_daily_buyticket">超级购物券</string>
+    <string name="index_toufu_daily_costperform">超级性价比</string>
+
+
+    <string name="index_toufu_newuser_newuserprice">新人专享</string>
+    <string name="index_toufu_newuser_pinorder">凑单更划算</string>
+    <string name="index_toufu_newuser_registergift">注册大礼包</string>
+    <string name="index_toufu_newuser_bigreward">助力大奖</string>
+
+    <string name="text_grid_postfee">全场包邮</string>
+
+    <string name="text_card_type">品质乐享生活</string>
+
+    <string name="text_qrcode_hint_one">将二维码/条码放入框内即可自动扫描</string>
+
+    <string name="text_qrcode_hint_two">即可自动扫描</string>
+
+    <string name="my_invite_qrcode">我的邀请码</string>
+    <string name="qrcode_text">扫一扫</string>
+    <string name="alblum_text">相册</string>
+    <string name="back_text">返回</string>
+    <string name="touch_light_text">轻触照亮</string>
+
+    <string name="add_family">扫一扫上面的二维码图案,加入我们家族吧</string>
+
+    <string name="clothes">服饰</string>
+    <string name="funiture">家居</string>
+    <string name="food">美食</string>
+    <string name="life">生活</string>
+    <string name="more">更多</string>
+
+    <!-- 登录相关 -->
+    <string name="login_weixin_error">微信登录失败</string>
+    <string name="data_error_msg">数据获取失败，错误码：%s</string>
+    <string name="jd_share_text">发现了一个不错的商品赶紧来看看吧</string>
+    <string name="click_change_platform">点击切换商品来源</string>
+    <string name="hrz_save_str">本次红人装为你省</string>
+
+</resources>

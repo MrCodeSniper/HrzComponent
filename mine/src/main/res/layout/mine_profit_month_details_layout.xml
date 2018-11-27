@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mine_profit_month_layout_bg"
+    android:padding="1dp">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mine_profit_month_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="5月累计收益"/>
+    <View
+        android:layout_height="1dp"
+        android:background="#ececec"
+        android:layout_width="match_parent"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:orientation="horizontal"
+           >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人购物奖励(元)"
+                    android:textColor="@color/mine_profit_text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/mine_profit_personal_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/settings_main_text_color"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_height="match_parent"
+                android:background="#ececec"
+                android:layout_width="1dp"></View>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动奖励(元)"
+                    android:textColor="@color/mine_profit_text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/mine_profit_activity_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/settings_main_text_color"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:background="#ececec"
+            android:layout_width="match_parent"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:orientation="horizontal"
+           >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="皇冠奖励(元)"
+                    android:textColor="@color/mine_profit_text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/mine_profit_level_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/settings_main_text_color"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_height="match_parent"
+                android:background="#ececec"
+                android:layout_width="1dp"></View>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺总收益(元)"
+                    android:textColor="@color/mine_profit_text_color"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/mine_profit_shop_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/settings_main_text_color"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/mine_profit_reward_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺服务费奖励￥--"
+                    android:textColor="#ffed4143"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
