@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hrz.push" >
+
+
+    <application>
+
+        <service
+            android:name=".HrzPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+
+
+
+
+        <!-- OPPO辅助 SDK -->
+        <meta-data
+            android:name="OPPOPUSH_APPKEY"
+            android:value="OP_${OPPO_APP_KEY}" />
+        <meta-data
+            android:name="OPPOPUSH_APPSECRET"
+            android:value="OP_${OPPO_APP_SECRET}" />
+        <service android:name="com.igexin.sdk.OppoPushService"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+
+</manifest>

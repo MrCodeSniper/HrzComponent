@@ -1,0 +1,28 @@
+apply plugin: 'maven'
+
+configurations {
+    deployerJars
+}
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://192.168.1.130:8081/repository/hrz/") {
+                authentication(userName: "admin", password: "admin123")
+            }
+            pom.project {
+                name 'poplayer'
+                version '1.0.0'
+                artifactId 'poplayer'
+                groupId 'com.hdyl.hrz'
+                packaging 'aar'
+                description 'library for android'
+            }
+        }
+    }
+}
+

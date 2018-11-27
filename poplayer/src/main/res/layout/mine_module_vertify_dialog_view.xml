@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:background="@drawable/rectangle_bg_4dp_corner"
+    android:layout_height="189dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#333"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:text="操作过于频繁，请输入验证码"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/rectangle_bg_4dp_corner"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+
+        <EditText
+            android:id="@+id/et_vertify_code"
+            android:layout_width="0dp"
+            android:background="#F4F4F4"
+            android:hint="请输入验证码"
+            android:layout_weight="14"
+            android:maxEms="4"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/view_capture"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:background="#b2b2b2"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    
+    
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:text="换一张验证码"
+        android:layout_marginBottom="15dp"
+        android:textSize="12sp"
+        android:textColor="#b2b2b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ececec"
+        />
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       android:layout_height="0dp">
+
+     <TextView
+         android:id="@+id/tv_cancle"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:text="取消"
+         android:gravity="center"
+         android:textColor="#333"
+         android:textSize="14sp"
+         android:layout_height="match_parent" />
+
+       <View
+           android:layout_width="0.5dp"
+           android:layout_height="match_parent"
+           android:background="#ececec"
+           ></View>
+
+       <TextView
+           android:id="@+id/tv_sure"
+           android:layout_width="0dp"
+           android:textColor="#ed4143"
+           android:gravity="center"
+           android:text="确定"
+           android:textSize="14sp"
+           android:layout_weight="1"
+           android:layout_height="match_parent" />
+
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</FrameLayout>

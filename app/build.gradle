@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        if(rootProject.ext.isAppRelease){
+            applicationId "com.mujirenben.liangchenbufu"
+        }else{
+            applicationId "com.hrz.hrzcomponent"
+        }
+
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters 'arm64-v8a', 'x86'
+        }
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "nqy4tTY3Ll9wjGXH5dVfy",
+                GETUI_APP_KEY   : "X2TkcDXvYf8E21iscznZe8",
+                GETUI_APP_SECRET: "SJD365uu6G9ujuwdpeRKt4",
+                HUAWEI_APP_ID   : "10479720",
+                MEIZU_APP_ID    : "115161",
+                MEIZU_APP_KEY   : "211e62cd0cbf4a4092bf0d866c3f0b57",
+                XIAOMI_APP_ID   : "2882303761517452861",
+                XIAOMI_APP_KEY  : "5961745236861",
+                OPPO_APP_KEY    : "1d7b8L95Z6Jo4o0G0ssGks840",
+                OPPO_APP_SECRET : "d4a1F22C436374fAec6948088C537042"
+        ]
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias '良辰布服'
+            keyPassword '123456'
+            storeFile file('../liangchebufu.jks')
+            storePassword '123456'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.hdyl.hrz:poplayer:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
