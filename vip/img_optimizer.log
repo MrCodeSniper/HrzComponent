@@ -1,0 +1,164 @@
+2018-11-30 23:44:11  info:  Task optimizeVipRelease begin:
+----------------------------------------
+2018-11-30 23:44:11  info:  78 images need to be optimized.
+----------------------------------------
+2018-11-30 23:44:12  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_income_ten_star_bg.png
+----------------------------------------
+2018-11-30 23:44:12  info:  Succeed! 4255B-->1848B, 56.56874% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_activity_bg.png
+----------------------------------------
+2018-11-30 23:44:12  info:  Succeed! 24191B-->23720B, 1.947005% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/shopkeeper_upgrade_privilege.png
+----------------------------------------
+2018-11-30 23:44:12  info:  Succeed! 64760B-->30618B, 52.720814% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/exclusive_shop_remain_bg.png
+----------------------------------------
+2018-11-30 23:44:12  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_incom_crown_bg.png
+----------------------------------------
+2018-11-30 23:44:13  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_income_five_star_bg.png
+----------------------------------------
+2018-11-30 23:44:13  info:  Succeed! 95442B-->94242B, 1.2573081% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_login_normal_bg.png
+----------------------------------------
+2018-11-30 23:44:13  info:  Succeed! 765B-->663B, 13.333333% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_lbs.png
+----------------------------------------
+2018-11-30 23:44:13  info:  Succeed! 787B-->492B, 37.484116% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/choose_unselect.png
+----------------------------------------
+2018-11-30 23:44:14  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_income_shop_bg.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 1971B-->1438B, 27.04211% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/announce_icon.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 1829B-->1133B, 38.05358% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_crown_qrcode.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 9032B-->4146B, 54.096546% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_privilege_2.png
+----------------------------------------
+2018-11-30 23:44:14  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/triangle_icon_press.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 2050B-->1429B, 30.292683% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_upgrade_privilege_4.png
+----------------------------------------
+2018-11-30 23:44:14  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_income_fan_bg.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 1878B-->1693B, 9.850905% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_upgrade_privilege_5.png
+----------------------------------------
+2018-11-30 23:44:14  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/triangle_icon_normal.png
+----------------------------------------
+2018-11-30 23:44:14  info:  Succeed! 2159B-->1810B, 16.16489% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_question_mark.png
+----------------------------------------
+2018-11-30 23:44:15  info:  Succeed! 9886B-->4231B, 57.202103% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_privilege_3.png
+----------------------------------------
+2018-11-30 23:44:15  info:  Succeed! 12358B-->5132B, 58.472244% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_privilege_1.png
+----------------------------------------
+2018-11-30 23:44:15  info:  Succeed! 1013B-->625B, 38.302074% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_trophy.png
+----------------------------------------
+2018-11-30 23:44:15  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/share_make_bg.png
+----------------------------------------
+2018-11-30 23:44:15  info:  Succeed! 3164B-->2053B, 35.11378% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_upgrade_privilege_2.png
+----------------------------------------
+2018-11-30 23:44:15  info:  Succeed! 2882B-->1940B, 32.685635% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_upgrade_privilege_3.png
+----------------------------------------
+2018-11-30 23:44:15  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/make_income_fifteen_star_bg.png
+----------------------------------------
+2018-11-30 23:44:15  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_enter.png
+----------------------------------------
+2018-11-30 23:44:16  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/crow_upgrade_privilege.png
+----------------------------------------
+2018-11-30 23:44:16  info:  Succeed! 3377B-->2078B, 38.466095% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_crown_upgrade_privilege_1.png
+----------------------------------------
+2018-11-30 23:44:16  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_huangguan.png
+----------------------------------------
+2018-11-30 23:44:16  info:  Succeed! 4150B-->1643B, 60.409637% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/sign_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:16  info:  Succeed! 6628B-->3386B, 48.9137% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_number_2.png
+----------------------------------------
+2018-11-30 23:44:16  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/shopkeeper_upgrade_other_privilege.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 53176B-->49446B, 7.0144424% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_login_crown_bg.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 1075B-->699B, 34.976746% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_school_crown.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 5885B-->3075B, 47.748512% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_number_1.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 3544B-->977B, 72.43228% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_crown_border_bg.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 23382B-->8661B, 62.958687% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_shop_privilege_bg.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 801B-->636B, 20.59925% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_select.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 18452B-->6522B, 64.654236% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_shop_star.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 3535B-->992B, 71.93777% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_normal_border_bg.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 3378B-->1693B, 49.881588% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/recommend_icon.png
+----------------------------------------
+2018-11-30 23:44:17  info:  Succeed! 5593B-->2253B, 59.717503% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/exclusive_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:18  info:  Succeed! 100342B-->47315B, 52.846264% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/college_bg.png
+----------------------------------------
+2018-11-30 23:44:18  info:  Succeed! 930B-->692B, 25.591398% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_study.png
+----------------------------------------
+2018-11-30 23:44:18  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/shopkeeper_privilege.png
+----------------------------------------
+2018-11-30 23:44:18  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_fensi.png
+----------------------------------------
+2018-11-30 23:44:18  info:  Succeed! 2882B-->1940B, 32.685635% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_fans_upgrade_privilege_3.png
+----------------------------------------
+2018-11-30 23:44:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/shopkeeper_upgrade_method.png
+----------------------------------------
+2018-11-30 23:44:19  info:  Succeed! 249B-->221B, 11.24498% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_unfold.png
+----------------------------------------
+2018-11-30 23:44:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_sanjiaoxing.png
+----------------------------------------
+2018-11-30 23:44:19  info:  Succeed! 603B-->444B, 26.368158% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/ic_yaowan.png
+----------------------------------------
+2018-11-30 23:44:19  info:  Succeed! 3164B-->2053B, 35.11378% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_fans_upgrade_privilege_2.png
+----------------------------------------
+2018-11-30 23:44:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/fan_header_bg.png
+----------------------------------------
+2018-11-30 23:44:19  info:  Succeed! 3117B-->2109B, 32.338787% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/fan_icon.png
+----------------------------------------
+2018-11-30 23:44:19  info:  Succeed! 1596B-->1019B, 36.15288% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_normal_qrcode.png
+----------------------------------------
+2018-11-30 23:44:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_header_shop_login_bg.png
+----------------------------------------
+2018-11-30 23:44:20  info:  Succeed! 2046B-->1454B, 28.934505% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/phone_icon.png
+----------------------------------------
+2018-11-30 23:44:20  info:  Succeed! 3377B-->2078B, 38.466095% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_fans_upgrade_privilege_1.png
+----------------------------------------
+2018-11-30 23:44:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/fans_upgrade_privilege.png
+----------------------------------------
+2018-11-30 23:44:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/poster1.png
+----------------------------------------
+2018-11-30 23:44:21  info:  Succeed! 902B-->454B, 49.667404% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/shop_keeper_icon.png
+----------------------------------------
+2018-11-30 23:44:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/vip_pull_activity_new_bg.png
+----------------------------------------
+2018-11-30 23:44:21  info:  Succeed! 2223B-->1784B, 19.748089% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/crown_icon.png
+----------------------------------------
+2018-11-30 23:44:21  info:  Succeed! 3070B-->1984B, 35.37459% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/icon_fans_upgrade_privilege_4.png
+----------------------------------------
+2018-11-30 23:44:22  info:  Succeed! 4074B-->1506B, 63.033875% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/college_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/poster3.png
+----------------------------------------
+2018-11-30 23:44:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xhdpi/poster2.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 2596B-->1701B, 34.476116% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-xxhdpi/vip_header_qrocode.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 22889B-->14598B, 36.22264% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/blur_bg.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 1954B-->1689B, 13.561924% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/announce_icon.png
+----------------------------------------
+2018-11-30 23:44:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/triangle_icon_press.png
+----------------------------------------
+2018-11-30 23:44:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/triangle_icon_normal.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 58639B-->25573B, 56.38909% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/college_icon.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 6899B-->3706B, 46.28207% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/sign_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 10266B-->5021B, 51.09098% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/exclusive_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:23  info:  Succeed! 58639B-->25573B, 56.38909% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/college_bg.png
+----------------------------------------
+2018-11-30 23:44:24  info:  Succeed! 7407B-->3864B, 47.83313% saved! /Users/mac/Desktop/HrzComponent/vip/src/main/res/drawable-hdpi/college_icon_bg.png
+----------------------------------------
+2018-11-30 23:44:24  info:  Total: 78, Succeed: 52, Skipped: 26, Failed: 0, Saved: 257.041015625KB
+----------------------------------------
+2018-11-30 23:44:24  info:  Task optimizeVipRelease executed successfully.
+----------------------------------------
