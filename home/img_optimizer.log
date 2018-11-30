@@ -1,0 +1,64 @@
+2018-11-30 23:41:01  info:  Task optimizeHomeRelease begin:
+----------------------------------------
+2018-11-30 23:41:01  info:  28 images need to be optimized.
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 13269B-->6248B, 52.912804% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_index_menu_vip.png
+----------------------------------------
+2018-11-30 23:41:02  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/scan_selected.png
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 7510B-->4148B, 44.76698% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_index_menu_mgj.png
+----------------------------------------
+2018-11-30 23:41:02  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/scan_default.png
+----------------------------------------
+2018-11-30 23:41:02  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/microphone.png
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 6597B-->3733B, 43.413673% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_index_menu_hrz.png
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 1797B-->941B, 47.63495% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_new_gender_select.png
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 2393B-->1847B, 22.816547% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/search_icon.png
+----------------------------------------
+2018-11-30 23:41:02  info:  Succeed! 1629B-->1361B, 16.45181% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_activity_small_bg.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 165858B-->46283B, 72.0948% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/new_user_service.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 1687B-->396B, 76.526375% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_activity_quan_icon.png
+----------------------------------------
+2018-11-30 23:41:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/advisory_common.png
+----------------------------------------
+2018-11-30 23:41:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/advisory_default.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 13857B-->5934B, 57.17688% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_index_menu_jd.png
+----------------------------------------
+2018-11-30 23:41:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/advisory_selected.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 1037B-->965B, 6.943105% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/home_tag_decorator_right.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 489B-->300B, 38.650307% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/bg_ticket.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 7290B-->3566B, 51.083675% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/title_background.png
+----------------------------------------
+2018-11-30 23:41:03  info:  Succeed! 10455B-->5574B, 46.685795% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_index_menu_tb.png
+----------------------------------------
+2018-11-30 23:41:04  info:  Succeed! 171881B-->52512B, 69.44863% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/toufu_2.png
+----------------------------------------
+2018-11-30 23:41:04  info:  Succeed! 985B-->957B, 2.8426397% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/home_tag_decorator_left.png
+----------------------------------------
+2018-11-30 23:41:04  info:  Succeed! 1835B-->945B, 48.50136% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_activity_jd_icon.png
+----------------------------------------
+2018-11-30 23:41:04  info:  Succeed! 1905B-->705B, 62.992126% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_dangqianfan.png
+----------------------------------------
+2018-11-30 23:41:04  info:  Succeed! 4709B-->2632B, 44.10703% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/hrz_me_fensi_icon.png
+----------------------------------------
+2018-11-30 23:41:05  info:  Succeed! 144105B-->52083B, 63.857605% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xhdpi/toufu_1.png
+----------------------------------------
+2018-11-30 23:41:05  info:  Succeed! 2766B-->2191B, 20.788141% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xxhdpi/home_tag_decorator_right.png
+----------------------------------------
+2018-11-30 23:41:05  info:  Succeed! 943B-->570B, 39.55461% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xxhdpi/bg_ticket.png
+----------------------------------------
+2018-11-30 23:41:05  info:  Succeed! 2584B-->2087B, 19.233746% saved! /Users/mac/Desktop/HrzComponent/home/src/main/res/drawable-xxhdpi/home_tag_decorator_left.png
+----------------------------------------
+2018-11-30 23:41:05  info:  Total: 28, Succeed: 22, Skipped: 6, Failed: 0, Saved: 360.9404296875KB
+----------------------------------------
+2018-11-30 23:41:05  info:  Task optimizeHomeRelease executed successfully.
+----------------------------------------
