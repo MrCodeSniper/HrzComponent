@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/535938854e2c206081b3fe25442b49b9/jars/classes.jar
+FILE.hash=b16d6f097e58557d795d47120cdea459daa3cd25375fffce2e0e9d7fbfb41add
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.hdyl.alliance.utils.jcvideolib.JCVideoPlayerStandard
+    <com.mujirenben.android.xsh.utils.jcvideolib.JCVideoPlayerStandard
         android:id="@+id/custom_videoplayer_standard"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

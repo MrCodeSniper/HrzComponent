@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/modules-2/files-2.1/com.taobao.android/mtopsdk_allinone_open/1.2.2.4/6572b3342d7412f86a41193a8570dab8bc096b7b/mtopsdk_allinone_open-1.2.2.4.jar
+FILE.hash=04a790e2845c9e79201bdf72f09a481ea4a4dbbf20fe90c25b6d4b50455ebb1e
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

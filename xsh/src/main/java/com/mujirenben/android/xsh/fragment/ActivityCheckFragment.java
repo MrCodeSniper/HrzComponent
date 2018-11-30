@@ -288,17 +288,7 @@ public class ActivityCheckFragment extends BaseFragment implements View.OnClickL
     
     private void setLocationPicker(){
         if(pvLocation==null){
-            pvLocation = new OptionsPickerView.Builder(getActivity(), new OptionsPickerView.OnOptionsSelectListener() {
-                @Override
-                public void onOptionsSelect(int options1, int option2, int options3, View v) {
-                    //返回的分别是三个级别的选中位置
-                    String tx = provItems.get(options1).getPickerViewText();
-                    provinceStr = tx;
-                    shop_area.setText(tx + "");
-                    getCity(provItems.get(options1).getNum());
-
-                }
-            }).build();
+            pvLocation = new OptionsPickerView.Builder(getActivity(), new LocationPickerCallback()).build();
         }
 
         pvLocation.setPicker(provItems);
@@ -311,17 +301,7 @@ public class ActivityCheckFragment extends BaseFragment implements View.OnClickL
 
     private void setCityPicker(){
         if(pvCity==null){
-            pvCity = new OptionsPickerView.Builder(getActivity(), new OptionsPickerView.OnOptionsSelectListener() {
-                @Override
-                public void onOptionsSelect(int options1, int option2, int options3, View v) {
-                    //返回的分别是三个级别的选中位置
-                    String tx = cityItems.get(options1).getPickerViewText();
-                    shop_area.append(tx + "");
-                    cityStr = tx;
-                    cityid = cityItems.get(options1).getCityid();
-
-                }
-            }).build();
+            pvCity = new OptionsPickerView.Builder(getActivity(), new CityPickerCallback()).build();
         }
 
         pvCity.setPicker(cityItems);
@@ -450,17 +430,7 @@ public class ActivityCheckFragment extends BaseFragment implements View.OnClickL
 
     private void setInstryPicker() {
         if(pvIndustry==null){
-            pvIndustry = new OptionsPickerView.Builder(getActivity(), new OptionsPickerView.OnOptionsSelectListener() {
-                @Override
-                public void onOptionsSelect(int options1, int option2, int options3, View v) {
-                    //返回的分别是三个级别的选中位置
-                    String tx = options1Items.get(options1).getPickerViewText()
-                            + options2Items.get(options1).get(option2).getName();
-                    shop_worker.setText(tx + "");
-                    industryid = options2Items.get(options1).get(option2).getId();
-                    getShopdata();
-                }
-            }).build();
+            pvIndustry = new OptionsPickerView.Builder(getActivity(),new CheckOptionCallback()).build();
         }
 
         pvIndustry.setPicker(options1Items, options2Items);
@@ -566,6 +536,43 @@ public class ActivityCheckFragment extends BaseFragment implements View.OnClickL
             TextView msgTv = mToast.getView().findViewById(R.id.common_toast_msg_tv);
             msgTv.setText(message+"");
             mToast.show();
+        }
+    }
+
+
+    class LocationPickerCallback implements OptionsPickerView.OnOptionsSelectListener {
+        @Override
+        public void onOptionsSelect(int options1, int options2, int options3, View v) {
+            //返回的分别是三个级别的选中位置
+            String tx = cityItems.get(options1).getPickerViewText();
+            shop_area.append(tx + "");
+            cityStr = tx;
+            cityid = cityItems.get(options1).getCityid();
+        }
+    }
+
+
+    class CityPickerCallback implements OptionsPickerView.OnOptionsSelectListener {
+        @Override
+        public void onOptionsSelect(int options1, int options2, int options3, View v) {
+            //返回的分别是三个级别的选中位置
+            String tx = cityItems.get(options1).getPickerViewText();
+            shop_area.append(tx + "");
+            cityStr = tx;
+            cityid = cityItems.get(options1).getCityid();
+        }
+    }
+
+
+    class CheckOptionCallback implements OptionsPickerView.OnOptionsSelectListener {
+        @Override
+        public void onOptionsSelect(int options1, int options2, int options3, View v) {
+            //返回的分别是三个级别的选中位置
+            String tx = options1Items.get(options1).getPickerViewText()
+                    + options2Items.get(options1).get(options2).getName();
+            shop_worker.setText(tx + "");
+            industryid = options2Items.get(options1).get(options2).getId();
+            getShopdata();
         }
     }
 

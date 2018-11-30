@@ -39,7 +39,9 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-
+/**
+ * TODO 对接店铺列表 缺少java接口
+ */
 public class MyLinkStoreListActivity extends BaseActivity implements View.OnClickListener, LinkListAdapter.LinkItemActionListener ,XRecyclerView.LoadingListener{
 	private XRecyclerView mRecyclerView;
 	private LinkListAdapter mAdapter;

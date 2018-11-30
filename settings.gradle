@@ -1,1 +1,1 @@
-include ':app', ':poplayer', ':push', ':thirdsdk', ':common', ':discovery', ':home', ':vip', ':mine', ':xsh'
+include ':app', ':poplayer', ':push', ':thirdsdk', ':common', ':discovery', ':home', ':vip', ':mine', ':xsh', ':kefu'

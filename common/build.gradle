@@ -45,8 +45,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api 'com.hdyl.hrz:thirdsdk:1.0.0'
-    api 'com.hdyl.hrz:poplayer:1.0.0'
+    implementation 'com.hdyl.hrz:thirdsdk:1.0.2'
+    implementation 'com.hdyl.hrz:poplayer:1.0.0'
 
 
 

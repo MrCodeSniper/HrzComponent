@@ -1,0 +1,28 @@
+apply plugin: 'maven'
+
+configurations {
+    deployerJars
+}
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://"+rootProject.ext.nexusAddress+":8081/repository/hrz/") {
+                authentication(userName: "admin", password: "admin123")
+            }
+            pom.project {
+                name 'kefu'
+                version '1.0.0'
+                artifactId 'kefu'
+                groupId 'com.hdyl.hrz'
+                packaging 'aar'
+                description 'library for android'
+            }
+        }
+    }
+}
+

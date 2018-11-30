@@ -177,7 +177,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <com.mujirenben.vip.mvp.ui.widget.ResizableImageView
+            <com.mujirenben.android.vip.mvp.ui.widget.ResizableImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
@@ -235,7 +235,7 @@
                     android:src="@drawable/icon_question_mark" />
             </LinearLayout>
 
-            <com.mujirenben.vip.mvp.ui.widget.ResizableImageView
+            <com.mujirenben.android.vip.mvp.ui.widget.ResizableImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
@@ -266,7 +266,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <com.mujirenben.vip.mvp.ui.widget.ResizableImageView
+            <com.mujirenben.android.vip.mvp.ui.widget.ResizableImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"

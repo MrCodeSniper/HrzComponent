@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatUI</string>
+    <string name="kefu_send_not_empty">发送内容不能为空</string>
+    <string name="kefu_delete_dialog_title">提示</string>
+    <string name="kefu_delete_dialog_content">是否清空所有的聊天记录</string>
+    <string name="kefu_transfer_kefu_fail_text">转人工客服失败,请重试</string>
+    <string name="kefu_delete_dialog_okay_text">确定</string>
+</resources>

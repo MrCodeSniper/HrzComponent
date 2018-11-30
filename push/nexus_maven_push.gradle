@@ -11,7 +11,7 @@ repositories {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "http://192.168.1.101:8081/repository/hrz/") {
+            repository(url: "http://"+rootProject.ext.nexusAddress+":8081/repository/hrz/") {
                 authentication(userName: "admin", password: "admin123")
             }
             pom.project {

@@ -10,8 +10,9 @@ import android.content.Context;
 import android.util.Log;
 
 
+import com.jd.jdsdk.R;
 import com.mujirenben.android.thirdsdk.PackageUtils;
-import com.ch.android.thirdsdk.R;
+
 import com.kepler.jd.Listener.AsyncInitListener;
 import com.kepler.jd.Listener.OpenAppAction;
 import com.kepler.jd.login.KeplerApiManager;

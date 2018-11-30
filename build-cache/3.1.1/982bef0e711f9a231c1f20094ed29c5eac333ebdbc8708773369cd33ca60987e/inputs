@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9127c4a09012e9ebdfe81863cfe37313/jars/classes.jar
+FILE.hash=a303eb3d1c39bc0a81815986bcbf32279ddfc811e8b5366f380d3a074fdb8eef
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

@@ -1,2 +1,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mujirenben.android.vip" />
+    package="com.mujirenben.android.vip" >
+
+    <application>
+
+        <activity
+            android:name=".mvp.ui.activity.MyFanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <activity
+            android:name=".mvp.ui.activity.ShopKeeperRenewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.VipQrCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.VipShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme">
+        </activity>
+
+
+        <activity
+            android:name=".mvp.ui.activity.VipUpgradeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme">
+        </activity>
+
+
+
+    </application>
+
+
+
+</manifest>

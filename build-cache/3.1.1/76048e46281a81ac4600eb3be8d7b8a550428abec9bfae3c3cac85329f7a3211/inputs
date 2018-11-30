@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/alibabauth_ui-1.2.1.aar/cba1d3412a851a3c793fb8006f8b5995/jars/classes.jar
+FILE.hash=1dabdf48f2fb588c66a2a360e1ef8110c475144de0129af08ca0c82b2d7c0bda
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=true

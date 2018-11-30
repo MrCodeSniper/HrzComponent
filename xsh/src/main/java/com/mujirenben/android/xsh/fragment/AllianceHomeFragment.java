@@ -443,42 +443,7 @@ public class AllianceHomeFragment extends BaseFragment {
         distanceList.add(new DistanceEntity("3km-4km"));
         distanceList.add(new DistanceEntity(">4km"));
         //条件选择器
-        OptionsPickerView pvOptions = new OptionsPickerView.Builder(getActivity(), (options1, option2, options3, v) -> {
-            //返回的分别是三个级别的选中位置
-            postion = options1;
-            String tx = distanceList.get(options1).getPickerViewText();
-            switch (postion) {
-                case 1:
-                    tv_near.setText(tx + "");
-                    break;
-                case 2:
-                    tv_near.setText("0.5km-1km");
-                    break;
-                case 3:
-                    tv_near.setText("1km-2km");
-                    break;
-                case 4:
-                    tv_near.setText("2km-3km");
-                    break;
-                case 5:
-                    tv_near.setText("3km-4km");
-                    break;
-                case 6:
-                    tv_near.setText(">4km");
-                    break;
-                case 0:
-                    tv_near.setText("全部");
-                    break;
-
-            }
-            page = 1;
-
-            tv_near.setText(distanceList.get(postion).getDistance());
-
-            request_first_page(discount);
-
-
-        }).setBackgroundId(0xa0000000).build();
+        OptionsPickerView pvOptions = new OptionsPickerView.Builder(getActivity(),new OptionPickerCallback(distanceList)).setBackgroundId(0xa0000000).build();
         pvOptions.setPicker(distanceList);
         pvOptions.show();
     }
@@ -980,6 +945,53 @@ public class AllianceHomeFragment extends BaseFragment {
                             ArmsUtils.makeText(getActivity(),"未授权权限，定位功能不能使用");
                         }
                     });
+        }
+    }
+
+
+    class OptionPickerCallback implements OptionsPickerView.OnOptionsSelectListener {
+
+        private List<DistanceEntity> mDistanceList;
+
+
+        public OptionPickerCallback(List<DistanceEntity> distanceList) {
+            this.mDistanceList=distanceList;
+        }
+
+        @Override
+        public void onOptionsSelect(int options1, int options2, int options3, View v) {
+            //返回的分别是三个级别的选中位置
+            postion = options1;
+            String tx = mDistanceList.get(options1).getPickerViewText();
+            switch (postion) {
+                case 1:
+                    tv_near.setText(tx + "");
+                    break;
+                case 2:
+                    tv_near.setText("0.5km-1km");
+                    break;
+                case 3:
+                    tv_near.setText("1km-2km");
+                    break;
+                case 4:
+                    tv_near.setText("2km-3km");
+                    break;
+                case 5:
+                    tv_near.setText("3km-4km");
+                    break;
+                case 6:
+                    tv_near.setText(">4km");
+                    break;
+                case 0:
+                    tv_near.setText("全部");
+                    break;
+
+            }
+            page = 1;
+
+            tv_near.setText(mDistanceList.get(postion).getDistance());
+
+            request_first_page(discount);
         }
     }
 }

@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/modules-2/files-2.1/com.ali.auth.sdk/alibabauth_ext/1.2.1/48d40ed323d51271b7a46e61dbe2622434a4f85c/alibabauth_ext-1.2.1.jar
+FILE.hash=496ae114005778503fac60bf499950fe716abfc430f53caa2814feb33e503575
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=true

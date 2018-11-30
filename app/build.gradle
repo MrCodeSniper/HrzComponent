@@ -59,7 +59,7 @@ android {
 
         ndk {
             //根据需要 自行选择添加的对应cpu类型的.so库。
-            abiFilters 'arm64-v7a', 'x86'
+            abiFilters 'arm64-v7a', 'x86','armeabi','arm64-v8a'
         }
 
 
@@ -87,7 +87,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug{
-            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -97,18 +96,24 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation project(":discovery")
-    api 'com.hdyl.hrz:poplayer:1.0.0@aar'
-    api 'com.hdyl.hrz:hrz_push:1.0.0'
-    api 'com.hdyl.hrz:thirdsdk:1.0.0'
-    api 'com.hdyl.hrz:resource:1.0.0@aar'
-    api 'com.hdyl.hrz:home:1.0.0@aar'
-    api 'com.hdyl.hrz:qrcode:1.0.0@aar'
-    api 'com.hdyl.hrz:discovery:1.0.0@aar'
-    api 'com.hdyl.hrz:common:1.0.1'
-    api 'com.hdyl.hrz:vip:1.0.0@aar'
-    api 'com.hdyl.hrz:mine:1.0.0@aar'
-    api 'com.hdyl.hrz:xsh:1.0.0@aar'
+//    implementation project(":discovery")
+//    api 'com.hdyl.hrz:poplayer:1.0.0@aar'
+//    api 'com.hdyl.hrz:hrz_push:1.0.0'
+//    api 'com.hdyl.hrz:thirdsdk:1.0.0'
+//    api 'com.hdyl.hrz:resource:1.0.0@aar'
+//    api 'com.hdyl.hrz:home:1.0.0@aar'
+//    api 'com.hdyl.hrz:qrcode:1.0.0@aar'
+//    api 'com.hdyl.hrz:discovery:1.0.1@aar'
+//    api 'com.hdyl.hrz:common:1.0.1'
+//    api 'com.hdyl.hrz:vip:1.0.0@aar'
+//    api 'com.hdyl.hrz:mine:1.0.0@aar'
+//    api 'com.hdyl.hrz:xsh:1.0.0@aar'
+
+
+      implementation project(":thirdsdk")
+
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

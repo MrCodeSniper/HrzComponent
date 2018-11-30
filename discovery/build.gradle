@@ -38,8 +38,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    implementation 'com.hdyl.hrz:common:1.0.0'
-    implementation project(":common")
+    implementation 'com.hdyl.hrz:common:1.0.1'
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
     implementation 'com.android.support:gridlayout-v7:27.1.1'

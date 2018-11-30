@@ -1,5 +1,126 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mujirenben.android.mine" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mujirenben.android.mine">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+   
+
+    <application>
+
+        <activity
+            android:name=".mvp.ui.activity.WithdrawDepositActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.SelfRunOrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <activity
+            android:name=".mvp.ui.activity.ShipAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.WithdrawDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.MaterialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <activity
+            android:name=".mvp.ui.activity.WithdrawRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+        <activity
+            android:name=".mvp.ui.activity.ProfitDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.NotificationSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.SaveShipAddressActivitity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+        <activity
+            android:name=".mvp.ui.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+        <activity
+            android:name=".mvp.ui.activity.SettingsWebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.SmsCodeVerifyActivity"
+            android:theme="@style/myTransparent" />
+
+        <activity
+            android:name=".mvp.ui.activity.AboutHrzActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <!-- 绑定手机页面 -->
+        <activity
+            android:name=".mvp.ui.activity.BindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+
+        <activity
+            android:name=".mvp.ui.activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".mvp.ui.activity.CouponsReceiveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.InviteCodeWritingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <activity
+            android:name=".mvp.ui.activity.InviteCodeExistedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".mvp.ui.activity.OrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+        <activity
+            android:launchMode="singleTop"
+            android:name=".mvp.ui.activity.LoginHrzActivity"
+            android:theme="@style/myTransparent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+    </application>
 </manifest>

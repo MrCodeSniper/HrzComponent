@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/alibc_trade_biz-3.1.1.99.aar/04f547de1206ef3679afef555ada875d/jars/classes.jar
+FILE.hash=2b4acdc4376ea4427688af4fb72ad364791936a33163f79e0d750c4c1fea7cc9
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

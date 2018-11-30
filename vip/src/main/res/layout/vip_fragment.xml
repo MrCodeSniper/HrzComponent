@@ -17,7 +17,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.mujirenben.vip.mvp.ui.widget.VipRefreshLayout
+        <com.mujirenben.android.vip.mvp.ui.widget.VipRefreshLayout
             android:id="@+id/vip_refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/bg_grey_1"/>
-        </com.mujirenben.vip.mvp.ui.widget.VipRefreshLayout>
+        </com.mujirenben.android.vip.mvp.ui.widget.VipRefreshLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"

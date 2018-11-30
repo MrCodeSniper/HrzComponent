@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.alibaba.baichuan.android.trade.AlibcTrade;
 import com.alibaba.baichuan.android.trade.AlibcTradeSDK;
+import com.alibaba.baichuan.android.trade.callback.AlibcTradeCallback;
 import com.alibaba.baichuan.android.trade.callback.AlibcTradeInitCallback;
 import com.alibaba.baichuan.android.trade.model.AlibcShowParams;
 import com.alibaba.baichuan.android.trade.model.OpenType;
@@ -65,7 +66,7 @@ public class AlibabaSDK {
     /**
      * 显示店铺
      */
-    public static void showShop(Activity activity,String shopId,HrzTradeCallback hrzTradeCallback) {
+    public static void showShop(Activity activity,String shopId,AlibcTradeCallback hrzTradeCallback) {
         AlibcBasePage alibcBasePage=new AlibcShopPage(shopId);
         AlibcTrade.show(activity, alibcBasePage, alibcShowParams, alibcTaokeParams, exParams , hrzTradeCallback);
     }
@@ -74,7 +75,7 @@ public class AlibabaSDK {
     /**
      * 商品详情页
      */
-    public static void showGoodsDetail(Activity activity,String goodsId,HrzTradeCallback hrzTradeCallback){
+    public static void showGoodsDetail(Activity activity,String goodsId,AlibcTradeCallback hrzTradeCallback){
         AlibcBasePage alibcBasePage=new AlibcDetailPage(goodsId);
         AlibcTrade.show(activity,alibcBasePage, alibcShowParams, alibcTaokeParams, exParams , hrzTradeCallback);
     }
@@ -82,7 +83,7 @@ public class AlibabaSDK {
     /**
      * 添加到购物车(可行)
      */
-    public static void addToCart(Activity activity,String goodsId,HrzTradeCallback hrzTradeCallback){
+    public static void addToCart(Activity activity,String goodsId,AlibcTradeCallback hrzTradeCallback){
         AlibcBasePage alibcBasePage=new AlibcAddCartPage(goodsId);
         AlibcTrade.show(activity, alibcBasePage, alibcShowParams, alibcTaokeParams, exParams , hrzTradeCallback);
     }
@@ -92,7 +93,7 @@ public class AlibabaSDK {
     /**
      * 打开指定链接  打开web页面
      */
-    public static void routeUrl(Activity activity,String url,HrzTradeCallback hrzTradeCallback){
+    public static void routeUrl(Activity activity,String url,AlibcTradeCallback hrzTradeCallback){
         AlibcTrade.show(activity, new AlibcPage(url), alibcShowParams, null, exParams ,hrzTradeCallback);
     }
 

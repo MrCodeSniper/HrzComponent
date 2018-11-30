@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/b9b918961cb6addeaffef6bd325db129/jars/classes.jar
+FILE.hash=2f30923c711a7f7c4c400bd00a3fac8baec5858293fccf6bbd08f4e38faeb692
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mujirenben.android.kefu" >
+
+
+    <application>
+
+
+        <!-- 九宫格图片页面 -->
+        <activity
+            android:name="com.mujirenben.kefu.ui.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <!-- 客服页面 -->
+        <activity
+            android:name="com.mujirenben.kefu.ui.activity.KeFuChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <!-- 录视频页面 -->
+        <activity
+            android:name="com.mujirenben.kefu.ui.activity.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <!-- 显示文件页面 -->
+        <activity
+            android:name="com.mujirenben.kefu.ui.activity.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+        <!-- 视频播放页面 -->
+        <activity
+            android:name="com.mujirenben.kefu.ui.activity.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+    </application>
+
+
+</manifest>

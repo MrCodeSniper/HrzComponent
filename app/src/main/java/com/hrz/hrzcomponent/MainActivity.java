@@ -4,11 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.alibaba.baichuan.trade.biz.context.AlibcTradeResult;
-import com.ch.android.resource.PreloadStrategy;
+import com.mujirenben.liangchenbufu.R;
 
-import com.mujirenben.android.discovery.mvp.ui.activity.ImageBrowseActivity;
-import com.mujirenben.android.home.mvp.ui.activity.MyCapturesActivity;
 
 public class MainActivity extends AppCompatActivity {
 

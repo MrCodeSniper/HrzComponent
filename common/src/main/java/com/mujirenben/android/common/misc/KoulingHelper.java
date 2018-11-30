@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.alibaba.baichuan.android.trade.callback.AlibcTradeCallback;
 import com.alibaba.baichuan.trade.biz.context.AlibcTradeResult;
 import com.bumptech.glide.Glide;
 
@@ -47,6 +49,9 @@ import com.mujirenben.android.common.util.rxtools.RxTextTool;
 import com.mujirenben.android.common.util.sensorHelper.SensorHelper;
 import com.mujirenben.android.common.util.wxHelper.ShareDialogHelper;
 import com.mujirenben.android.common.util.wxHelper.WeiXinHelper;
+import com.mujirenben.android.common.util.wxHelper.listener.OnClickLinkListener;
+import com.mujirenben.android.common.util.wxHelper.listener.OnClickSessionListener;
+import com.mujirenben.android.common.util.wxHelper.listener.OnClickTimeLineListener;
 import com.mujirenben.android.common.widget.DialogUtils;
 import com.mujirenben.android.common.widget.JdPopDialog;
 import com.mujirenben.android.common.widget.dialog.LinkPlatformPopDialog;
@@ -56,7 +61,6 @@ import com.mujirenben.android.common.widget.dialog.dialogpopmanager.bean.BuildBe
 import com.mujirenben.android.common.widget.dialog.dialogpopmanager.utils.DialogManager;
 import com.mujirenben.android.thirdsdk.JdSdk.JdSdkRouter;
 import com.mujirenben.android.thirdsdk.alibabaSDK.AlibabaSDK;
-import com.mujirenben.android.thirdsdk.alibabaSDK.HrzTradeCallback;
 
 
 import org.greenrobot.eventbus.EventBus;
@@ -386,96 +390,102 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
         TextView buyTV = dialogView.findViewById(R.id.tv_buy);
         ImageView closeIV = dialogView.findViewById(R.id.iv_close);
 
-        closeIV.setOnClickListener(v -> {
-            if (buildBean != null && buildBean.dialog != null) {
-                buildBean.dialog.dismiss();
-                clearTaoKouLingInClipBoard();
-            }
-
-            writeSensorData("关闭");
-        });
-
-        buyTV.setOnClickListener(v -> {
-
-            LoginDataManager ldm = LoginDataManager.getsInstance(mContext);
-            if (ldm.isLogin()) {
-                if (koulingBean.getData().getIdType() == 2) { // 第三方商品，直接跳转
-                    requestTaobaoLink(activity, koulingBean);
-                } else {
-                    Bundle bundle = new Bundle();
-                    bundle.putString(Consts.PLATFORM_ID_INTENT_STR, data.getPlatform() + "");
-                    bundle.putString(Consts.GOODS_ID_INTENT_STR, data.getId() + "");
-                    ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
-                            .withBundle(Consts.HRZ_ROUTER_BUNDLE, bundle)
-                            .navigation(activity);
-                }
+        closeIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 if (buildBean != null && buildBean.dialog != null) {
                     buildBean.dialog.dismiss();
                     clearTaoKouLingInClipBoard();
                 }
-                mText = null;
-            } else {
-                if (koulingBean.getData().getIdType() == 2) {
-                    ARouter.getInstance()
-                            .build(ARouterPaths.LOGIN_MAIN_MINE)
-                            .withString(Consts.LOGIN_SOURCE_KEY, "淘口令")
-                            .withInt("request_code", LoginStatusEvent.LOGIN_REQUEST_CODE_KOULING_BUY)
-                            .navigation(mContext);
-                } else {
-                    Bundle bundle = new Bundle();
-                    bundle.putString(Consts.PLATFORM_ID_INTENT_STR, data.getPlatform() + "");
-                    bundle.putString(Consts.GOODS_ID_INTENT_STR, data.getId() + "");
-                    ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
-                            .withBundle(Consts.HRZ_ROUTER_BUNDLE, bundle)
-                            .navigation(activity);
-                }
-            }
 
-            writeSensorData("购买");
+                writeSensorData("关闭");
+            }
+        });
+
+        buyTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LoginDataManager ldm = LoginDataManager.getsInstance(mContext);
+                if (ldm.isLogin()) {
+                    if (koulingBean.getData().getIdType() == 2) { // 第三方商品，直接跳转
+                        requestTaobaoLink(activity, koulingBean);
+                    } else {
+                        Bundle bundle = new Bundle();
+                        bundle.putString(Consts.PLATFORM_ID_INTENT_STR, data.getPlatform() + "");
+                        bundle.putString(Consts.GOODS_ID_INTENT_STR, data.getId() + "");
+                        ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
+                                .withBundle(Consts.HRZ_ROUTER_BUNDLE, bundle)
+                                .navigation(activity);
+                    }
+                    if (buildBean != null && buildBean.dialog != null) {
+                        buildBean.dialog.dismiss();
+                        clearTaoKouLingInClipBoard();
+                    }
+                    mText = null;
+                } else {
+                    if (koulingBean.getData().getIdType() == 2) {
+                        ARouter.getInstance()
+                                .build(ARouterPaths.LOGIN_MAIN_MINE)
+                                .withString(Consts.LOGIN_SOURCE_KEY, "淘口令")
+                                .withInt("request_code", LoginStatusEvent.LOGIN_REQUEST_CODE_KOULING_BUY)
+                                .navigation(mContext);
+                    } else {
+                        Bundle bundle = new Bundle();
+                        bundle.putString(Consts.PLATFORM_ID_INTENT_STR, data.getPlatform() + "");
+                        bundle.putString(Consts.GOODS_ID_INTENT_STR, data.getId() + "");
+                        ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
+                                .withBundle(Consts.HRZ_ROUTER_BUNDLE, bundle)
+                                .navigation(activity);
+                    }
+                }
+
+                writeSensorData("购买");
+            }
         });
 
         //分享按钮
-        shareToProfitTV.setOnClickListener(v -> {
+        shareToProfitTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                writeSensorData("分享");
 
-            writeSensorData("分享");
 
+                LoginDataManager ldm = LoginDataManager.getsInstance(mContext);
+                if (ldm.isLogin()) {
+                    generateKouling(koulingBean, new Callback() {
+                        @Override
+                        public void onKoulingGenerated(String kouling, String shareUrl) {
+                            ArrayList<String> imgs = new ArrayList<>();
+                            imgs.add(data.getImg());
+                            showShareDialog(
+                                    activity,
+                                    shareUrl,
+                                    koulingType,
+                                    kouling,
+                                    data.getCommission(),
+                                    GoodsUtil.getPlatformById(data.getPlatform()),
+                                    data.getName(),
+                                    data.getOrgPrice(),
+                                    data.getOrgPrice() - data.getCoupon(),
+                                    data.getCoupon(),
+                                    imgs);
+                        }
+                    });
 
-            LoginDataManager ldm = LoginDataManager.getsInstance(mContext);
-            if (ldm.isLogin()) {
-                generateKouling(koulingBean, new Callback() {
-                    @Override
-                    public void onKoulingGenerated(String kouling, String shareUrl) {
-                        ArrayList<String> imgs = new ArrayList<>();
-                        imgs.add(data.getImg());
-                        showShareDialog(
-                                activity,
-                                shareUrl,
-                                koulingType,
-                                kouling,
-                                data.getCommission(),
-                                GoodsUtil.getPlatformById(data.getPlatform()),
-                                data.getName(),
-                                data.getOrgPrice(),
-                                data.getOrgPrice() - data.getCoupon(),
-                                data.getCoupon(),
-                                imgs);
+                    if (buildBean != null && buildBean.dialog != null) {
+                        buildBean.dialog.dismiss();
                     }
-                });
 
-                if (buildBean != null && buildBean.dialog != null) {
-                    buildBean.dialog.dismiss();
+                    mText = null;
+
+                } else {
+                    ARouter.getInstance()
+                            .build(ARouterPaths.LOGIN_MAIN_MINE)
+                            .withString(Consts.LOGIN_SOURCE_KEY, "淘口令")
+                            .withInt("request_code", LoginStatusEvent.LOGIN_REQUEST_CODE_KOULING_SHARE)
+                            .navigation(mContext);
                 }
-
-                mText = null;
-
-            } else {
-                ARouter.getInstance()
-                        .build(ARouterPaths.LOGIN_MAIN_MINE)
-                        .withString(Consts.LOGIN_SOURCE_KEY, "淘口令")
-                        .withInt("request_code", LoginStatusEvent.LOGIN_REQUEST_CODE_KOULING_SHARE)
-                        .navigation(mContext);
             }
-
         });
 
 
@@ -519,9 +529,12 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
 //
 //                }
 //            });
-            buildBean.dialog.setOnDismissListener(dialog -> {
-                clearTaoKouLingInClipBoard();
-                com.orhanobut.logger.Logger.e("淘口令弹窗dismiss");
+            buildBean.dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialog) {
+                    clearTaoKouLingInClipBoard();
+                    com.orhanobut.logger.Logger.e("淘口令弹窗dismiss");
+                }
             });
         }
 
@@ -572,10 +585,13 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
             mLoadingToast = null;
         }
 
-        mHandler.post(() -> {
-            buildBean=DialogUIUtils.showKoulingErrorDialog(activity,null);
-            buildBean.setmLevel(5);
-            DialogManager.getInstance().pushToQueue(buildBean);
+        mHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                buildBean=DialogUIUtils.showKoulingErrorDialog(activity,null);
+                buildBean.setmLevel(5);
+                DialogManager.getInstance().pushToQueue(buildBean);
+            }
         });
     }
 
@@ -603,69 +619,79 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
         ShareDialogHelper.getBuilder(activity1)
                 .setDialogTitle("标题")
                 .setDialogContent("内容")
-                .setOnLinkListener(() -> {
-                    ClipData data1 = ClipData.newPlainText(null, kouling);
-                    if (mCm != null) {
-                        mCm.setPrimaryClip(data1);
+                .setOnLinkListener(new OnClickLinkListener() {
+                    @Override
+                    public void onClick() {
+                        ClipData data1 = ClipData.newPlainText(null, kouling);
+                        if (mCm != null) {
+                            mCm.setPrimaryClip(data1);
+                        }
+
+                        ArmsUtils.makeText(mContext, "复制成功");
+                    }
+                })
+                .setOnSessionListener(new OnClickSessionListener() {
+                                          @Override
+                                          public void onClick() {
+                                              if (platform == Const.Platform.JD) {
+                                                  WeiXinHelper.getBuilder(mContext)
+                                                          .setWebPageUrl(kouling)
+                                                          .setTitle(goodsName)
+                                                          .setWebPageThumbPath(imageUrls.get(0))
+                                                          .setDescription(activity1.getString(R.string.jd_share_text))
+                                                          .build()
+                                                          .shareWebPageTo(WeiXinHelper.ShareToType.SESSION);
+                                              } else {
+                                                  ARouter.getInstance().build(ARouterPaths.GOODS_SHARE)
+                                                          .withInt("type", 0)
+                                                          .withBoolean("is_taokouling", true)
+                                                          .withBoolean("joint_share_style", true)
+                                                          .withString("taokouling", kouling)
+                                                          .withStringArrayList("image_urls", imageUrls)
+                                                          .withFloat("commission", commission)
+                                                          .withString("label", label)
+                                                          .withString("goods_name", goodsName)
+                                                          .withFloat("pre_price", prePrice)
+                                                          .withFloat("after_price", afterPrice)
+                                                          .withFloat("coupons", coupons)
+                                                          .withString("qr_code_url", shareUrl)
+                                                          .withFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                                          .navigation(mContext);
+                                              }
+                                          }
+                                      }
+                )
+                .setOnTimeLineListener(new OnClickTimeLineListener() {
+                    @Override
+                    public void onClick() {
+                        if (platform == Const.Platform.JD || platform==Const.Platform.MGJ || platform == Const.Platform.VIP) {
+                            WeiXinHelper.getBuilder(mContext)
+                                    .setWebPageUrl(kouling)
+                                    .setTitle(goodsName)
+                                    .setWebPageThumbPath(imageUrls.get(0))
+                                    .setDescription(activity1.getString(R.string.jd_share_text))
+                                    .build()
+                                    .shareWebPageTo(WeiXinHelper.ShareToType.TIMELINE);
+                        } else {
+                            ARouter.getInstance().build(ARouterPaths.GOODS_SHARE)
+                                    .withInt("type", 1)
+                                    .withBoolean("is_taokouling", true)
+                                    .withBoolean("joint_share_style", true)
+                                    .withString("taokouling", kouling)
+                                    .withStringArrayList("image_urls", imageUrls)
+                                    .withFloat("commission", commission)
+                                    .withString("label", label)
+                                    .withString("goods_name", goodsName)
+                                    .withFloat("pre_price", prePrice)
+                                    .withFloat("after_price", afterPrice)
+                                    .withFloat("coupons", coupons)
+                                    .withString("qr_code_url", shareUrl)
+                                    .withFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                    .navigation(mContext);
+                        }
                     }
 
-                    ArmsUtils.makeText(mContext, "复制成功");
-                })
-                .setOnSessionListener(() -> {
-                            if (platform == Const.Platform.JD) {
-                                WeiXinHelper.getBuilder(mContext)
-                                        .setWebPageUrl(kouling)
-                                        .setTitle(goodsName)
-                                        .setWebPageThumbPath(imageUrls.get(0))
-                                        .setDescription(activity1.getString(R.string.jd_share_text))
-                                        .build()
-                                        .shareWebPageTo(WeiXinHelper.ShareToType.SESSION);
-                            } else {
-                                ARouter.getInstance().build(ARouterPaths.GOODS_SHARE)
-                                        .withInt("type", 0)
-                                        .withBoolean("is_taokouling", true)
-                                        .withBoolean("joint_share_style", true)
-                                        .withString("taokouling", kouling)
-                                        .withStringArrayList("image_urls", imageUrls)
-                                        .withFloat("commission", commission)
-                                        .withString("label", label)
-                                        .withString("goods_name", goodsName)
-                                        .withFloat("pre_price", prePrice)
-                                        .withFloat("after_price", afterPrice)
-                                        .withFloat("coupons", coupons)
-                                        .withString("qr_code_url", shareUrl)
-                                        .withFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                        .navigation(mContext);
-                            }
-                        }
-                )
-                .setOnTimeLineListener(() -> {
-                            if (platform == Const.Platform.JD || platform==Const.Platform.MGJ || platform == Const.Platform.VIP) {
-                                WeiXinHelper.getBuilder(mContext)
-                                        .setWebPageUrl(kouling)
-                                        .setTitle(goodsName)
-                                        .setWebPageThumbPath(imageUrls.get(0))
-                                        .setDescription(activity1.getString(R.string.jd_share_text))
-                                        .build()
-                                        .shareWebPageTo(WeiXinHelper.ShareToType.TIMELINE);
-                            } else {
-                                ARouter.getInstance().build(ARouterPaths.GOODS_SHARE)
-                                        .withInt("type", 1)
-                                        .withBoolean("is_taokouling", true)
-                                        .withBoolean("joint_share_style", true)
-                                        .withString("taokouling", kouling)
-                                        .withStringArrayList("image_urls", imageUrls)
-                                        .withFloat("commission", commission)
-                                        .withString("label", label)
-                                        .withString("goods_name", goodsName)
-                                        .withFloat("pre_price", prePrice)
-                                        .withFloat("after_price", afterPrice)
-                                        .withFloat("coupons", coupons)
-                                        .withString("qr_code_url", shareUrl)
-                                        .withFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                        .navigation(mContext);
-                            }
-                        }
+    }
                 )
                 .build()
                 .showDialog(false);
@@ -730,7 +756,7 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
             if (goodTaobaoLinkResult.getData() == null || goodTaobaoLinkResult.getData().getClickUrl() == null)
                 return;
             new Handler(Looper.getMainLooper()).postDelayed(() -> AlibabaSDK.routeUrl(
-                    activity1, goodTaobaoLinkResult.getData().getClickUrl(), new HrzTradeCallback() {
+                    activity1, goodTaobaoLinkResult.getData().getClickUrl(), new AlibcTradeCallback() {
                         @Override
                         public void onTradeSuccess(AlibcTradeResult alibcTradeResult) {
 

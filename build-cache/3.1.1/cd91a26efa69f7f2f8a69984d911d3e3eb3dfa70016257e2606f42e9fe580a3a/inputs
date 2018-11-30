@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9694049ad1be23e6143f1f2efc2a009e/jars/classes.jar
+FILE.hash=fd925c5d2d0d96766660a79595472ee681a04affc487bc87af9b3e42a9c051f4
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

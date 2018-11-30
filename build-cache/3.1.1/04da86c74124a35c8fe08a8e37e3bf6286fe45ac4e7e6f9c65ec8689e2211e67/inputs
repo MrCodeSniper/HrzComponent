@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/modules-2/files-2.1/com.taobao.android/utdid4all/1.1.5.3_proguard/989c3bb13060da1e3154bfe00236f76453a2725f/utdid4all-1.1.5.3_proguard.jar
+FILE.hash=063d440591cbe5a07a9c48f35146bc20f17550323eaaf2c89752e9b92a7deeb7
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

@@ -43,7 +43,7 @@
                 android:textColor="#B2B2B2"
                 android:textSize="11sp" />
 
-            <com.mujirenben.mine.mvp.ui.view.SwitchButton
+            <com.mujirenben.android.mine.mvp.ui.view.SwitchButton
                 android:id="@+id/switch_action"
                 android:layout_width="38dp"
                 android:layout_height="23dp"

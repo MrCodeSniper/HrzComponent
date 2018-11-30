@@ -26,7 +26,7 @@
 
     <include layout="@layout/mine_include_divider_bar_full"/>
 
-    <com.mujirenben.mine.mvp.ui.view.LazyViewPager
+    <com.mujirenben.android.mine.mvp.ui.view.LazyViewPager
         android:id="@+id/vp_materia"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,6 +35,6 @@
 
 
 
-    </com.mujirenben.mine.mvp.ui.view.LazyViewPager>
+    </com.mujirenben.android.mine.mvp.ui.view.LazyViewPager>
 
 </LinearLayout>

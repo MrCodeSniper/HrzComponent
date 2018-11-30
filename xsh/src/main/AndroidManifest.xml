@@ -1,2 +1,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mujirenben.android.xsh" />
+    package="com.mujirenben.android.xsh">
+
+    <application>
+
+        <activity
+            android:name=".activity.SqCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+         android:name=".activity.AllianceShopDetailActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/MainAppTheme" />
+        <activity
+            android:name=".activity.Amap2DActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".activity.DockingActivity"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".activity.MyLinkStoreListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".activity.NewVideoActivity"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".utils.jcvideolib.JCFullScreenActivity"
+            android:theme="@style/MainAppTheme" />
+
+        <activity
+            android:name=".activity.ShareActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    </application>
+
+
+</manifest>

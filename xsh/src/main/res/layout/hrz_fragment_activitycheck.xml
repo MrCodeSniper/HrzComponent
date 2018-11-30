@@ -127,13 +127,13 @@
             android:layout_height="1dp"
             android:background="@color/gray_f0" />
 
-        <com.hdyl.alliance.widget.xrecyclerview.XRecyclerView
+        <com.mujirenben.android.xsh.widget.xrecyclerview.XRecyclerView
             android:id="@+id/xrecyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tv_title"
             android:background="@color/white">
 
-        </com.hdyl.alliance.widget.xrecyclerview.XRecyclerView>
+        </com.mujirenben.android.xsh.widget.xrecyclerview.XRecyclerView>
     </LinearLayout>
 </RelativeLayout>

@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/mac/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/b1ec540425637fb948de91440f6b9dba/jars/classes.jar
+FILE.hash=e236ede2bdea6a8ed5060fd9301ca355dc0463f8484ff5f1d5d5cac098bc19aa
+DX_VERSION=1.16
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=D8
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=16
+IS_DEBUGGABLE=false

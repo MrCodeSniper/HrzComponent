@@ -14,7 +14,7 @@
         android:textColor="@color/settings_main_text_color"
         android:textSize="@dimen/settings_main_description_text_size" />
 
-    <com.mujirenben.mine.mvp.ui.view.SwitchButton
+    <com.mujirenben.android.mine.mvp.ui.view.SwitchButton
         android:id="@+id/switch_action"
         android:layout_width="38dp"
         android:layout_height="23dp"

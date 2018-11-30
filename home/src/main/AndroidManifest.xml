@@ -1,2 +1,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mujirenben.android.home" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mujirenben.android.home">
+
+
+    <application>
+
+        <activity
+            android:name=".mvp.ui.activity.MyCapturesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".mvp.ui.activity.MyQrCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainAppTheme" />
+
+
+
+    </application>
+
+
+
+</manifest>

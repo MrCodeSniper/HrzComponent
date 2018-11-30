@@ -56,13 +56,13 @@
 
 
 
-        <com.hdyl.alliance.widget.xrecyclerview.XRecyclerView
+        <com.mujirenben.android.xsh.widget.xrecyclerview.XRecyclerView
             android:id="@+id/rv_shop_nearby"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
 
-        </com.hdyl.alliance.widget.xrecyclerview.XRecyclerView>
+        </com.mujirenben.android.xsh.widget.xrecyclerview.XRecyclerView>
 
 
 
