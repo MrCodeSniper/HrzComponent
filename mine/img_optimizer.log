@@ -1,0 +1,156 @@
+2018-11-30 23:43:15  info:  Task optimizeMineRelease begin:
+----------------------------------------
+2018-11-30 23:43:15  info:  74 images need to be optimized.
+----------------------------------------
+2018-11-30 23:43:15  info:  Succeed! 1443B-->1091B, 24.393625% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_crown.png
+----------------------------------------
+2018-11-30 23:43:15  info:  Succeed! 16533B-->3926B, 76.253555% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_frontcase.png
+----------------------------------------
+2018-11-30 23:43:15  info:  Succeed! 2636B-->1423B, 46.016693% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_common_qa.png
+----------------------------------------
+2018-11-30 23:43:15  info:  Succeed! 10259B-->4103B, 60.005848% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_auth_success.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 2928B-->2424B, 17.213116% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_user_deal_success.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 362B-->262B, 27.62431% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_mine_enter_mark.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 7223B-->3124B, 56.74927% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/order_status_pay_success.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 21673B-->8256B, 61.90652% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/withdraw_schedule.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 11350B-->4571B, 59.72687% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/order_status_ing.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 2832B-->2418B, 14.618644% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_user_deal_invalid.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 2196B-->1164B, 46.994537% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_fragment_icon_docking.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 10570B-->5782B, 45.29801% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/hrz_fragment_excepted.png
+----------------------------------------
+2018-11-30 23:43:16  info:  Succeed! 75646B-->28005B, 62.978874% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/invite_steps.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 1030B-->560B, 45.63107% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_userinfo_qrcode.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 13008B-->5273B, 59.463406% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/sign_guohui.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 1200B-->1073B, 10.583333% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_hrz_academy.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 2181B-->1248B, 42.77854% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_contact_kefu.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 2647B-->476B, 82.01738% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_square.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 13547B-->5839B, 56.898205% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/sign_headpicture.png
+----------------------------------------
+2018-11-30 23:43:17  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/iv_all_orders.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 2849B-->1653B, 41.97964% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_xdz_icon.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 597B-->449B, 24.790619% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_littleclose.png
+----------------------------------------
+2018-11-30 23:43:17  info:  Succeed! 1008B-->746B, 25.992064% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_profit_calendar.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 9995B-->3860B, 61.38069% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/hrz_activity_ruzhang.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 13503B-->5440B, 59.712658% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/idcard_auth_icon.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 15529B-->4268B, 72.51594% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_opposite.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 8912B-->3549B, 60.177288% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/order_status_close.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 14478B-->2441B, 83.13994% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/invite_qrcode_dialog_bg.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 69561B-->25458B, 63.401905% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/verification_steps.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 1451B-->841B, 42.039974% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_camera_close.png
+----------------------------------------
+2018-11-30 23:43:18  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_user_qrcode.png
+----------------------------------------
+2018-11-30 23:43:18  info:  Succeed! 2055B-->1199B, 41.654503% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/invite_code_icon.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 2321B-->1322B, 43.041794% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_contact_us.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 1145B-->827B, 27.772926% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/iv_open_eyes.png
+----------------------------------------
+2018-11-30 23:43:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/hrz_activity_profit_libao.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 532B-->399B, 25.0% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_telephone.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 31639B-->16292B, 48.50659% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/ic_retrieve_verification_code.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 7455B-->3827B, 48.665325% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_camera_take.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 5066B-->2512B, 50.414528% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_camera.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 2728B-->1452B, 46.774193% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/withdraw_add.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 956B-->813B, 14.958159% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/iv_close_eyes.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 2578B-->2088B, 19.006983% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_user_deal_close.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 31651B-->10400B, 67.14164% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_require.png
+----------------------------------------
+2018-11-30 23:43:19  info:  Succeed! 1586B-->910B, 42.62295% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_activity_icon.png
+----------------------------------------
+2018-11-30 23:43:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_enter_grey.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 318B-->252B, 20.754717% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/iv_close_explation.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 2115B-->1001B, 52.671394% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/withdraw_recommend_bg.png
+----------------------------------------
+2018-11-30 23:43:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/picture_payments.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 11620B-->5130B, 55.85198% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/ic_retrieve_invite_code.png
+----------------------------------------
+2018-11-30 23:43:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_user_rightarrow.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 1395B-->889B, 36.2724% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/icon_lock.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 1612B-->1051B, 34.801487% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xhdpi/mine_fragment_icon_shipinfo.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 5523B-->2758B, 50.06337% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_common_qa.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 2756B-->2026B, 26.487663% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/icon.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 6643B-->3621B, 45.491493% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_user_deal_success.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 6363B-->3496B, 45.05736% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_user_deal_invalid.png
+----------------------------------------
+2018-11-30 23:43:20  info:  Succeed! 25368B-->17340B, 31.646168% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/hrz_fragment_excepted.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 2339B-->1952B, 16.545532% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_hrz_academy.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 3827B-->1902B, 50.300495% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_contact_kefu.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 3313B-->2639B, 20.344099% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/iv_all_orders.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 5291B-->2654B, 49.83935% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_xdz_icon.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 1484B-->1107B, 25.404312% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_profit_calendar.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 26589B-->9823B, 63.056152% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/hrz_activity_ruzhang.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 1379B-->1352B, 1.9579406% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_user_qrcode.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 3642B-->1752B, 51.89456% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/invite_code_icon.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 4666B-->2341B, 49.82855% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_contact_us.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 2374B-->1833B, 22.788542% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/iv_open_eyes.png
+----------------------------------------
+2018-11-30 23:43:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/hrz_activity_profit_libao.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 8328B-->4092B, 50.86455% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/iv_user_default_icon.png
+----------------------------------------
+2018-11-30 23:43:21  info:  Succeed! 1727B-->1500B, 13.14418% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/iv_close_eyes.png
+----------------------------------------
+2018-11-30 23:43:22  info:  Succeed! 6535B-->3591B, 45.049732% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_user_deal_close.png
+----------------------------------------
+2018-11-30 23:43:22  info:  Succeed! 2804B-->1743B, 37.838802% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_activity_icon.png
+----------------------------------------
+2018-11-30 23:43:22  info:  Succeed! 973B-->928B, 4.6248717% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/icon_enter_grey.png
+----------------------------------------
+2018-11-30 23:43:22  info:  Succeed! 1144B-->1106B, 3.3216784% saved! /Users/mac/Desktop/HrzComponent/mine/src/main/res/drawable-xxhdpi/mine_user_rightarrow.png
+----------------------------------------
+2018-11-30 23:43:22  info:  Total: 74, Succeed: 67, Skipped: 7, Failed: 0, Saved: 309.90625KB
+----------------------------------------
+2018-11-30 23:43:22  info:  Task optimizeMineRelease executed successfully.
+----------------------------------------
