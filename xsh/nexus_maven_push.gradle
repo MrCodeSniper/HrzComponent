@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'xsh'
-                version '1.0.3'
+                version '1.0.4'
                 artifactId 'xsh'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'
