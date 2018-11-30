@@ -2,6 +2,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
 apply from: 'nexus_maven_push.gradle'
 
+apply plugin: 'img-optimizer'
+
+optimizerOptions {
+    triggerSize 0
+    type "lossy"
+}
+
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]

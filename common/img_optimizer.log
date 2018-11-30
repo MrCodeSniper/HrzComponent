@@ -1,0 +1,704 @@
+2018-11-30 23:31:57  info:  Task optimizeCommonRelease begin:
+----------------------------------------
+2018-11-30 23:31:57  info:  348 images need to be optimized.
+----------------------------------------
+2018-11-30 23:31:57  info:  Succeed! 1842B-->1246B, 32.356136% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_award.png
+----------------------------------------
+2018-11-30 23:31:57  info:  Succeed! 722B-->662B, 8.310249% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/common_ticket_bg.png
+----------------------------------------
+2018-11-30 23:31:57  info:  Succeed! 1473B-->1105B, 24.983028% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_vip.png
+----------------------------------------
+2018-11-30 23:31:57  info:  Succeed! 6256B-->4006B, 35.965473% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/more_icon.png
+----------------------------------------
+2018-11-30 23:31:57  info:  Succeed! 2803B-->1974B, 29.575455% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/ic_image_selected.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 7357B-->3409B, 53.663177% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/hrz_redactor_icon.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 2779B-->2003B, 27.923714% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/load.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 2314B-->1806B, 21.953327% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_six.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 1678B-->1271B, 24.255066% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_mgj_small.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 2357B-->1821B, 22.740772% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_two.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 8100B-->3835B, 52.65432% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/no_data_icon.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 194B-->177B, 8.762887% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_right.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 822B-->478B, 41.849148% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/mine_order_details_location.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 11309B-->4631B, 59.050312% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_jingdong_large.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 1449B-->1250B, 13.733609% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/common_icon_up.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 982B-->608B, 38.08554% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/iconlight.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 6770B-->4098B, 39.468243% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/life_icon.png
+----------------------------------------
+2018-11-30 23:31:58  info:  Succeed! 1529B-->949B, 37.93329% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_discount.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 131116B-->45746B, 65.11028% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/dialog_shopkeeper_expiration.png
+----------------------------------------
+2018-11-30 23:31:59  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_back.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 6521B-->4082B, 37.40224% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/food_icon.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 3132B-->2086B, 33.39719% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_jingdong_small.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 3017B-->2298B, 23.831621% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/mine_setting_guanbi.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 11819B-->6226B, 47.32211% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_guide_font.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 5493B-->2564B, 53.32241% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/hrz_activity_login_wx.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 2021B-->1262B, 37.555664% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_ruchang.png
+----------------------------------------
+2018-11-30 23:31:59  info:  Succeed! 4838B-->2822B, 41.670113% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_mgj_large.png
+----------------------------------------
+2018-11-30 23:32:00  info:  Succeed! 298B-->280B, 6.0402684% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/close_icon_dialog.png
+----------------------------------------
+2018-11-30 23:32:00  info:  Succeed! 1593B-->1045B, 34.4005% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_selected_mark.png
+----------------------------------------
+2018-11-30 23:32:00  info:  Succeed! 279B-->198B, 29.032259% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_back_left_toward.png
+----------------------------------------
+2018-11-30 23:32:01  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/share_pic_two.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 358B-->247B, 31.005587% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/iconforback.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 1213B-->982B, 19.043694% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_experience.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 613B-->529B, 13.703099% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/mark_icon.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 8782B-->3653B, 58.403553% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/goods_detail_pics_empty.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 27023B-->7532B, 72.12745% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/load_error.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 982B-->762B, 22.40326% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_home1.png
+----------------------------------------
+2018-11-30 23:32:01  info:  Succeed! 17990B-->9150B, 49.13841% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/weixin_circle.png
+----------------------------------------
+2018-11-30 23:32:02  info:  Succeed! 1193B-->662B, 44.50964% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_jingdong.png
+----------------------------------------
+2018-11-30 23:32:02  info:  Succeed! 18309B-->8372B, 54.273853% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/link.png
+----------------------------------------
+2018-11-30 23:32:02  info:  Succeed! 550B-->488B, 11.272727% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_close_white_32px.png
+----------------------------------------
+2018-11-30 23:32:02  info:  Succeed! 418B-->337B, 19.37799% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/scan_icon.png
+----------------------------------------
+2018-11-30 23:32:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/first_pic.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 2233B-->1833B, 17.913122% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_five.png
+----------------------------------------
+2018-11-30 23:32:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_vip1.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 758B-->552B, 27.17678% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/delete_icon.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 2290B-->1795B, 21.61572% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_three.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 3941B-->2217B, 43.745243% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_top.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 2379B-->1888B, 20.638924% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/ic_image_unselected.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 1033B-->823B, 20.329138% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_consume.png
+----------------------------------------
+2018-11-30 23:32:03  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/samll_loading_icon.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 6361B-->4006B, 37.02248% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/home_icon.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 17866B-->7184B, 59.789543% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/network_error_icon.png
+----------------------------------------
+2018-11-30 23:32:03  info:  Succeed! 582B-->263B, 54.810997% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/arrow_back.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 6391B-->3558B, 44.32796% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/clothes_icon.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 684B-->439B, 35.818714% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_search_module.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 784B-->569B, 27.42347% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/mine_order_list_platforms_arrow.png
+----------------------------------------
+2018-11-30 23:32:04  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/hj_ui_live_button_share.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1535B-->1248B, 18.69707% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/common_icon_down.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1602B-->1291B, 19.413233% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/fun_icon_normal.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 2318B-->1171B, 49.48231% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/jd_resource.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 273B-->247B, 9.523809% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_reback.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 3449B-->2201B, 36.184402% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/alipay_icon.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1358B-->861B, 36.59794% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_pay.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1925B-->899B, 53.298702% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/fg.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1672B-->1300B, 22.248804% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_icon.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 213B-->196B, 7.9812207% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_rectangle_down_selected.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 1133B-->784B, 30.803177% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_shop1.png
+----------------------------------------
+2018-11-30 23:32:04  info:  Succeed! 840B-->622B, 25.952381% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_light.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 2469B-->1064B, 56.90563% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_qa.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 975B-->744B, 23.692308% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_home_search.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 4968B-->2008B, 59.58132% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/dialogui_spinner_mum_light.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 1090B-->641B, 41.19266% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/customer_service_white.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 1590B-->879B, 44.71698% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_mogujie.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 2232B-->1560B, 30.107527% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_commission.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 219B-->186B, 15.068493% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_right_arrow_textcolor.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 1132B-->956B, 15.547703% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_annouce.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 1059B-->877B, 17.186024% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_goods_detail_share.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 2050B-->1412B, 31.121952% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_discover_unselect.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 5192B-->2572B, 50.46225% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/weixin.png
+----------------------------------------
+2018-11-30 23:32:05  info:  Succeed! 27023B-->7532B, 72.12745% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/common_hrz_empty_view.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 117661B-->39504B, 66.425575% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/popwindow_upgrade.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 982B-->859B, 12.525458% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/message_icon.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 1357B-->1301B, 4.12675% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/iconfont_search_icons.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 301B-->264B, 12.292358% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/drop_down_unselected_icon.png
+----------------------------------------
+2018-11-30 23:32:06  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/down_login_phone_choose.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 13234B-->6072B, 54.11818% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_weipinhui_large.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 573B-->409B, 28.621292% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/common_search_icon.png
+----------------------------------------
+2018-11-30 23:32:06  info:  Succeed! 985B-->671B, 31.878172% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_mine.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 101574B-->32289B, 68.21135% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/splash.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 10607B-->4261B, 59.828415% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/ic_luncher.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 11946B-->5719B, 52.126236% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_taobao_large.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 1193B-->634B, 46.856663% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/service_icon.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 1304B-->982B, 24.69325% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_experience1.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 5756B-->2787B, 51.58096% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/jd_dialog_icon.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 521B-->364B, 30.134357% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_down.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 1056B-->833B, 21.117424% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_rmb.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 772B-->677B, 12.305699% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_share_obtain.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 2229B-->1789B, 19.739794% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_seven.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 1367B-->875B, 35.991222% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/btn_tick_pressed.png
+----------------------------------------
+2018-11-30 23:32:07  info:  Succeed! 1654B-->1292B, 21.886335% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/fun_icon_selected.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 54409B-->14913B, 72.590935% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/qr_code_logo.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 1507B-->782B, 48.108826% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_pinduoduo.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 1095B-->726B, 33.69863% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_faied.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 11501B-->5467B, 52.465004% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/hrz_logo.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 2220B-->1411B, 36.44144% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_discover_selected.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 3524B-->2316B, 34.27923% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_taobao_small.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 129268B-->46648B, 63.91373% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/link_to_platform_bg.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 974B-->605B, 37.88501% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_ziying.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 1073B-->784B, 26.93383% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_shop.png
+----------------------------------------
+2018-11-30 23:32:08  info:  Succeed! 946B-->762B, 19.450317% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_home.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 17408B-->311B, 98.21346% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/drop_down_selected_icon.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 443B-->324B, 26.862303% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_guanbi.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 2080B-->1468B, 29.423077% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/wx_pay_icon.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 4571B-->2424B, 46.970028% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/iv_user_default_icon.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 3662B-->2247B, 38.640087% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_weipinhui_small.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 1313B-->823B, 37.319115% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/btn_xuanze_normal.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 1326B-->994B, 25.037708% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_coupon.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 16773B-->5636B, 66.39838% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_guide_icon.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 986B-->589B, 40.26369% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/order_commit_poster_tag.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 26772B-->9360B, 65.0381% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/ic_picture_fail.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 844B-->489B, 42.06161% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/iconforshare.png
+----------------------------------------
+2018-11-30 23:32:09  info:  Succeed! 3189B-->142B, 95.547195% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/transparent_bg.png
+----------------------------------------
+2018-11-30 23:32:09  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/order_mask_view.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 201B-->195B, 2.9850745% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/rectangle_up_unselected.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1282B-->1029B, 19.734789% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_wechat_pay.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 489B-->300B, 38.650307% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/bg_ticket.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 497B-->359B, 27.7666% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_up.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 269B-->198B, 26.394053% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_back_white.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1177B-->689B, 41.46134% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_taobao.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 2702B-->2140B, 20.799408% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_all_small.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 2276B-->1803B, 20.782074% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_one.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 210B-->195B, 7.142857% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/rectangle_up_selected.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1018B-->671B, 34.086445% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_mine1.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 4962B-->2008B, 59.532448% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/dialogui_spinner_mum.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 16340B-->954B, 94.16157% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/umeng_socialize_wxcircle.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1401B-->1163B, 16.987865% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_delete.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1638B-->1617B, 1.2820513% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_alipay.png
+----------------------------------------
+2018-11-30 23:32:10  info:  Succeed! 1986B-->1440B, 27.492447% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/close_icon.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 2340B-->1835B, 21.581196% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_four.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 12341B-->6988B, 43.37574% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/search_platform_all_large.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 766B-->543B, 29.112272% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/clean_icon.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 1443B-->769B, 46.70825% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_weipinhui.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 201B-->196B, 2.4875622% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/rectangle_down_unselect.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 1869B-->810B, 56.661316% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/bg.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 962B-->647B, 32.74428% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/icon_succeed.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 1733B-->1301B, 24.92787% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/candiate_search_icon.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 21087B-->5744B, 72.76047% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/loading_img.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 2234B-->1763B, 21.08326% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xhdpi/header_loading_eight.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 5869B-->3335B, 43.17601% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_award.png
+----------------------------------------
+2018-11-30 23:32:11  info:  Succeed! 1377B-->1165B, 15.395788% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/common_ticket_bg.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 2828B-->2122B, 24.96464% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_vip.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 13817B-->6528B, 52.753853% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/more_icon.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 5193B-->2727B, 47.487003% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/load.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 2749B-->2039B, 25.827574% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/iconlight.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 14955B-->6561B, 56.128384% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/life_icon.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 5241B-->3063B, 41.556953% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_discount.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 503B-->366B, 27.23658% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_back.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 13871B-->6616B, 52.303368% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/food_icon.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 2409B-->1866B, 22.540474% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_experience.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 1123B-->1004B, 10.596616% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/mark_icon.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 1970B-->1612B, 18.172588% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_home1.png
+----------------------------------------
+2018-11-30 23:32:12  info:  Succeed! 37448B-->15886B, 57.57851% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/weixin_circle.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 38825B-->14048B, 63.817127% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/link.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 749B-->528B, 29.506008% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/scan_icon.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 4014B-->2857B, 28.824116% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_vip1.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 7801B-->3774B, 51.621586% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_top.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 1662B-->1369B, 17.629362% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_consume.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 13949B-->6495B, 53.437523% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/home_icon.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 14253B-->6143B, 56.900303% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/clothes_icon.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 3037B-->2118B, 30.260124% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/fun_icon_normal.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 4549B-->2807B, 38.294132% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_pay.png
+----------------------------------------
+2018-11-30 23:32:13  info:  Succeed! 2357B-->1878B, 20.322443% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_shop1.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 2778B-->2136B, 23.110151% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_of_alipay.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 1980B-->1539B, 22.272728% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_light.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 2393B-->1847B, 22.816547% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_home_search.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 2581B-->2042B, 20.883379% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_of_wx.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 4339B-->2614B, 39.755703% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_commission.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 2682B-->2161B, 19.425802% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_annouce.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 4001B-->2546B, 36.36591% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_discover_unselect.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 10425B-->4611B, 55.769783% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/weixin.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 1704B-->1371B, 19.542253% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/message_icon.png
+----------------------------------------
+2018-11-30 23:32:14  info:  Succeed! 2304B-->1587B, 31.119791% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_mine.png
+----------------------------------------
+2018-11-30 23:32:15  info:  Succeed! 178851B-->56749B, 68.27023% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/splash.png
+----------------------------------------
+2018-11-30 23:32:15  info:  Succeed! 2488B-->1837B, 26.165594% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_experience1.png
+----------------------------------------
+2018-11-30 23:32:15  info:  Succeed! 1928B-->1498B, 22.302904% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_rmb.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2569B-->1778B, 30.790192% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/btn_tick_pressed.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 3202B-->2234B, 30.231106% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/fun_icon_selected.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2137B-->1535B, 28.170332% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_faied.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 20197B-->8629B, 57.275833% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/hrz_logo.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 4336B-->2620B, 39.575645% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_discover_selected.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2245B-->1628B, 27.483295% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_shop.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 1899B-->1453B, 23.486046% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_home.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 3000B-->2037B, 32.1% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/btn_xuanze_normal.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2391B-->1650B, 30.991217% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_coupon.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2688B-->1732B, 35.565475% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/order_commit_poster_tag.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 2923B-->2171B, 25.726994% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_wechat_pay.png
+----------------------------------------
+2018-11-30 23:32:16  info:  Succeed! 943B-->570B, 39.55461% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/bg_ticket.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 2439B-->1784B, 26.855268% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_mine1.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 3639B-->2484B, 31.739489% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_alipay.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 3610B-->2253B, 37.590027% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/close_icon.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 1811B-->1290B, 28.768637% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxhdpi/icon_succeed.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 2267B-->1904B, 16.012352% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_award.png
+----------------------------------------
+2018-11-30 23:32:17  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/common_ticket_bg.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 1326B-->1159B, 12.594269% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_vip.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 4508B-->3021B, 32.9858% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/more_icon.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 2289B-->1831B, 20.008738% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/load.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 1179B-->899B, 23.74894% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/btn_xuanze_pressed.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 1202B-->1029B, 14.392679% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/iconlight.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 5041B-->2922B, 42.03531% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/life_icon.png
+----------------------------------------
+2018-11-30 23:32:17  info:  Succeed! 2151B-->1791B, 16.736403% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_discount.png
+----------------------------------------
+2018-11-30 23:32:17  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_back.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 4717B-->3012B, 36.145855% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/food_icon.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 1109B-->1094B, 1.3525699% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_experience.png
+----------------------------------------
+2018-11-30 23:32:18  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/mark_icon.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 1020B-->926B, 9.215686% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_home1.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 12283B-->6252B, 49.100384% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/weixin_circle.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 12572B-->5610B, 55.37703% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/link.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 367B-->334B, 8.991826% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/scan_icon.png
+----------------------------------------
+2018-11-30 23:32:18  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_vip1.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 817B-->810B, 0.85679317% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_consume.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 4704B-->3016B, 35.884354% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/home_icon.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 4634B-->2672B, 42.339233% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/clothes_icon.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 1417B-->1390B, 1.905434% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/fun_icon_normal.png
+----------------------------------------
+2018-11-30 23:32:18  info:  Succeed! 1861B-->1740B, 6.5018806% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_pay.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 1259B-->1239B, 1.5885624% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_shop1.png
+----------------------------------------
+2018-11-30 23:32:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_of_alipay.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 801B-->780B, 2.621723% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_light.png
+----------------------------------------
+2018-11-30 23:32:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_of_wx.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 1989B-->1781B, 10.457517% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_commission.png
+----------------------------------------
+2018-11-30 23:32:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_annouce.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 1747B-->1517B, 13.165426% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_discover_unselect.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 2402B-->1647B, 31.43214% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/weixin.png
+----------------------------------------
+2018-11-30 23:32:19  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/message_icon.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 1211B-->946B, 21.882742% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_mine.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 57250B-->18291B, 68.05065% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/splash.png
+----------------------------------------
+2018-11-30 23:32:19  info:  Succeed! 1202B-->1196B, 0.49916804% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_experience1.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1057B-->959B, 9.271523% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_rmb.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1179B-->899B, 23.74894% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/btn_tick_pressed.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1468B-->1462B, 0.40871936% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/fun_icon_selected.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1008B-->810B, 19.642857% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_faied.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 7805B-->4059B, 47.994877% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/hrz_logo.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1832B-->1626B, 11.244541% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_discover_selected.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1188B-->1154B, 2.8619528% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_shop.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 940B-->850B, 9.574468% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_home.png
+----------------------------------------
+2018-11-30 23:32:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/white_delete_icon.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1369B-->1205B, 11.9795475% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/btn_xuanze_normal.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1193B-->1146B, 3.939648% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_coupon.png
+----------------------------------------
+2018-11-30 23:32:20  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_wechat_pay.png
+----------------------------------------
+2018-11-30 23:32:20  info:  Succeed! 1257B-->1087B, 13.524264% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_mine1.png
+----------------------------------------
+2018-11-30 23:32:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_alipay.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 1458B-->1073B, 26.406036% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/close_icon.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 900B-->731B, 18.777779% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-hdpi/icon_succeed.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 1149B-->966B, 15.926893% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_award.png
+----------------------------------------
+2018-11-30 23:32:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/common_ticket_bg.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 756B-->703B, 7.010582% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_vip.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 2266B-->2103B, 7.193292% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/more_icon.png
+----------------------------------------
+2018-11-30 23:32:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/load.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 693B-->537B, 22.510822% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/iconlight.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 2503B-->1965B, 21.494207% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/life_icon.png
+----------------------------------------
+2018-11-30 23:32:21  info:  Succeed! 1007B-->776B, 22.939425% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_discount.png
+----------------------------------------
+2018-11-30 23:32:21  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_back.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 2333B-->1989B, 14.744964% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/food_icon.png
+----------------------------------------
+2018-11-30 23:32:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_experience.png
+----------------------------------------
+2018-11-30 23:32:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/mark_icon.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 568B-->527B, 7.21831% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_home1.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 5425B-->2960B, 45.43779% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/link.png
+----------------------------------------
+2018-11-30 23:32:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/scan_icon.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 803B-->736B, 8.343711% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_vip1.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 465B-->462B, 0.6451613% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_consume.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 2322B-->2032B, 12.489233% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/home_icon.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 2260B-->1908B, 15.575221% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/clothes_icon.png
+----------------------------------------
+2018-11-30 23:32:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/fun_icon_normal.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 869B-->678B, 21.979286% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_pay.png
+----------------------------------------
+2018-11-30 23:32:22  info:  Succeed! 638B-->596B, 6.583072% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_shop1.png
+----------------------------------------
+2018-11-30 23:32:22  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_of_alipay.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 440B-->429B, 2.5% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_light.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_of_wx.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_commission.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_annouce.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 917B-->652B, 28.898582% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_discover_unselect.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/message_icon.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 608B-->480B, 21.052631% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_mine.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 28049B-->9562B, 65.90966% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/splash.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_experience1.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 637B-->597B, 6.2794347% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_rmb.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 659B-->521B, 20.940819% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/btn_tick_pressed.png
+----------------------------------------
+2018-11-30 23:32:23  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/fun_icon_selected.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 536B-->424B, 20.895523% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_faied.png
+----------------------------------------
+2018-11-30 23:32:23  info:  Succeed! 4220B-->2705B, 35.900475% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/hrz_logo.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 938B-->724B, 22.814499% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_discover_selected.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 604B-->569B, 5.794702% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_shop.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 529B-->519B, 1.8903592% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_home.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 591B-->437B, 26.05753% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/btn_xuanze_normal.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 653B-->633B, 3.062787% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_coupon.png
+----------------------------------------
+2018-11-30 23:32:24  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_wechat_pay.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 655B-->529B, 19.23664% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_mine1.png
+----------------------------------------
+2018-11-30 23:32:24  warn:  Skipped! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_alipay.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 715B-->542B, 24.195805% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/close_icon.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 481B-->402B, 16.424116% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-mdpi/icon_succeed.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 7947B-->4058B, 48.936707% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_award.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 1724B-->1177B, 31.728539% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/common_ticket_bg.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 2980B-->1901B, 36.208054% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_vip.png
+----------------------------------------
+2018-11-30 23:32:24  info:  Succeed! 17344B-->7491B, 56.809273% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/more_icon.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 5975B-->2961B, 50.443516% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/load.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 3550B-->2139B, 39.74648% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/iconlight.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 18715B-->7369B, 60.625168% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/life_icon.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 6837B-->3527B, 48.413048% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_discount.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 570B-->311B, 45.438595% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_back.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 16514B-->7165B, 56.61257% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/food_icon.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 2742B-->1807B, 34.099197% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_experience.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 1218B-->879B, 27.832512% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/mark_icon.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 2030B-->1327B, 34.630543% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_home1.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 43245B-->16128B, 62.705517% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/weixin_circle.png
+----------------------------------------
+2018-11-30 23:32:25  info:  Succeed! 47039B-->15670B, 66.68722% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/link.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 817B-->563B, 31.089352% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/scan_icon.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 5827B-->4020B, 31.01081% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_vip1.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 1695B-->1054B, 37.81711% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_consume.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 18022B-->7643B, 57.59072% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/home_icon.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 18946B-->7297B, 61.485275% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/clothes_icon.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 3298B-->2145B, 34.960583% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/fun_icon_normal.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 5722B-->2894B, 49.42328% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_pay.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 2444B-->1487B, 39.15712% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_shop1.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 3002B-->2060B, 31.37908% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_of_alipay.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 2776B-->2070B, 25.432276% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_light.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 3382B-->2308B, 31.756357% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_home_search.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 2950B-->2018B, 31.59322% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_of_wx.png
+----------------------------------------
+2018-11-30 23:32:26  info:  Succeed! 4557B-->2588B, 43.208252% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_commission.png
+----------------------------------------
+2018-11-30 23:32:27  info:  Succeed! 3160B-->2216B, 29.873417% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_annouce.png
+----------------------------------------
+2018-11-30 23:32:27  info:  Succeed! 4262B-->2549B, 40.192398% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_discover_unselect.png
+----------------------------------------
+2018-11-30 23:32:27  info:  Succeed! 2035B-->1571B, 22.800983% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/message_icon.png
+----------------------------------------
+2018-11-30 23:32:27  info:  Succeed! 2322B-->1342B, 42.204994% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_mine.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 512720B-->164584B, 67.899826% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/splash.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 2833B-->1806B, 36.251324% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_experience1.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 1961B-->1237B, 36.919937% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_rmb.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 2776B-->1676B, 39.62536% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/btn_tick_pressed.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 3445B-->2142B, 37.822933% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/fun_icon_selected.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 2189B-->1308B, 40.24669% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_faied.png
+----------------------------------------
+2018-11-30 23:32:29  info:  Succeed! 4489B-->2549B, 43.21675% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_discover_selected.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 2356B-->1486B, 36.926994% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_shop.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 1946B-->1327B, 31.808838% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_home.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 2904B-->1664B, 42.699726% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/btn_xuanze_normal.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 2559B-->1627B, 36.420475% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_coupon.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 3891B-->2519B, 35.260857% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_wechat_pay.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 2393B-->1341B, 43.961555% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_mine1.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 4731B-->2941B, 37.835552% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_alipay.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 4760B-->2733B, 42.584034% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/close_icon.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Succeed! 1942B-->1179B, 39.28939% saved! /Users/mac/Desktop/HrzComponent/common/src/main/res/drawable-xxxhdpi/icon_succeed.png
+----------------------------------------
+2018-11-30 23:32:30  info:  Total: 348, Succeed: 313, Skipped: 35, Failed: 0, Saved: 1468.0322265625KB
+----------------------------------------
+2018-11-30 23:32:30  info:  Task optimizeCommonRelease executed successfully.
+----------------------------------------
