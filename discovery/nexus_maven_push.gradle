@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'discovery'
-                version '1.0.2'
+                version '1.0.3'
                 artifactId 'discovery'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'

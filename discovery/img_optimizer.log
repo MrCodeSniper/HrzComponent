@@ -1,0 +1,14 @@
+2018-11-30 23:38:59  info:  Task optimizeDiscoveryRelease begin:
+----------------------------------------
+2018-11-30 23:38:59  info:  3 images need to be optimized.
+----------------------------------------
+2018-11-30 23:38:59  info:  Succeed! 550B-->351B, 36.18182% saved! /Users/mac/Desktop/HrzComponent/discovery/src/main/res/drawable-xhdpi/coupons_background.png
+----------------------------------------
+2018-11-30 23:38:59  info:  Succeed! 1332B-->1012B, 24.024025% saved! /Users/mac/Desktop/HrzComponent/discovery/src/main/res/drawable-xxhdpi/coupons_background.png
+----------------------------------------
+2018-11-30 23:38:59  info:  Succeed! 550B-->351B, 36.18182% saved! /Users/mac/Desktop/HrzComponent/discovery/src/main/res/drawable-hdpi/coupons_background.png
+----------------------------------------
+2018-11-30 23:38:59  info:  Total: 3, Succeed: 3, Skipped: 0, Failed: 0, Saved: 0.701171875KB
+----------------------------------------
+2018-11-30 23:38:59  info:  Task optimizeDiscoveryRelease executed successfully.
+----------------------------------------

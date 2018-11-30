@@ -1,7 +1,7 @@
 ext {
 
     isAppRelease=true
-    nexusAddress="192.168.1.100"
+    nexusAddress="192.168.1.102"
 
     android = [
                compileSdkVersion       : 27,

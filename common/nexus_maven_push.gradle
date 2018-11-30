@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'common'
-                version '1.0.3'
+                version '1.0.4'
                 artifactId 'common'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'
