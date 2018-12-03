@@ -18,16 +18,8 @@ android {
 
     buildTypes {
         release {
-//            postprocessing {
-//                removeUnusedCode true
-//                removeUnusedResources false
-//                obfuscate false
-//                optimizeCode false
-//                proguardFile 'proguard-rules.pro'
-//            }
             minifyEnabled true
-            consumerProguardFiles 'proguard-rules.pro'
-
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 

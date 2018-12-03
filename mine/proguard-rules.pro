@@ -19,3 +19,26 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# okhttp https://github.com/square/okhttp/#proguard
+-dontwarn java.lang.invoke.**
+-keep class com.mujirenben.android.mine.mvp.model.bean.**{*;}
+-keep class com.mujirenben.android.mine.login.bean.**{*;}
+-keep class com.mujirenben.android.mine.mvp.model.**{*;}
+-keep class com.mujirenben.android.mine.mvp.ui.view.**{*;}
+
+
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn org.conscrypt.**
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# okdownload:okhttp
+-keepnames class com.liulishuo.okdownload.core.connection.DownloadOkHttp3Connection
+
+# okdownload:sqlite
+-keep class com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite {
+        public com.liulishuo.okdownload.core.breakpoint.DownloadStore createRemitSelf();
+        public com.liulishuo.okdownload.core.breakpoint.BreakpointStoreOnSQLite(android.content.Context);
+}

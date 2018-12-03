@@ -755,18 +755,23 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
             showDialog(activity1, koulingBean1.getData().getCommission() + "", koulingBean1.getData().getCoupon() + "", "淘宝");
             if (goodTaobaoLinkResult.getData() == null || goodTaobaoLinkResult.getData().getClickUrl() == null)
                 return;
-            new Handler(Looper.getMainLooper()).postDelayed(() -> AlibabaSDK.routeUrl(
-                    activity1, goodTaobaoLinkResult.getData().getClickUrl(), new AlibcTradeCallback() {
-                        @Override
-                        public void onTradeSuccess(AlibcTradeResult alibcTradeResult) {
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    AlibabaSDK.routeUrl(
+                            activity1, goodTaobaoLinkResult.getData().getClickUrl(), new AlibcTradeCallback() {
+                                @Override
+                                public void onTradeSuccess(AlibcTradeResult alibcTradeResult) {
 
-                        }
+                                }
 
-                        @Override
-                        public void onFailure(int i, String s) {
+                                @Override
+                                public void onFailure(int i, String s) {
 
-                        }
-                    }), 1000);
+                                }
+                            });
+                }
+            },1000);
         } else if (Const.Platform.JD == koulingBean1.getData().getPlatform()) {
 
             //京东弹窗
@@ -789,13 +794,18 @@ public class KoulingHelper implements Application.ActivityLifecycleCallbacks {
                 jdPopDialog.show();
             } else {
                 showDialog(activity1, koulingBean1.getData().getCommission() + "", koulingBean1.getData().getCoupon() + "", "京东");
-                new Handler(Looper.getMainLooper()).postDelayed(() -> JdSdkRouter.openUrlToJD(
-                        goodTaobaoLinkResult.getData().getClickUrl(), activity1, new OpenAppAction() {
-                            @Override
-                            public void onStatus(int i) {
-                                Log.e("xxx",i+"xxx");
-                            }
-                        }), 1500);
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        JdSdkRouter.openUrlToJD(
+                                goodTaobaoLinkResult.getData().getClickUrl(), activity1, new OpenAppAction() {
+                                    @Override
+                                    public void onStatus(int i) {
+                                        Log.e("xxx",i+"xxx");
+                                    }
+                                });
+                    }
+                }, 1500);
             }
         }
     }

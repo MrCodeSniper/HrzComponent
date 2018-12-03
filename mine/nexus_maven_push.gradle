@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'mine'
-                version '1.0.2'
+                version '1.0.3'
                 artifactId 'mine'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'
