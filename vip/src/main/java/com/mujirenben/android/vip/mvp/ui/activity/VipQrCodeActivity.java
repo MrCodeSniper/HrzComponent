@@ -103,16 +103,19 @@ public class VipQrCodeActivity extends BaseActivity<VipQrCodePresenter>
         LoginDataManager ldm = LoginDataManager.getsInstance(this);
         String name = ldm.getDisplayName();
         String portraitUrl = ldm.getAvatarUrl();
-        mQrCodeIV.post(() -> {
-            String qrCodeUrl = ldm.getUserQrCodeUrl();
-            if (!TextUtils.isEmpty(qrCodeUrl)) {
-                Bitmap qrCodeBmp = null;
-                try {
-                    qrCodeBmp = QrCodeUtils.createCode(qrCodeUrl, BitmapFactory.decodeResource(getResources(), R.drawable.qr_code_logo));
-                } catch (WriterException e) {
-                    e.printStackTrace();
+        mQrCodeIV.post(new Runnable() {
+            @Override
+            public void run() {
+                String qrCodeUrl = ldm.getUserQrCodeUrl();
+                if (!TextUtils.isEmpty(qrCodeUrl)) {
+                    Bitmap qrCodeBmp = null;
+                    try {
+                        qrCodeBmp = QrCodeUtils.createCode(qrCodeUrl, BitmapFactory.decodeResource(getResources(), R.drawable.qr_code_logo));
+                    } catch (WriterException e) {
+                        e.printStackTrace();
+                    }
+                    mQrCodeIV.setImageBitmap(qrCodeBmp);
                 }
-                mQrCodeIV.setImageBitmap(qrCodeBmp);
             }
         });
 

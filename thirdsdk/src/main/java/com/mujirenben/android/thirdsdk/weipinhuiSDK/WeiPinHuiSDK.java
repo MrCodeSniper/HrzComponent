@@ -3,9 +3,10 @@ package com.mujirenben.android.thirdsdk.weipinhuiSDK;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.Keep;
 
 
-
+@Keep
 public class WeiPinHuiSDK {
 
     public static void jumpToGoodsDetailPage(Context context,  String traFrom,String brandId, String goodsId) {

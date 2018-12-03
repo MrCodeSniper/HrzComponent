@@ -1,21 +1,43 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+##红人装推送sdk
+-dontwarn ccom.hrz.push.**
+-keep class com.hrz.push.** {*;}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+##个推设置
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+-dontwarn com.igexin.**
+-keep class com.igexin.** { *; }
+-keep class org.json.** { *; }
+
+-keep class android.support.v4.app.NotificationCompat {*;}
+-keep class android.support.v4.app.NotificationCompat$Builder {*;}
+
+
+##华为推送通道
+-dontwarn com.huawei.hms.**
+-keep class com.huawei.hms.** { *; }
+-keep class com.huawei.android.** { *; }
+-dontwarn com.huawei.android.**
+-keep class com.hianalytics.android.** { *; }
+-dontwarn com.hianalytics.android.**
+-keep class com.huawei.updatesdk.** { *; }
+-dontwarn com.huawei.updatesdk.**
+-ignorewarning
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable
+
+##魅族推送通道
+-keep class com.meizu.** { *; }
+-dontwarn com.meizu.**
+
+##小米推送通道
+-keep class com.xiaomi.** { *; }
+-dontwarn com.xiaomi.push.**
+-keep class org.apache.thrift.** { *; }
+
+##oppo推送通道
+-keep class com.coloros.mcssdk.** { *; }
+-dontwarn com.coloros.mcssdk.**

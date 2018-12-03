@@ -2,6 +2,7 @@ package com.mujirenben.android.thirdsdk.alibabaSDK;
 
 import android.app.Activity;
 import android.app.Application;
+import android.support.annotation.Keep;
 import android.util.Log;
 
 import com.alibaba.baichuan.android.trade.AlibcTrade;
@@ -25,7 +26,7 @@ import java.util.Map;
  * @date: 2018/8/27 20:02
  * @describe:
  */
-
+@Keep
 public class AlibabaSDK {
 
     private static AlibcShowParams alibcShowParams;//页面打开方式，默认，H5，Native

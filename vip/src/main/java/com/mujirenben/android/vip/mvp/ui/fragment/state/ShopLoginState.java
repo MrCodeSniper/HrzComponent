@@ -115,11 +115,15 @@ public class ShopLoginState implements UserState{
     private void initClickEvent() {
 
         //点击二维码跳转
-        vipHeaderLoginQrcode.setOnClickListener(view ->
+        vipHeaderLoginQrcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 ARouter.getInstance()
                         .build(ARouterPaths.VIP_QR_CODE_ACTIVITY)
                         .withString("source", "会员")
-                        .navigation(mContext));
+                        .navigation(mContext);
+            }
+        });
         LoginDataManager loginDataManager = LoginDataManager.getsInstance(mContext);
         String expirationStr ="您的店主身份将于";
         long expirationTime = loginDataManager.getShopKeeperExpirationTimeMillis();
@@ -148,16 +152,22 @@ public class ShopLoginState implements UserState{
                 })
                 .into(vipHeaderLoginShopInvalidTv);
 
-        vipHeaderLoginShopRetrievalTv.setOnClickListener(v -> {
-            ARouter.getInstance()
-                    .build(ARouterPaths.STOCKING_ACTIVITY)
-                    .navigation(mContext);
+        vipHeaderLoginShopRetrievalTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance()
+                        .build(ARouterPaths.STOCKING_ACTIVITY)
+                        .navigation(mContext);
+            }
         });
 
-        vipHeaderPullNewActivityIv.setOnClickListener(v -> {
-            String clickURL = Consts.VIP_PULL_NEW_URL;
-            Logger.e(clickURL);
-            HrzRouter.getsInstance(mContext).navigation(clickURL);
+        vipHeaderPullNewActivityIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String clickURL = Consts.VIP_PULL_NEW_URL;
+                Logger.e(clickURL);
+                HrzRouter.getsInstance(mContext).navigation(clickURL);
+            }
         });
 
     }
@@ -199,7 +209,7 @@ public class ShopLoginState implements UserState{
         switcher.start();
         //公告栏字体颜色
         vipHeaderLoginSwitcher.setSwitcherTextColor(Color.parseColor("#FF333333"));
-        vipHeaderLoginSwitcher.setOnTipClickListener(position -> {});
+       // vipHeaderLoginSwitcher.setOnTipClickListener(position -> {});
     }
 
     /**
@@ -214,9 +224,24 @@ public class ShopLoginState implements UserState{
         vipHeaderLoginNormalFanNumTv.setText(fd == null? "--":fd.getLv0Count()+"");
         vipHeaderLoginCrownFanNumTv.setText(fd == null? "--":fd.getLv1Count()+"");
         vipHeaderLoginShopFanNumTv.setText(fd == null? "--":fd.getLv2Count()+"");
-        vipHeaderLoginNormalFanLl.setOnClickListener(v -> gotoFanActivity());
-        vipHeaderLoginCrownFanLl.setOnClickListener(v -> gotoFanActivity());
-        vipHeaderLoginShopFanLl.setOnClickListener(v -> gotoFanActivity());
+        vipHeaderLoginNormalFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
+        vipHeaderLoginCrownFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
+        vipHeaderLoginShopFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
 
         RxTextTool.getBuilder("您的专区商品剩余",mContext)
                   .append(fd == null ? "--":fd.getSurplusCount()+"")

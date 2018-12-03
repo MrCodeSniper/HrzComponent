@@ -3,6 +3,8 @@ package com.mujirenben.android.vip.mvp.presenter;
 import android.app.Application;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 import me.jessyan.rxerrorhandler.handler.ErrorHandleSubscriber;
@@ -53,7 +55,12 @@ public class MyFanPresenter extends BasePresenter<MyFanContract.Model, MyFanCont
         RequestBody body  = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postJson);
         mModel.getMyFanInfo(body)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<FanHeaderInfo>(mErrorHandler) {
                     @Override
@@ -102,7 +109,12 @@ public class MyFanPresenter extends BasePresenter<MyFanContract.Model, MyFanCont
         RequestBody body  = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postJson);
         mModel.getMyFanList(body)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<FanListBean>(mErrorHandler) {
                     @Override

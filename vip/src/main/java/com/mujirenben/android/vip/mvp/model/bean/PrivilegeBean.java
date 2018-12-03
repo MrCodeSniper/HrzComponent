@@ -1,5 +1,8 @@
-package com.mujirenben.android.vip.mvp.model;
+package com.mujirenben.android.vip.mvp.model.bean;
 
+import android.support.annotation.Keep;
+
+@Keep
 public class PrivilegeBean {
     public String title;
     public String subtitle;

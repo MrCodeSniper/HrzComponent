@@ -1,10 +1,8 @@
 package com.mujirenben.android.vip.mvp.ui.fragment;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +21,7 @@ import com.mujirenben.android.vip.R2;
 import com.mujirenben.android.vip.di.component.DaggerFansAndCrownUpgradeComponent;
 import com.mujirenben.android.vip.di.module.FansAndCrownUpgradeModule;
 import com.mujirenben.android.vip.mvp.contract.FansAndCrownUpgradeContract;
-import com.mujirenben.android.vip.mvp.model.PrivilegeBean;
+import com.mujirenben.android.vip.mvp.model.bean.PrivilegeBean;
 import com.mujirenben.android.vip.mvp.model.bean.VipUpgradeInfo;
 import com.mujirenben.android.vip.mvp.presenter.FansAndCrownUpgradePresenter;
 

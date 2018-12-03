@@ -17,6 +17,7 @@ import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -39,6 +40,8 @@ import com.mujirenben.android.common.util.QrCodeUtils;
 import com.mujirenben.android.common.util.sensorHelper.SensorHelper;
 import com.mujirenben.android.common.util.wxHelper.ShareDialogHelper;
 import com.mujirenben.android.common.util.wxHelper.WeiXinHelper;
+import com.mujirenben.android.common.util.wxHelper.listener.OnClickSessionListener;
+import com.mujirenben.android.common.util.wxHelper.listener.OnClickTimeLineListener;
 import com.mujirenben.android.vip.R;
 import com.mujirenben.android.vip.R2;
 import com.mujirenben.android.vip.di.component.DaggerVipShareComponent;
@@ -144,7 +147,12 @@ public class VipShareActivity extends BaseActivity<VipSharePresenter>
         mNickName = ldm.getDisplayName();
         mPortraitUrl = ldm.getAvatarUrl();
 
-        mVpWrapperFL.setOnTouchListener((v, event) -> mStylesVP.dispatchTouchEvent(event));
+        mVpWrapperFL.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return mStylesVP.dispatchTouchEvent(event);
+            }
+        });
 
         mStylesVP.setPageTransformer(true, new ViewPager.PageTransformer() {
             @Override
@@ -192,11 +200,18 @@ public class VipShareActivity extends BaseActivity<VipSharePresenter>
             ShareDialogHelper.getBuilder(this)
                     .setDialogTitle("标题")
                     .setDialogContent("内容")
-                    .setOnLinkListener(() -> {
-
+                    .setOnSessionListener(new OnClickSessionListener() {
+                        @Override
+                        public void onClick() {
+                            share(WeiXinHelper.ShareToType.SESSION);
+                        }
                     })
-                    .setOnSessionListener(() -> share(WeiXinHelper.ShareToType.SESSION))
-                    .setOnTimeLineListener(() -> share(WeiXinHelper.ShareToType.TIMELINE))
+                    .setOnTimeLineListener(new OnClickTimeLineListener() {
+                        @Override
+                        public void onClick() {
+                            share(WeiXinHelper.ShareToType.TIMELINE);
+                        }
+                    })
                     .build()
                     .showDialog(true);
         } else {

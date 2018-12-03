@@ -30,7 +30,7 @@ import com.mujirenben.android.common.widget.DialogUtils;
 import com.mujirenben.android.common.widget.dialog.MessageOnlyDialog;
 import com.mujirenben.android.vip.R;
 import com.mujirenben.android.vip.R2;
-import com.mujirenben.android.vip.mvp.model.PrivilegeBean;
+import com.mujirenben.android.vip.mvp.model.bean.PrivilegeBean;
 
 import java.util.ArrayList;
 import java.util.Calendar;

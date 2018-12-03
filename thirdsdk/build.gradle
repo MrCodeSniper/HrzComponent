@@ -18,62 +18,54 @@ android {
 
     buildTypes {
         release {
-            postprocessing {
-                removeUnusedCode false
-                removeUnusedResources false
-                obfuscate false
-                optimizeCode false
-                proguardFile 'proguard-rules.pro'
-            }
+//            postprocessing {
+//                removeUnusedCode true
+//                removeUnusedResources false
+//                obfuscate false
+//                optimizeCode false
+//                proguardFile 'proguard-rules.pro'
+//            }
+            minifyEnabled true
+            consumerProguardFiles 'proguard-rules.pro'
+
         }
     }
 
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation files('libs/json_simple-1.1.jar')
     implementation files('libs/jd_crash_lib_release_210.jar')
     implementation files('libs/jdmasdk.jar')
-    implementation files('libs/JDSDK_h.jar')
-
-
-
+    api files('libs/JDSDK_h.jar')
     //fastjson
     api 'com.alibaba:fastjson:1.2.9'
-
     //支付
     api 'com.alibaba.alipay:alipaySingle:20160825@jar'
-
     //登陆
     api 'com.ali.auth.sdk:alibabauth_core:1.1.4@jar'
     api 'com.ali.auth.sdk:alibabauth_ui:1.1.4@aar'
     api 'com.ali.auth.sdk:alibabauth_ext:1.1.4@jar'
     //【可选】仅供特殊合作伙伴使用
     api 'com.ali.auth.sdk:alibabauth_accountlink:1.1.4@jar'
-
     //安全基础
     api 'com.taobao.android:securityguardaar3:5.1.81@aar'
     //【可选】安全高级，如使用了发放红包、优惠券高级功能，则必须引入
     api 'com.taobao.android:securitybodyaar3:5.1.25@aar'
-
     //Mtop网关
     api 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
-
     //applink
     api 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.0'
-
     //UT
     api 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
     api 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
-
     //电商SDK
     api 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.99'
     api 'com.alibaba.sdk.android:alibc_trade_biz:3.1.1.99'
     api 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.99'
-
-
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:support-annotations:28.0.0'
 }

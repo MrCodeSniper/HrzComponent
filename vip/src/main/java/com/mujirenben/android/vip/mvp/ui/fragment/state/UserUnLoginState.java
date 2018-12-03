@@ -74,18 +74,24 @@ public class UserUnLoginState implements UserState {
         textSwitcher = vipUnLoginLayout.findViewById(R.id.text_switcher);
         indicatorLayout = vipUnLoginLayout.findViewById(R.id.vip_header_unLogin_indicatorLayout);
         shareLayoutIv = vipUnLoginLayout.findViewById(R.id.vip_header_unLogin_share_iv);
-        shareLayoutIv.setOnClickListener(v -> {
-            ARouter.getInstance()
-                    .build(ARouterPaths.LOGIN_MAIN_MINE)
-                    .withString(Consts.LOGIN_SOURCE_KEY,"会员")
-                    .navigation(mContext);
+        shareLayoutIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance()
+                        .build(ARouterPaths.LOGIN_MAIN_MINE)
+                        .withString(Consts.LOGIN_SOURCE_KEY,"会员")
+                        .navigation(mContext);
+            }
         });
         vipHeaderPullNewActivityIv = vipUnLoginLayout.findViewById(R.id.vip_header_pull_new_activity_iv);
-        vipHeaderPullNewActivityIv.setOnClickListener(v -> {
-            ARouter.getInstance()
-                    .build(ARouterPaths.LOGIN_MAIN_MINE)
-                    .withString(Consts.LOGIN_SOURCE_KEY,"活动运营")
-                    .navigation(mContext);
+        vipHeaderPullNewActivityIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance()
+                        .build(ARouterPaths.LOGIN_MAIN_MINE)
+                        .withString(Consts.LOGIN_SOURCE_KEY,"活动运营")
+                        .navigation(mContext);
+            }
         });
     }
     /**
@@ -113,7 +119,7 @@ public class UserUnLoginState implements UserState {
             //注意这里的单位是秒！秒！秒！秒！秒！
             switcher.setDuration(5);
             switcher.start();
-            textSwitcher.setOnTipClickListener(position -> {});
+         //   textSwitcher.setOnTipClickListener(position -> {});
         }
     }
 
@@ -145,22 +151,27 @@ public class UserUnLoginState implements UserState {
             indicatorLayout.setVisibility(View.VISIBLE);
         }
         bgaBanner.setData(R.layout.vip_header_banner_content, bannerListStr, null);
-        bgaBanner.setDelegate((banner, itemView, url, position) ->{
-            String clickURL = bannerList.get(position).getUrl();
-            String title = bannerList.get(position).getTitle();
-            HrzRouter.getsInstance(mContext).navigation(clickURL);
-            HashMap<String,Object> trackMap = new HashMap<>();
-            trackMap.put("page_type","会员未登录");
-            trackMap.put("banner_name",title);
-            trackMap.put("url",clickURL);
-            trackMap.put("banner_rank",position);
-            SensorHelper.uploadTrack("BannerClick",trackMap);
+        bgaBanner.setDelegate(new BGABanner.Delegate() {
+            @Override
+            public void onBannerItemClick(BGABanner banner, View itemView, @Nullable Object model, int position) {
+                String clickURL = bannerList.get(position).getUrl();
+                String title = bannerList.get(position).getTitle();
+                HrzRouter.getsInstance(mContext).navigation(clickURL);
+                HashMap<String,Object> trackMap = new HashMap<>();
+                trackMap.put("page_type","会员未登录");
+                trackMap.put("banner_name",title);
+                trackMap.put("url",clickURL);
+                trackMap.put("banner_rank",position);
+                SensorHelper.uploadTrack("BannerClick",trackMap);
+            }
         });
-        bgaBanner.setAdapter((banner, itemView, url, position) -> {
-            ImageView targetView = itemView.findViewById(R.id.vip_header_banner_iv);
-            if(url == null) return;
-            Glide.with(mContext).load(url).into(targetView);
-
+        bgaBanner.setAdapter(new BGABanner.Adapter() {
+            @Override
+            public void fillBannerItem(BGABanner banner, View itemView, @Nullable Object url, int position) {
+                ImageView targetView = itemView.findViewById(R.id.vip_header_banner_iv);
+                if(url == null) return;
+                Glide.with(mContext).load(url).into(targetView);
+            }
         });
         bgaBanner.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override

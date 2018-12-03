@@ -7,6 +7,7 @@ package com.mujirenben.android.thirdsdk.JdSdk;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.annotation.Keep;
 import android.util.Log;
 
 
@@ -27,6 +28,7 @@ import org.json.JSONException;
 /**
  * @Author CH
  */
+@Keep
 public class JdSdkRouter {
 
 
@@ -56,7 +58,7 @@ public class JdSdkRouter {
          }
     }
 
-    public static void openJDGoodsDetail(Context context,String goodsId ){
+    public static void openJDGoodsDetail(Context context,String goodsId){
         try {
             if(PackageUtils.appIsInstalled(context,jdpgname)){
                 mKelperTask= KeplerApiManager.getWebViewService().openItemDetailsPage(goodsId, mKeplerAttachParameter,context,null,timeOut);
@@ -99,7 +101,7 @@ public class JdSdkRouter {
                 });
     }
 
-    public static void openUrlToJD(String url,Context context,OpenAppAction openAppAction){
+    public static void openUrlToJD(String url,Context context,JdCallback openAppAction){
            try {
                if(PackageUtils.appIsInstalled(context,jdpgname)) {
                    mKelperTask=KeplerApiManager.getWebViewService().openJDUrlPage(url,mKeplerAttachParameter,context,openAppAction,timeOut);

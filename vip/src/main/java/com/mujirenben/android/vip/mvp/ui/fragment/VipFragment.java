@@ -254,15 +254,18 @@ public class VipFragment extends BaseFragment<VipPresenter> implements VipContra
 
         ll_discount = exclusiveLayout.findViewById(R.id.ll_discount);
         ivSelect = exclusiveLayout.findViewById(R.id.iv_select);
-        ll_discount.setOnClickListener((View v) -> {
-            if (ivSelect.isSelected()) {
-                ivSelect.setSelected(false);
-            } else {
-                ivSelect.setSelected(true);
+        ll_discount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ivSelect.isSelected()) {
+                    ivSelect.setSelected(false);
+                } else {
+                    ivSelect.setSelected(true);
+                }
+                LoadingDialog.getInstance(getActivity()).show();
+                page = 1;
+                getVipPageData(Type.FIRST_LOAD,1);
             }
-            LoadingDialog.getInstance(getActivity()).show();
-            page = 1;
-            getVipPageData(Type.FIRST_LOAD,1);
         });
         userIsLogin();
         intRecyclerView();
@@ -446,16 +449,17 @@ public class VipFragment extends BaseFragment<VipPresenter> implements VipContra
 
        // ((LinearLayout.LayoutParams)mAdapter.getHeaderLayout().getChildAt(1).getLayoutParams()).setMargins(0,0,0,R.dimen.recycleview_marginbottom);
         userStateManager.showUniqueInfoLayout(tempHeaderInfo);
-        mAdapter.setOnItemClickListener((BaseQuickAdapter adapter, View view, int position) -> {
-
-            Bundle bundle=new Bundle();
-            bundle.putString(Consts.GOODS_ID_INTENT_STR,mAdapter.getData().get(position).getId()+"");
-            bundle.putString(Consts.PLATFORM_ID_INTENT_STR,mAdapter.getData().get(position).getPlatform()+"");
-            bundle.putString(Consts.ROUTER_FROM,"会员");
-            ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
-                    .withBundle(Consts.HRZ_ROUTER_BUNDLE,bundle)
-                    .navigation(getActivity());
-
+        mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                Bundle bundle=new Bundle();
+                bundle.putString(Consts.GOODS_ID_INTENT_STR,mAdapter.getData().get(position).getId()+"");
+                bundle.putString(Consts.PLATFORM_ID_INTENT_STR,mAdapter.getData().get(position).getPlatform()+"");
+                bundle.putString(Consts.ROUTER_FROM,"会员");
+                ARouter.getInstance().build(ARouterPaths.GOODS_DETAIL)
+                        .withBundle(Consts.HRZ_ROUTER_BUNDLE,bundle)
+                        .navigation(getActivity());
+            }
         });
     }
 
@@ -543,11 +547,14 @@ public class VipFragment extends BaseFragment<VipPresenter> implements VipContra
      */
     @Override
     public void onLoadMoreRequested() {
-        vipRecyclerView.post(() -> {
-            Logger.e("触发了加载更多，请求页数为:"+page);
-            page++;
-            reqType=Type.LOAD_MORE;
-            getVipPageData(reqType,page);
+        vipRecyclerView.post(new Runnable() {
+            @Override
+            public void run() {
+                Logger.e("触发了加载更多，请求页数为:"+page);
+                page++;
+                reqType=Type.LOAD_MORE;
+                getVipPageData(reqType,page);
+            }
         });
     }
 
@@ -600,7 +607,12 @@ public class VipFragment extends BaseFragment<VipPresenter> implements VipContra
            TextView default_operate_tv=emptyView.findViewById(R.id.default_operate_tv);
            default_operate_tv.setVisibility(View.VISIBLE);
            default_operate_tv.setText("点击刷新");
-           default_operate_tv.setOnClickListener(v -> getVipPageData(Type.FIRST_LOAD,1));
+           default_operate_tv.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   getVipPageData(Type.FIRST_LOAD,1);
+               }
+           });
            mAdapter.removeHeaderView(emptyView);
            mAdapter.addHeaderView(emptyView);
        }else if(type.equals(Consts.STAND_BY_VIEW.STATE_NETOUTTIME)){

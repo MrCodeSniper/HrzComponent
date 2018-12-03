@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'hrz_push'
-                version '1.0.0'
+                version '1.0.1'
                 artifactId 'hrz_push'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'

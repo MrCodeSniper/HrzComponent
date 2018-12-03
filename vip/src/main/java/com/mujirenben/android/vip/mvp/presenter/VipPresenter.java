@@ -21,6 +21,8 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 import me.jessyan.rxerrorhandler.handler.ErrorHandleSubscriber;
@@ -54,7 +56,12 @@ public class VipPresenter extends BasePresenter<VipContract.Model, VipContract.V
         RequestBody body  = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postJson);
         mModel.getMyFanInfo(body)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable) )
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<FanHeaderInfo>(mErrorHandler) {
                     @Override
@@ -104,7 +111,12 @@ public class VipPresenter extends BasePresenter<VipContract.Model, VipContract.V
         RequestBody body  = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),postJson);
         mModel.getVipBanner(body)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<VipBannerBean>(mErrorHandler) {
                     @Override
@@ -152,7 +164,12 @@ public class VipPresenter extends BasePresenter<VipContract.Model, VipContract.V
     public void getNoticeList(HashMap<String,String> map){
         mModel.getNoticeList(map)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<NoticeBean>(mErrorHandler) {
                     @Override
@@ -213,7 +230,12 @@ public class VipPresenter extends BasePresenter<VipContract.Model, VipContract.V
         mRootView.showLoading();
         mModel.getSearchGoods(params)
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<SearchResult>(mErrorHandler) {
                     @Override

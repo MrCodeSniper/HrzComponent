@@ -28,7 +28,7 @@ import com.mujirenben.android.vip.R2;
 import com.mujirenben.android.vip.di.component.DaggerFansAndCrownUpgradeComponent;
 import com.mujirenben.android.vip.di.module.FansAndCrownUpgradeModule;
 import com.mujirenben.android.vip.mvp.contract.FansAndCrownUpgradeContract;
-import com.mujirenben.android.vip.mvp.model.PrivilegeBean;
+import com.mujirenben.android.vip.mvp.model.bean.PrivilegeBean;
 import com.mujirenben.android.vip.mvp.model.bean.VipUpgradeInfo;
 import com.mujirenben.android.vip.mvp.presenter.FansAndCrownUpgradePresenter;
 

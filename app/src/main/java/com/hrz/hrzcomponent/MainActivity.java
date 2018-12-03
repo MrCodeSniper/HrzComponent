@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.mujirenben.android.thirdsdk.JdSdk.JdCallback;
+import com.mujirenben.android.thirdsdk.JdSdk.JdSdkRouter;
 import com.mujirenben.liangchenbufu.R;
 
 
@@ -14,7 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        JdSdkRouter.openUrlToJD("xxx", this, new JdCallback() {
+            @Override
+            public void onStatus(int i) {
 
+            }
+        });
     }
 
 //    public void testTbRoute(View view){

@@ -184,8 +184,13 @@ public class UserLoginState implements UserState {
                 vipHeaderShopExpiredRl.setVisibility(View.VISIBLE);
                 vipHeaderLoginGotoUpdateTv.setText("点击续费店主");
                 vipHeaderLoginGotoUpdateTv.setTag(0);
-                vipHeaderShopExpiredRl.setOnClickListener(v ->
-                        ARouter.getInstance().build(ARouterPaths.SHOP_KEEPER_RENEW_ACTIVITY).navigation(mContext));
+                vipHeaderShopExpiredRl.setOnClickListener(new View.OnClickListener() {
+                                                              @Override
+                                                              public void onClick(View v) {
+                                                                  ARouter.getInstance().build(ARouterPaths.SHOP_KEEPER_RENEW_ACTIVITY).navigation(mContext);
+                                                              }
+                                                          }
+                );
             }else {
                 vipHeaderShopExpiredRl.setVisibility(View.GONE);
                 vipHeaderLoginGotoUpdateTv.setTag(1);
@@ -318,9 +323,24 @@ public class UserLoginState implements UserState {
         vipHeaderLoginNormalFanNumTv.setText(fd == null? "--":fd.getLv0Count()+"");
         vipHeaderLoginCrownFanNumTv.setText(fd == null? "--":fd.getLv1Count()+"");
         vipHeaderLoginShopFanNumTv.setText(fd == null? "--":fd.getLv2Count()+"");
-        vipHeaderLoginNormalFanLl.setOnClickListener(v -> gotoFanActivity());
-        vipHeaderLoginCrownFanLl.setOnClickListener(v -> gotoFanActivity());
-        vipHeaderLoginShopFanLl.setOnClickListener(v -> gotoFanActivity());
+        vipHeaderLoginNormalFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
+        vipHeaderLoginCrownFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
+        vipHeaderLoginShopFanLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoFanActivity();
+            }
+        });
     }
 
     /**
@@ -350,7 +370,7 @@ public class UserLoginState implements UserState {
             //注意这里的单位是秒！秒！秒！秒！秒！
             switcher.setDuration(5);
             switcher.start();
-            vipHeaderLoginSwitcher.setOnTipClickListener(position -> {});
+          //  vipHeaderLoginSwitcher.setOnTipClickListener(position -> {});
         }
     }
 
@@ -417,32 +437,49 @@ public class UserLoginState implements UserState {
         if(fanHeaderInfo != null && fanHeaderInfo.getData() != null){
             upgradeType = fanHeaderInfo.getData().getLv();
         }
-        vipHeaderExpiredNoticeCloseIv.setOnClickListener(v ->
-                vipHeaderShopExpiredRl.setVisibility(View.GONE));
+        vipHeaderExpiredNoticeCloseIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vipHeaderShopExpiredRl.setVisibility(View.GONE);
+            }
+        });
         
         //点击二维码跳转
-        vipHeaderLoginQrcode.setOnClickListener(view -> 
+        vipHeaderLoginQrcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 ARouter.getInstance()
                         .build(ARouterPaths.VIP_QR_CODE_ACTIVITY)
                         .withString("source", "会员")
-                        .navigation(mContext));
-        vipHeaderLoginGotoUpdateTv.setOnClickListener(v ->{
-            if(fanHeaderInfo != null && fanHeaderInfo.getData() != null){
-                int expiredLv = fanHeaderInfo.getData().getExpiredLv();
-                judgeGoToActivity(expiredLv);
+                        .navigation(mContext);
             }
         });
-
-        vipHeaderLoginUpdateLayoutIv.setOnClickListener(v ->{
+        vipHeaderLoginGotoUpdateTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 if(fanHeaderInfo != null && fanHeaderInfo.getData() != null){
                     int expiredLv = fanHeaderInfo.getData().getExpiredLv();
                     judgeGoToActivity(expiredLv);
                 }
-            });
+            }
+        });
+
+        vipHeaderLoginUpdateLayoutIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(fanHeaderInfo != null && fanHeaderInfo.getData() != null){
+                    int expiredLv = fanHeaderInfo.getData().getExpiredLv();
+                    judgeGoToActivity(expiredLv);
+                }
+            }
+        });
         //
-        vipHeaderPullNewActivityIv.setOnClickListener(v -> {
-            //String clickURL = Consts.VIP_PULL_NEW_URL+LoginDataManager.getsInstance(mContext).getWeixinUnionId();
-            HrzRouter.getsInstance(mContext).navigation(Consts.VIP_PULL_NEW_URL);
+        vipHeaderPullNewActivityIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //String clickURL = Consts.VIP_PULL_NEW_URL+LoginDataManager.getsInstance(mContext).getWeixinUnionId();
+                HrzRouter.getsInstance(mContext).navigation(Consts.VIP_PULL_NEW_URL);
+            }
         });
     }
 

@@ -7,6 +7,8 @@ import com.mujirenben.android.vip.mvp.model.bean.InvitationCodeBean;
 import javax.inject.Inject;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 import me.jessyan.rxerrorhandler.handler.ErrorHandleSubscriber;
@@ -25,7 +27,12 @@ public class VipQrCodePresenter extends
     public void loadUserInfo() {
         mModel.loadInvitaionCode()
                 .subscribeOn(Schedulers.io())
-                .doOnSubscribe(disposable -> addDispose(disposable))
+                .doOnSubscribe(new Consumer<Disposable>() {
+                    @Override
+                    public void accept(Disposable disposable) throws Exception {
+                        addDispose(disposable);
+                    }
+                })
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ErrorHandleSubscriber<InvitationCodeBean>(mErrorHandler) {
                     @Override
@@ -38,9 +45,12 @@ public class VipQrCodePresenter extends
     }
 
     public void copyTextToClipboard(String text) {
-        mModel.copyTextToClipboard(text, () -> {
-            if(mRootView!=null){
-                mRootView.onTextCopied(text);
+        mModel.copyTextToClipboard(text, new Runnable() {
+            @Override
+            public void run() {
+                if(mRootView!=null){
+                    mRootView.onTextCopied(text);
+                }
             }
         });
     }

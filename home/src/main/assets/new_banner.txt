@@ -17,7 +17,7 @@
             "url": "hrzrouter:\/\/hrzapp\/mine\/login",
             "img": "http:\/\/imgcdn.tlgn365.com\/2018-08-16\/579b5835-9a0e-449a-8fb0-3288dbfbcc72.jpg",
             "startTime": 1534262400,
-            "endTime": 1537718400
+            "e韩ndTime": 1537718400
         },
         {
             "sequence": 3,

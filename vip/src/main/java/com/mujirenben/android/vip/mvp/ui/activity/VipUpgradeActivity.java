@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -67,6 +68,11 @@ public class VipUpgradeActivity extends FragmentActivity {
         transaction.commit();
 
         ((TextView)findViewById(R.id.tv_title)).setText(title);
-        findViewById(R.id.ib_left_action).setOnClickListener(v -> finish());
+        findViewById(R.id.ib_left_action).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

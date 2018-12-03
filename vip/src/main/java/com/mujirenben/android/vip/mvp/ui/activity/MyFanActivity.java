@@ -59,6 +59,7 @@ import butterknife.ButterKnife;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
+import io.reactivex.functions.Consumer;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 
 import static com.mujirenben.android.common.util.Preconditions.checkNotNull;
@@ -135,7 +136,12 @@ public class MyFanActivity extends BaseActivity<MyFanPresenter> implements MyFan
         tvTitlebar.setTextColor(getResources().getColor(R.color.text_color));
         fanOverviewLayout = (FrameLayout) LayoutInflater.from(this).inflate(R.layout.fan_header_layout, null);
         defaultLayout = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.common_default_layout,null);
-        tvBack.setOnClickListener(view -> finish());
+        tvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         initRecyclerView();
     }
 
@@ -348,10 +354,15 @@ public class MyFanActivity extends BaseActivity<MyFanPresenter> implements MyFan
                     .setForegroundColor(Color.parseColor("#FFC9B07A"))
                     .setUnderline()
                     .into(fanHeaderGetReferrerTv);
-            fanHeaderGetReferrerTv.setOnClickListener(v ->
+            fanHeaderGetReferrerTv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
                     ARouter.getInstance()
                             .build(ARouterPaths.INVITE_CODE_WRITING_ACTIVITY)
-                            .navigation(MyFanActivity.this));
+                            .navigation(MyFanActivity.this);
+                }
+            });
+
         } else {
             //有推荐人则显示推荐人的头像，名字
             RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) fanHeaderReferrerNameTv.getLayoutParams();
@@ -367,21 +378,27 @@ public class MyFanActivity extends BaseActivity<MyFanPresenter> implements MyFan
             fanHeaderReferrerNameTv.setText(fhd.getNikeName() + "");
             fanHeaderReferrerNameTv.setTextColor(Color.parseColor("#FF333333"));
 
-            fanHeaderReferrerPhone.setOnClickListener(v -> {
-                rxPermissions.request(Manifest.permission.CALL_PHONE)
-                        .subscribe(result -> {
-                            if(result){
-                                if(TextUtils.isEmpty(phoneNumber)){
-                                    ArmsUtils.makeText(MyFanActivity.this,"暂无该用户的手机信息");
-                                    return;
+            fanHeaderReferrerPhone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    rxPermissions.request(Manifest.permission.CALL_PHONE)
+                            .subscribe(new Consumer<Boolean>() {
+                                @Override
+                                public void accept(Boolean result) throws Exception {
+                                    if(result){
+                                        if(TextUtils.isEmpty(phoneNumber)){
+                                            ArmsUtils.makeText(MyFanActivity.this,"暂无该用户的手机信息");
+                                            return;
+                                        }
+                                        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        startActivity(intent);
+                                    }else {
+                                        ArmsUtils.makeText(MyFanActivity.this,"授权之后，才能拨打电话哦~");
+                                    }
                                 }
-                                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                            }else {
-                                ArmsUtils.makeText(MyFanActivity.this,"授权之后，才能拨打电话哦~");
-                            }
-                        });
+                            });
+                }
             });
         }
     }
@@ -428,16 +445,26 @@ public class MyFanActivity extends BaseActivity<MyFanPresenter> implements MyFan
                 defaultTitleDesTv.setVisibility(View.VISIBLE);
                 defaultTitleDesTv.setText("去邀请");
                 defaultTitleDesTv.setTextColor(getResources().getColor(R.color.golden_deep_color));
-                defaultTitleDesTv.setOnClickListener(v ->
-                    ARouter.getInstance()
-                            .build(ARouterPaths.VIP_QR_CODE_ACTIVITY)
-                            .navigation(MyFanActivity.this));
+                defaultTitleDesTv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ARouter.getInstance()
+                                .build(ARouterPaths.VIP_QR_CODE_ACTIVITY)
+                                .navigation(MyFanActivity.this);
+                    }
+                });
+
             }else if(errorType == NET_WORK_ERROR_TYPE){
                 defaultTitleTv.setText(msg);
                 defaultTitleDesTv.setVisibility(View.VISIBLE);
                 defaultTitleDesTv.setTextColor(getResources().getColor(R.color.golden_deep_color));
                 defaultTitleDesTv.setText("点击刷新");
-                defaultTitleDesTv.setOnClickListener(v -> getMyFanData(Type.REFRESH,1) );
+                defaultTitleDesTv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getMyFanData(Type.REFRESH,1);
+                    }
+                });
             }
         }else {
             mAdapter.loadMoreComplete();
@@ -494,9 +521,12 @@ public class MyFanActivity extends BaseActivity<MyFanPresenter> implements MyFan
      */
     @Override
     public void onLoadMoreRequested() {
-        fanRecyclerView.post(()->{
-            page++;
-            getMyFanData(Type.LOAD_MORE,page);
+        fanRecyclerView.post(new Runnable() {
+            @Override
+            public void run() {
+                page++;
+                getMyFanData(Type.LOAD_MORE,page);
+            }
         });
     }
 
