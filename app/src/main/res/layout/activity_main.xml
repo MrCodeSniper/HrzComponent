@@ -7,10 +7,10 @@
 
 
     <Button
-        android:text="测试淘宝跳转"
+        android:text="测试红人装跳转"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="testTbRoute"
+        android:onClick="test"
         />
 
 

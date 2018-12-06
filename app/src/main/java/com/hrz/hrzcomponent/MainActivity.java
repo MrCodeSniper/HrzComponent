@@ -1,5 +1,7 @@
 package com.hrz.hrzcomponent;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,12 +18,37 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        JdSdkRouter.openUrlToJD("xxx", this, new JdCallback() {
-            @Override
-            public void onStatus(int i) {
 
-            }
-        });
+
+//        JdSdkRouter.openUrlToJD("xxx", this, new JdCallback() {
+//            @Override
+//            public void onStatus(int i) {
+//
+//            }
+//        });
+    }
+
+    public void goMain() {
+//        ComponentName componentName = new ComponentName("com.mujirenben.liangchenbufu",
+//                "com.mujirenben.liangchenbufu.activity.MainActivity");
+        Intent intent = new Intent();
+        intent.setClassName("com.mujirenben.liangchenbufu",
+                "com.mujirenben.liangchenbufu.MainActivity");
+        intent.setAction("android.intent.action.MAIN");
+        intent.putExtra("FromXDZ",true);
+//        intent.setAction("android.intent.action.MAIN");
+//        intent.putExtra("FromXDZ", true);
+        // intent.putExtra("com.mujirenben.videoDetailActivity.linkurl",
+        // "http://yangjie.tlgn365.com/hrz_zhifubao/index.html");
+        // intent.putExtra("IsActivity", true);
+//        intent.setComponent(componentName);
+        startActivity(intent);
+    }
+
+    public void test(View view){
+//        goMain();
+        new HrzLoadingWidget(this).show();
+
     }
 
 //    public void testTbRoute(View view){

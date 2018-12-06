@@ -83,11 +83,11 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug{
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -110,9 +110,9 @@ dependencies {
 //    api 'com.hdyl.hrz:xsh:1.0.0@aar'
 
 
-      implementation project(":thirdsdk")
+    //  implementation project(":thirdsdk")
 
-
+    implementation 'com.hdyl.hrz:thirdsdk:1.0.7'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

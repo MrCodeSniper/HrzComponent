@@ -137,7 +137,7 @@ dependencies {
         exclude module: 'jsr305'
     }
     api rootProject.ext.dependencies["ucrop"]
-    api rootProject.ext.dependencies["fresco"]
+//    api rootProject.ext.dependencies["fresco"]
     api rootProject.ext.dependencies["ptr"]
     api rootProject.ext.dependencies["banner"]
     api rootProject.ext.dependencies["autosystembar"]

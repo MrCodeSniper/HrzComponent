@@ -16,7 +16,7 @@ uploadArchives {
             }
             pom.project {
                 name 'thirdsdk'
-                version '1.0.6'
+                version '1.0.7'
                 artifactId 'thirdsdk'
                 groupId 'com.hdyl.hrz'
                 packaging 'aar'

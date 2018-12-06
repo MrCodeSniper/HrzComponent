@@ -14,6 +14,8 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 
+import com.mujirenben.android.common.util.imgCompress.ByteStreams;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -27,7 +29,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.facebook.common.internal.ByteStreams.copy;
+
 
 /**
  * @author: panrongfu
@@ -225,7 +227,7 @@ public class WxBitmapUtil {
             in = new BufferedInputStream(new URL(url).openStream(), 32);
             final ByteArrayOutputStream dataStream = new ByteArrayOutputStream();
             out = new BufferedOutputStream(dataStream, 32);
-            copy(in, out);
+            ByteStreams.copy(in, out);
             out.flush();
             byte[] data = dataStream.toByteArray();
             bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
