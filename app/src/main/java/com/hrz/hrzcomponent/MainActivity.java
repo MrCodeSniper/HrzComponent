@@ -4,28 +4,37 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
-import com.mujirenben.android.thirdsdk.JdSdk.JdCallback;
-import com.mujirenben.android.thirdsdk.JdSdk.JdSdkRouter;
+
+import com.mujirenben.android.common.util.ArmsUtils;
 import com.mujirenben.liangchenbufu.R;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String API_BASE_URL = "http://39.104.138.184:8080/";
+    private HrzLoadingWidget hrzLoadingWidget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        hrzLoadingWidget=new HrzLoadingWidget(this);
 
-
-
-//        JdSdkRouter.openUrlToJD("xxx", this, new JdCallback() {
-//            @Override
-//            public void onStatus(int i) {
-//
-//            }
-//        });
+        RetrofitUrlManager.getInstance().setGlobalDomain(API_BASE_URL);
+        
     }
 
     public void goMain() {
@@ -47,7 +56,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void test(View view){
 //        goMain();
-        new HrzLoadingWidget(this).show();
+//        new HrzLoadingWidget(this).show();
+
+        hrzLoadingWidget.show();
+        Map smsMap=new HashMap();
+        smsMap.put("telephone","17620752830");
+        ArmsUtils.obtainAppComponentFromContext(this).repositoryManager()
+                .obtainRetrofitService(TestService.class)
+                .getSmsCode(smsMap)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<ResponseEntity>() {
+                    @Override
+                    public void accept(ResponseEntity o) throws Exception {
+                        Log.e("chenhong",o.toString());
+                        hrzLoadingWidget.cancel();
+                    }
+                });
 
     }
 
